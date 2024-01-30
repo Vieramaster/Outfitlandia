@@ -1,16 +1,16 @@
-import './weather.css'
-
-function Weather(){
+import "./Weather.css"
+import React from "react"
+const Weather = ()=>{
 
     return(
-        <div className="weather-box">
-            <div className='weather-box--info'>
+        <div className="Weather">
+            <div className='Weather--info'>
                 <img src="/src/images/09d.svg" alt="" />
             </div>
-            <div className='weather-box--info'>
+            <div className='Weather--info'>
                 <p>14.3 °C</p>
             </div>
-            <div className='weather-box--info winter'>
+            <div className='Weather--info winter'>
                 <img src="/src/images/wind.svg" alt="" />
                 <span>12km/h</span>
             </div>
@@ -19,6 +19,4 @@ function Weather(){
     )
 }
 
-
 export default Weather
-

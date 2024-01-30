@@ -1,4 +1,5 @@
 import "./header.css";
+import React from "react";
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
       <div className="header--logo">
         <h1>outfilandia</h1>
       </div>
-      <button className="header--btn">Ingresar</button>
+      <button className="header--button">Ingresar</button>
     </header>
   );
 };

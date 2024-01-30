@@ -1,45 +1,36 @@
-.clothes-selection {
-    width: 55%;
-    height: 80%;
-    overflow: auto;
-  
-  
+.SelectionGarment {
+ 
+  width: 35rem;
+  height: 45rem;
+ 
+}
+
+.SelectionGarment,
+.SelectionGarment--small {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  grid-gap: 1px;
+}
+
+.SelectionGarment--big,
+.SelectionGarment--small {
+  width: 100%;
+  height: 100%;
+
+}
+
+.SelectionGarment--big {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+
+
+@media (width <= 1280px) {
+  .SelectionGarment {
+    width: 30rem;
+    height: 30rem;
   }
-  
-  .clothes-selection--box {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .clothes-selection::-webkit-scrollbar {
-    width: 10px;
-    
-  }
-  
-  .clothes-selection::-webkit-scrollbar-track {
-    background: var(--primary-color); 
-  }
-  
-  .clothes-selection::-webkit-scrollbar-thumb {
-    background: var(--fourth-color); 
-  }
-  
-  .clothes-selection::-webkit-scrollbar-thumb:hover {
-    background: var(--third-color); 
-  
-  }
-  
-  
-  .clothes-selection--btn{
-  
-    display: grid;
-  
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-    grid-gap: 2rem;
-     
-  }
-  
+}

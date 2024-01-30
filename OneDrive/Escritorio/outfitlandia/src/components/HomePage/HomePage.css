@@ -1,23 +1,22 @@
+.HomePage {
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  display: flex;
 
-.homePage {
+  display: grid;
+  place-items: center;
+}
 
-    width: 100vw;
-    height: calc(100vh - 5rem);
-    display: flex;
+.HomePage--box {
+  width: 100vw;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+@media (width <= 1280px) {
+  .HomePage--box {
+    height: 35rem;
   }
-  
-  .box {
-  
-    width: 100vw;
-    height: 45rem;
-    display: flex;
-    align-items: center;
-    place-content: center;
-  }
-  
-  @media (width <= 1280px) {
-    .box {
-      height: 35rem;
-    }
-  }
-  
+}
