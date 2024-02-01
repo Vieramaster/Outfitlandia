@@ -2,7 +2,7 @@
     {
         "garment": "top",
         "name": "hoodie",
-        "img": "./src/images/image-json/top/hoodie-hood-white.webp",
+        "image": "./src/images/image-json/top/hoodie-hood-white.webp",
         "css": "big",
         "style": [
             "basic",
@@ -153,7 +153,7 @@
     {
         "garment": "top",
         "name": "hoodie sin capucha",
-        "img": "/src/images/image-json/top/hoodie-white.webp",
+        "image": "/src/images/image-json/top/hoodie-white.webp",
         "css": "big",
         "style": [
             "basic",
@@ -168,7 +168,7 @@
     {
         "garment": "top",
         "name": "remera manga corta",
-        "img": "/src/images/image-json/top/t-shirt-white.webp",
+        "image": "/src/images/image-json/top/t-shirt-white.webp",
         "css": "big",
         "style": [
             "basic",
@@ -183,7 +183,7 @@
     {
         "garment": "top",
         "name": "chomba",
-        "img": "/src/images/image-json/top/polo-white.webp",
+        "image": "/src/images/image-json/top/polo-white.webp",
         "css": "big",
         "style": [
             "casual"
@@ -197,7 +197,7 @@
     {
         "garment": "top",
         "name": "sweater",
-        "img": "/src/images/image-json/top/sweater-white.webp",
+        "image": "/src/images/image-json/top/sweater-white.webp",
         "css": "big",
         "style": [
             "casual",
@@ -212,7 +212,7 @@
     {
         "garment": "top",
         "name": "polera",
-        "img": "/src/images/image-json/top/turtle-sweater-white.webp",
+        "image": "/src/images/image-json/top/turtle-sweater-white.webp",
         "css": "big",
         "style": [
             "casual",
@@ -226,7 +226,7 @@
     {
         "garment": "top",
         "name": "camisa manga corta",
-        "img": "/src/images/image-json/top/short-sleeved-shirt-white.webp",
+        "image": "/src/images/image-json/top/short-sleeved-shirt-white.webp",
         "css": "big",
         "style": [
             "casual"
@@ -239,7 +239,7 @@
     {
         "garment": "top",
         "name": "camisa manga larga",
-        "img": "/src/images/image-json/top/long-sleeve-shirt-whote.webp",
+        "image": "/src/images/image-json/top/long-sleeve-shirt-whote.webp",
         "css": "big",
         "style": [
             "casual",
@@ -255,7 +255,7 @@
     {
         "garment": "top",
         "name": "remera manga larga",
-        "img": "/src/images/image-json/top/long-t-shirt-white.webp",
+        "image": "/src/images/image-json/top/long-t-shirt-white.webp",
         "css": "big",
         "style": [
             "basic"
@@ -269,7 +269,7 @@
     {
         "garment": "coat",
         "name": "chaqueta de jean",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -284,7 +284,7 @@
     {
         "garment": "coat",
         "name": "chaqueta de gabardina",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -299,7 +299,7 @@
     {
         "garment": "coat",
         "name": "campera de cuero",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -314,7 +314,7 @@
     {
         "garment": "coat",
         "name": "campera infable",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic"
@@ -328,7 +328,7 @@
     {
         "garment": "coat",
         "name": "parka",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -342,7 +342,7 @@
     {
         "garment": "coat",
         "name": "camisaco",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -357,7 +357,7 @@
     {
         "garment": "coat",
         "name": "campera bomber",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "basic",
@@ -372,7 +372,7 @@
         "garment": "coat",
         "name": "chaqueta de jean con abrigo",
         "css": "big",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "style": [
             "basic",
             "casual"
@@ -385,7 +385,7 @@
     {
         "garment": "coat",
         "name": "blazer",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "casual",
@@ -400,7 +400,7 @@
     {
         "garment": "coat",
         "name": "saco cruzado",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "casual",
@@ -414,7 +414,7 @@
     {
         "garment": "coat",
         "name": "sobretodo",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "casual",
@@ -428,7 +428,7 @@
     {
         "garment": "coat",
         "name": "montgomery",
-        "img": "/src/images/jacket.webp",
+        "image": "/src/images/jacket.webp",
         "css": "big",
         "style": [
             "casual"

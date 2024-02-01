@@ -1,6 +1,6 @@
 .SelectionClothes {
   width: 55%;
-  height: 80%;
+  height: 100%;
   overflow: auto;
 }
 
@@ -8,9 +8,12 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  place-items: center;
+
   padding: 2rem;
+  row-gap: 2rem;
 }
 
 .SelectionClothes::-webkit-scrollbar {

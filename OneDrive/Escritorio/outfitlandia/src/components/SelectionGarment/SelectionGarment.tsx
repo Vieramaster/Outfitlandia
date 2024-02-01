@@ -2,21 +2,8 @@ import "./SelectionGarment.css";
 import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
 
-interface garmentButtons {
-  css: string;
-  src: string;
-  name: string;
-  garment: string;
-  nameButton: string;
-  key: string;
-}
 
-interface SelectionGarmentProps {
-  garmentButtons: garmentButtons[];
-  onGarmentClick: (id: string) => void;
-}
-
-const SelectionGarment: React.FC<SelectionGarmentProps> = ({garmentButtons,  onGarmentClick}) => {
+const SelectionGarment  = ({garmentButtons,  onGarmentClick}) => {
 
   const garmentClick = (id: string) => {
     onGarmentClick(id)
