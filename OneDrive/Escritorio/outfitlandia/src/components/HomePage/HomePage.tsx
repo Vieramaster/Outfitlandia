@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDataBase } from "../arrayHooks/arrayHooks";
 import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
@@ -13,25 +13,20 @@ interface arrayFiltered {
   style: [string, string];
   weather: [string, string];
 }
-interface garmentButtons {
-  css: string;
-  src: string;
-  name: string;
-  garment: string;
-  nameButton: string;
-  key: string;
-}
+
 
 interface HomePAgeProps {
-  onGarmentClick: (id: string) => void;
-  onClothesClick: (id: string) => void;
   arrayFiltered: arrayFiltered[];
-  garmentButtons: garmentButtons[];
 }
 
 const HomePage: React.FC<HomePAgeProps> = () => {
-  const [garmentClickId, setGarmentClickId] = useState("null");
+  const [garmentClickId, setGarmentClickId] = useState("");
+  const [clothesClickId, setClothesClickId] = useState("");
   const [garmentCards, setGarmentCards] = useState([]);
+  const [garmentElection, setGarmentElection] = useState([])
+
+
+
 
   const defaultGarmentButtons = [
     {
@@ -103,11 +98,26 @@ const HomePage: React.FC<HomePAgeProps> = () => {
 
   //mando para info para mapear SelectionClothes
 
-  const arrayFiltered = data.filter((item) => item.garment === garmentClickId);
+  useEffect(() => {
+    if(garmentCards){
+      const arrayFiltered = data.filter((item) => item.garment === garmentClickId);
+      setGarmentCards(arrayFiltered);
+    }
+  }, [garmentClickId, data]);
+  
 
-  const onClothesClick = (id: string) => {
-    console.log(id);
-  };
+  const onClothesClick =(id:string)=>{
+    setClothesClickId(id)
+  }
+
+  useEffect(()=>{
+    const  clothesElection= data.filter((item)=> item.name === clothesClickId)
+    setGarmentElection(clothesElection)
+
+  },[clothesClickId, data])
+
+
+
   return (
     <section className="HomePage">
       <div className="HomePage--box">
@@ -117,8 +127,10 @@ const HomePage: React.FC<HomePAgeProps> = () => {
         />
         <Weather />
         <SelectionClothes
-          arrayFiltered={arrayFiltered}
+          garmentCards={garmentCards}
           onClothesClick={onClothesClick}
+          garmentElection = {garmentElection}
+          onColorsClick={onClothesClick}
         />
       </div>
     </section>

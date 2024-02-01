@@ -1,17 +1,35 @@
 import "./SelectionClothes.css";
 import React from "react";
-import ClothingButton from "../ClothingButton/ClothingButton"
+import ClothingButton from "../ClothingButton/ClothingButton";
+import ColorButton from "../ColorButton/ColorButton";
 
+type garmentCardType = {
+  css: string;
+  image: string;
+  key: string;
+  name: string;
+  nameButton: string;
+}
 
-const SelectionClothes = ({arrayFiltered, onClothesClick}) => {
+type ColorButton = {
+  colorName: string;
+   hex: string; 
+   imgColor: string
+}
 
-
+const SelectionClothes = ({
+  garmentCards,
+  onClothesClick,
+  garmentElection,
+  onColorsClick,
+}) => {
+  console.log(garmentElection);
 
   return (
     <div className="SelectionClothes">
-      <div className="SelectionClothes--box">
-      {arrayFiltered.map(item => {
-         
+      <div className="SelectionClothes--box" key="SelectionClothes--box">
+        {garmentCards.map(
+          (item: garmentCardType ) => {
             return (
               <ClothingButton
                 onClick={onClothesClick}
@@ -22,10 +40,24 @@ const SelectionClothes = ({arrayFiltered, onClothesClick}) => {
                 nameButton={item.name}
               />
             );
-          
+          }
+        )}
+      </div>
+      <div className="SelectionClothes--color">
+        {garmentElection.map((item: any) => {
+          return item.colors.map(
+            (color: ColorButton) => {
+              return (
+                <ColorButton
+                  color={color.hex}
+                  name={color.colorName}
+                  onClick={onColorsClick}
+                />
+              );
+            }
+          );
         })}
       </div>
-      <div className="SelectionClothes--color"></div>
     </div>
   );
 };
