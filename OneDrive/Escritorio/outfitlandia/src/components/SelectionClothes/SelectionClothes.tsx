@@ -1,35 +1,32 @@
 import "./SelectionClothes.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
 import ColorButton from "../ColorButton/ColorButton";
+import { clothesType } from "../HomePage/HomePage";
 
-type garmentCardType = {
-  css: string;
-  image: string;
-  key: string;
-  name: string;
-  nameButton: string;
-}
+type SelectionClothesTypes = {
+  garmentCards: clothesType[];
+  onClothesClick: (id: string) => void;
+  clothesElection: clothesType[];
+  onColorsClick: (colorName: string) => void;
+  showClothesButton:boolean;
 
-type ColorButton = {
-  colorName: string;
-   hex: string; 
-   imgColor: string
-}
-
+};
 const SelectionClothes = ({
   garmentCards,
   onClothesClick,
-  garmentElection,
+  clothesElection,
   onColorsClick,
-}) => {
-  console.log(garmentElection);
+  showClothesButton, 
+
+}: SelectionClothesTypes) => {
+ 
 
   return (
     <div className="SelectionClothes">
       <div className="SelectionClothes--box" key="SelectionClothes--box">
-        {garmentCards.map(
-          (item: garmentCardType ) => {
+        {showClothesButton &&
+          garmentCards.map((item) => {
             return (
               <ClothingButton
                 onClick={onClothesClick}
@@ -40,23 +37,22 @@ const SelectionClothes = ({
                 nameButton={item.name}
               />
             );
-          }
-        )}
+          })}
       </div>
       <div className="SelectionClothes--color">
-        {garmentElection.map((item: any) => {
-          return item.colors.map(
-            (color: ColorButton) => {
+        {!showClothesButton &&
+          clothesElection.map((item) => {
+            return item.colors.map((color) => {
               return (
                 <ColorButton
                   color={color.hex}
                   name={color.colorName}
                   onClick={onColorsClick}
+                  key={color.colorName}
                 />
               );
-            }
-          );
-        })}
+            });
+          })}
       </div>
     </div>
   );

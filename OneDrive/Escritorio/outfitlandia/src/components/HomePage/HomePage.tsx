@@ -5,29 +5,23 @@ import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
 import Weather from "../Weather/Weather";
 
-interface arrayFiltered {
-  css: string;
+type filteredColorType = {
+  colorName: string;
+  hex: string;
+  imgColor: string;
+};
+
+export type clothesType = {
   garment: string;
-  image: string;
   name: string;
+  css: string;
+  image: string;
   style: [string, string];
   weather: [string, string];
-}
+  colors: filteredColorType[];
+};
 
-
-interface HomePAgeProps {
-  arrayFiltered: arrayFiltered[];
-}
-
-const HomePage: React.FC<HomePAgeProps> = () => {
-  const [garmentClickId, setGarmentClickId] = useState("");
-  const [clothesClickId, setClothesClickId] = useState("");
-  const [garmentCards, setGarmentCards] = useState([]);
-  const [garmentElection, setGarmentElection] = useState([])
-
-
-
-
+const HomePage = () => {
   const defaultGarmentButtons = [
     {
       css: "big",
@@ -86,12 +80,23 @@ const HomePage: React.FC<HomePAgeProps> = () => {
       key: "default-shoes",
     },
   ];
-  //setea si se usa los botones default o se actualizan
-  const filteredGarmentButtons = defaultGarmentButtons;
+  const [garmentClickId, setGarmentClickId] = useState("");
+  const [clothesClickId, setClothesClickId] = useState("");
+  const [garmentCards, setGarmentCards] = useState<clothesType[]>([]);
+  const [clothesElection, setClothesElection] = useState<clothesType[]>([]);
+  const [showClothesButton, setShowButtonsBUtton] = useState(false);
+  const [colorClick, setColorClick] = useState("string");
+  const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
+    defaultGarmentButtons
+  );
 
   //sustraigo el id de selectionGarment
   const onGarmentClick = (id: string) => {
     setGarmentClickId(id);
+    setTimeout(() => {
+      setFilteredGarmentButtons(defaultGarmentButtons);
+      setShowButtonsBUtton(true);
+    }, 200);
   };
 
   const { data } = useDataBase();
@@ -99,24 +104,39 @@ const HomePage: React.FC<HomePAgeProps> = () => {
   //mando para info para mapear SelectionClothes
 
   useEffect(() => {
-    if(garmentCards){
-      const arrayFiltered = data.filter((item) => item.garment === garmentClickId);
+    if (garmentCards) {
+      const arrayFiltered = data.filter(
+        (item) => item.garment === garmentClickId
+      );
       setGarmentCards(arrayFiltered);
     }
   }, [garmentClickId, data]);
-  
 
-  const onClothesClick =(id:string)=>{
-    setClothesClickId(id)
-  }
+  //vuelve con el nombre de la prenda
+  const onClothesClick = (id: string) => {
+    setClothesClickId(id);
 
-  useEffect(()=>{
-    const  clothesElection= data.filter((item)=> item.name === clothesClickId)
-    setGarmentElection(clothesElection)
+    setTimeout(() => {
+      setShowButtonsBUtton(false);
+    }, 200);
+  };
+  //se hace el array de colores
+  useEffect(() => {
+    const garmentChoise = data.filter((item) => item.name === clothesClickId);
+    setClothesElection(garmentChoise);
+  }, [clothesClickId, data]);
 
-  },[clothesClickId, data])
+  const onColorsClick = (id: string) => {
+    setColorClick(id);
+  };
 
 
+  const fafa = clothesElection.map((item) => {
+    return {
+      ...item,
+      colors: colorClick,
+    };
+  });
 
   return (
     <section className="HomePage">
@@ -129,8 +149,9 @@ const HomePage: React.FC<HomePAgeProps> = () => {
         <SelectionClothes
           garmentCards={garmentCards}
           onClothesClick={onClothesClick}
-          garmentElection = {garmentElection}
-          onColorsClick={onClothesClick}
+          clothesElection={clothesElection}
+          onColorsClick={onColorsClick}
+          showClothesButton={showClothesButton}
         />
       </div>
     </section>

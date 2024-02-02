@@ -1,21 +1,20 @@
 import { useEffect, useMemo, useState } from "react";
 
-interface Color {
+type color ={
   colorName: string;
-  hex: string;
-  imgColor: string;
+  hex:string;
+  imgColor:string;
 }
 
-interface useDataBase {
+type useDataBase ={
   garment: string;
   name: string;
-  img: string;
   css: string;
-  style: string[];
-  weather: string[];
-  colors: Color[];
+  image: string;
+  style: [string, string];
+  weather: [string, string];
+  colors: color[];
 }
-
 
 export const useDataBase = () => {
   const [data, setData] = useState<useDataBase[]>([]);
