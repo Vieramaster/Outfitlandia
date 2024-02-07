@@ -1,441 +1,4942 @@
 [
-    {
-        "garment": "top",
-        "name": "hoodie",
-        "image": "./src/images/image-json/top/hoodie-hood-white.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": [
-            {
-                "colorName": "violeta",
-                "hex": "#603085",
-                "imgColor": "/src/images/image-json/top/hoodie-violet.webp"
-            },
-            {
-                "colorName": "lila",
-                "hex": "#C8A2C8",
-                "imgColor": "/src/images/image-json/top/hoodie-lile.webp"
-            },
-            {
-                "colorName": "aero",
-                "hex": "#416aa2",
-                "imgColor": "/src/images/image-json/top/hoodie-aero.webp"
-            },
-            {
-                "colorName": "azul navy",
-                "hex": "#19284c",
-                "imgColor": "/src/images/image-json/top/hoodie-navy.webp"
-            },
-            {
-                "colorName": "azul francia",
-                "hex": "#318CE7",
-                "imgColor": "/src/images/image-json/top/hoodie-blue-france.webp"
-            },
-            {
-                "colorName": "celeste",
-                "hex": "#c9e9fc",
-                "imgColor": "/src/images/image-json/top/hoodie-skyblue.webp"
-            },
-            {
-                "colorName": "aguamarina",
-                "hex": "#9fd5d1 ",
-                "imgColor": "/src/images/image-json/top/hoodie-aquamarine.webp"
-            },
-            {
-                "colorName": "esmeralda oscuro",
-                "hex": "#08554c",
-                "imgColor": "/src/images/image-json/top/hoodie-esmerald.webp"
-            },
-            {
-                "colorName": "verde oscuro",
-                "hex": "#363d10",
-                "imgColor": "/src/images/image-json/top/hoodie-darkgreen.webp"
-            },
-            {
-                "colorName": "verde militar",
-                "hex": "#899478",
-                "imgColor": "/src/images/image-json/top/hoodie-military.webp"
-            },
-            {
-                "colorName": "marfil",
-                "hex": "#e1dfd1",
-                "imgColor": "/src/images/image-json/top/hoodie-ivory.webp"
-            },
-            {
-                "colorName": "amarillo",
-                "hex": "#ffe1a0",
-                "imgColor": "/src/images/image-json/top/hoodie-yellow.webp"
-            },
-            {
-                "colorName": "moztaza",
-                "hex": "#e1ad01",
-                "imgColor": "/src/images/image-json/top/hoodie-mostaza.webp"
-            },
-            {
-                "colorName": "naranja",
-                "hex": "#ff8c00",
-                "imgColor": "/src/images/image-json/top/hoodie-orange.webp"
-            },
-            {
-                "colorName": "suela",
-                "hex": "#8B4513",
-                "imgColor": "/src/images/image-json/top/hoodie-candy.webp"
-            },
-            {
-                "colorName": "choolate",
-                "hex": "#45322e",
-                "imgColor": "/src/images/image-json/top/hoodie-chocolate.webp"
-            },
-            {
-                "colorName": "camello",
-                "hex": "#b18a61",
-                "imgColor": "/src/images/image-json/top/hoodie-camel.webp"
-            },
-            {
-                "colorName": "beige",
-                "hex": "#d1bc8a",
-                "imgColor": "/src/images/image-json/top/hoodie-beige.webp"
-            },
-            {
-                "colorName": "blanco",
-                "hex": "#ffffff",
-                "imgColor": "/src/images/image-json/top/hoodie-white.webp"
-            },
-            {
-                "colorName": "gris claro",
-                "hex": "#c7c8ca",
-                "imgColor": "/src/images/image-json/top/hoodie-light-grey.webp"
-            },
-            {
-                "colorName": "gris topo",
-                "hex": "#708090",
-                "imgColor": "/src/images/image-json/top/hoodie-dark-grey.webp"
-            },
-            {
-                "colorName": "negro",
-                "hex": "#000000",
-                "imgColor": "/src/images/image-json/top/hoodie-black.webp"
-            },
-            {
-                "colorName": "borgoña",
-                "hex": "#800020",
-                "imgColor": "/src/images/image-json/top/hoodie-burgundy.webp"
-            },
-            {
-                "colorName": "rojo",
-                "hex": "#cf010b",
-                "imgColor": "/src/images/image-json/top/hoodie-red.webp"
-            },
-            {
-                "colorName": "rosa bebe",
-                "hex": "#eedbe5",
-                "imgColor": "/src/images/image-json/top/hoodie-baby-pink.webp"
-            },
-            {
-                "colorName": "rosa viejo",
-                "hex": "#a4767a",
-                "imgColor": "/src/images/image-json/top/hoodie-old-pink.webp"
-            },
-            {
-                "colorName": "salmón",
-                "hex": "#f3a399",
-                "imgColor": "/src/images/image-json/top/hoodie-salmon.webp"
-            }
-        ]
-    },
-    {
-        "garment": "top",
-        "name": "hoodie sin capucha",
-        "image": "/src/images/image-json/top/hoodie-white.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "remera manga corta",
-        "image": "/src/images/image-json/top/t-shirt-white.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "chomba",
-        "image": "/src/images/image-json/top/polo-white.webp",
-        "css": "big",
-        "style": [
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "sweater",
-        "image": "/src/images/image-json/top/sweater-white.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "polera",
-        "image": "/src/images/image-json/top/turtle-sweater-white.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "camisa manga corta",
-        "image": "/src/images/image-json/top/short-sleeved-shirt-white.webp",
-        "css": "big",
-        "style": [
-            "casual"
-        ],
-        "weather": [
-            "heat"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "camisa manga larga",
-        "image": "/src/images/image-json/top/long-sleeve-shirt-whote.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "heat",
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "top",
-        "name": "remera manga larga",
-        "image": "/src/images/image-json/top/long-t-shirt-white.webp",
-        "css": "big",
-        "style": [
-            "basic"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "chaqueta de jean",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "chaqueta de gabardina",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "campera de cuero",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "campera infable",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "parka",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "camisaco",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "heat",
-            "mild"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "campera bomber",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "chaqueta de jean con abrigo",
-        "css": "big",
-        "image": "/src/images/jacket.webp",
-        "style": [
-            "basic",
-            "casual"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "blazer",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "mild",
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "saco cruzado",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "sobretodo",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "casual",
-            "elegant"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    },
-    {
-        "garment": "coat",
-        "name": "montgomery",
-        "image": "/src/images/jacket.webp",
-        "css": "big",
-        "style": [
-            "casual"
-        ],
-        "weather": [
-            "cold"
-        ],
-        "colors": []
-    }
+  {
+    "garment": "top",
+    "name": "hoodie",
+    "image": "./src/images/image-json/top/topHoodie.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "verde militar",
+        "hex": "#899478"
+      },
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "hoodie sin capucha",
+    "image": "/src/images/image-json/top/topSweatshirt.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "remera manga corta",
+    "image": "/src/images/image-json/top/topTShirt.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "Purple",
+        "hex": "#862C84",
+        "ButtonName": "púrpura"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "verde pastel",
+        "hex": "#c6e5b1"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "chomba",
+    "image": "/src/images/image-json/top/topPolo.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "Purple",
+        "hex": "#862C84",
+        "ButtonName": "púrpura"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "pastel",
+        "hex": "#bdecb6",
+        "ButtonName": "verde pastel"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      },
+
+      {
+        "colorName": "magenta",
+        "hex": "#d8197f"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "sweater",
+    "image": "/src/images/image-json/top/topSweater.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "polera",
+    "image": "/src/images/image-json/top/topTurtleSweater.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "camisa manga corta",
+    "image": "/src/images/image-json/top/topShortShirt.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "camisa manga larga",
+    "image": "/src/images/image-json/top/topLongShirt.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "top",
+    "name": "remera manga larga",
+    "image": "/src/images/image-json/top/topLongTShirt.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia (2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "military green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "ivory",
+        "hex": "#e1dfd1",
+        "ButtonName": "marfil"
+      },
+
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "chaqueta de jean o garbardina",
+    "image": "/src/images/image-json/coat/coatDenim.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+
+      {},
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      }
+    ]
+  },
+
+  {
+    "garment": "coat",
+    "name": "campera de cuero",
+    "image": "/src/images/image-json/coat/coatLeather.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "campera infable",
+    "image": "/src/images/image-json/coat/coatInflatableJacket.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "parka",
+    "image": "/src/images/image-json/coat/coatParka.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "camisaco",
+    "image": "/src/images/image-json/coat/coatShacket.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["mild"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "baby pink",
+        "hex": "#eedbe5",
+        "ButtonName": "rosa bebe"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "campera bomber",
+    "image": "/src/images/image-json/coat/coatBomber.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "violeta",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "esmeralda oscuro",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "chaqueta de jean con abrigo",
+    "image": "/src/images/image-json/coat/coatDenimWinter.webp",
+    "css": "big",
+    "style": ["basic", "casual"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "windbraker",
+    "image": "/src/images/image-json/coat/coatWindbraker.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["mild", "heat"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aquamarine",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "pastel",
+        "hex": "#bdecb6",
+        "ButtonName": "verde pastel"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "orange",
+        "hex": "#ff8c00",
+        "ButtonName": "naranja"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "blazer",
+    "image": "/src/images/image-json/coat/coatBlazer.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violet",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "Purple",
+        "hex": "#862C84",
+        "ButtonName": "púrpura"
+      },
+      {
+        "colorName": "lilac",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "dark esmerald",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      
+
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "saco cruzado",
+    "image": "/src/images/image-json/coat/coatShortOvercoat.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "sobretodo",
+    "image": "/src/images/image-json/coat/coatGaban.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "coat",
+    "name": "montgomery",
+    "image": "/src/images/image-json/coat/coatDuffle.webp",
+    "css": "big",
+    "style": ["casual", "basic"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "navy blue",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+        "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+
+  {
+    "garment": "belt",
+    "name": "tradicional",
+    "image": "/src/images/image-json/belt/beltClasic.webp",
+    "css": "css",
+    "style": ["casual", "basic"],
+    "weather": ["heat", "cold", "heat"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "belt",
+    "name": "de tela",
+    "image": "/src/images/image-json/belt/beltCloth.webp",
+    "css": "small",
+    "style": ["basic"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "belt",
+    "name": "trenzado",
+    "image": "/src/images/image-json/belt/beltBraided.webp",
+    "css": "small",
+    "style": ["basic", "casual"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "artichoke",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "watch",
+    "name": "deportivo",
+    "image": "/src/images/image-json/watch/watchSport.webp",
+    "css": "small",
+    "style": ["basic"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      }
+    ]
+  },
+  {
+    "garment": "watch",
+    "name": "aviador",
+    "image": "/src/images/image-json/watch/watchAviator.webp",
+    "css": "small",
+    "style": ["casual", "elegant"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "watch",
+    "name": "inteligente",
+    "image": "/src/images/image-json/watch/watchSmart.webp",
+    "css": "small",
+    "style": ["basic"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      }
+    ]
+  },
+  {
+    "garment": "watch",
+    "name": "dress",
+    "image": "/src/images/image-json/watch/watchDress.webp",
+    "css": "small",
+    "style": ["elegant", "casual"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "silver",
+        "hex": "#a5a9b4",
+        "ButtonName": "plata"
+      },
+      {
+        "colorName": "gold",
+        "hex": "#d4af37", 
+        "ButtonName":"oro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "watch",
+    "name": "de tela",
+    "image": "/src/images/image-json/watch/watchCloth.webp",
+    "css": "small",
+    "style": ["basic", "casual"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "silver",
+        "hex": "#a5a9b4",
+        "ButtonName": "plata"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "babucha",
+    "image": "/src/images/image-json/pants/pantsSlipper.webp",
+    "css": "big",
+    "style": ["casual", "basic"],
+    "weather": ["heat", "mild"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "joggin",
+    "image": "/src/images/image-json/pants/pantsJoggin.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violeta",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "Purple",
+        "hex": "#862C84",
+        "ButtonName": "púrpura"
+      },
+      {
+        "colorName": "lila",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aguamarina",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "esmeralda oscuro",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "naranja",
+        "hex": "#ff8c00"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "bermuda joggin",
+    "image": "/src/images/image-json/pants/pantsShortJoggin.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "violeta",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "Purple",
+        "hex": "#862C84",
+        "ButtonName": "púrpura"
+      },
+      {
+        "colorName": "lila",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+      {
+        "colorName": "aguamarina",
+        "hex": "#9fd5d1 ",
+        "ButtonName": "aguamarina"
+      },
+      {
+        "colorName": "esmeralda oscuro",
+        "hex": "#08554c",
+        "ButtonName": "esmeralda oscuro"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "naranja",
+        "hex": "#ff8c00"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+
+    ]
+  },
+
+  {
+    "garment": "pants",
+    "name": "gabardina/Jean",
+    "image": "/src/images/image-json/pants/pantsDenimGabardine.webp",
+    "css": "big",
+    "style": ["casual", "elegant"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "bermuda gabardina/jean",
+    "image": "/src/images/image-json/pants/pantsShortsDeminGab.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "skyblue",
+        "hex": "#c9e9fc",
+        "ButtonName": "celeste"
+      },
+
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "chino",
+    "image": "/src/images/image-json/pants/pantsChinos.webp",
+    "css": "big",
+    "style": ["elegant", "casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "bermuda chino",
+    "image": "/src/images/image-json/pants/pantsShortChino.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "cargo",
+    "image": "/src/images/image-json/pants/pantsCharge.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "lino",
+    "image": "/src/images/image-json/pants/pantsLilen.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "deportivo",
+    "image": "",
+    "css": "small",
+    "style": ["basic"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "violeta",
+        "hex": "#603085",
+        "ButtonName": "violeta"
+      },
+      {
+        "colorName": "lila",
+        "hex": "#C8A2C8",
+        "ButtonName": "lila"
+      },
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "dark green",
+        "hex": "#363d10",
+        "ButtonName": "verde oscuro"
+      },
+      {
+        "colorName": "army green",
+        "hex": "#899478",
+        "ButtonName": "verde militar"
+      },
+      {
+        "colorName": "Champagne",
+        "hex": "#edd6b4",
+        "ButtonName": "Champagne"
+      },
+      {
+        "colorName": "yellow",
+        "hex": "#ffe1a0",
+        "ButtonName": "amarillo"
+      },
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      },
+      {
+        "colorName": "red",
+        "hex": "#cf010b",
+        "ButtonName": "rojo"
+      },
+      {
+        "colorName": "rosa bebe",
+        "hex": "#eedbe5"
+      },
+      {
+        "colorName": "old pink",
+        "hex": "#a4767a",
+        "ButtonName": "rosa viejo"
+      },
+      {
+        "colorName": "salmon",
+        "hex": "#f3a399",
+        "ButtonName": "salmón"
+      }
+
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "sneakers",
+    "image": "",
+    "css": "small",
+    "style": ["casual"],
+    "weather": ["heat", "mild", "cold"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      },
+      {
+        "colorName": "rojo sangre",
+        "hex": "#710c04"
+      },
+      {
+        "colorName": "burgundy",
+        "hex": "#800020",
+        "ButtonName": "borgoña"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "nautico",
+    "image": "",
+    "css": "small",
+    "style": ["casual"],
+    "weather": ["cold", "mild"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "nautico de tela",
+    "image": "",
+    "css": "small",
+    "style": ["casual"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "aero",
+        "hex": "#416aa2",
+        "ButtonName": "aero"
+      },
+      {
+        "colorName": "azul navy",
+        "hex": "#19284c",
+        "ButtonName": "azul navy"
+      },
+      {
+        "colorName": "french blue",
+        "hex": "#318CE7",
+        "ButtonName": "azul francia(2°)"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "botines de vestir",
+    "image": "",
+    "css": "small",
+    "style": ["casual", "elegant"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "borcego",
+    "image": "",
+    "css": "small",
+    "style": ["basic", "casual"],
+    "weather": ["cold"],
+    "colors": [
+      {
+        "colorName": "mustard",
+        "hex": "#e1ad01",
+        "ButtonName": "mostaza"
+      },
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "dark grey",
+        "hex": "#708090",
+        "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "zapato oxford",
+    "image": "",
+    "css": "small",
+    "style": ["casual", "elegant"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  },
+  {
+    "garment": "shoes",
+    "name": "zapato brogue",
+    "image": "",
+    "css": "small",
+    "style": ["casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "red brick",
+        "hex": "#a94c2b",
+        "ButtonName": "ladrillo"
+      },
+      {
+         "colorName": "windsor tan",
+        "hex": "#8B4513",
+        "ButtonName": "suela"
+      },
+      {
+        "colorName": "peanut",
+        "hex": "#766142",
+        "ButtonName": "cacahuate"
+      },
+      {
+        "colorName": "chocolate",
+        "hex": "#45322e",
+        "ButtonName": "chocolate"
+      },
+      {
+        "colorName": "camel",
+        "hex": "#b18a61",
+        "ButtonName": "camel"
+      },
+      {
+        "colorName": "beige",
+        "hex": "#d1bc8a",
+        "ButtonName": "beige"
+      },
+      {
+        "colorName": "sand",
+        "hex": "#FFE4B5",
+        "ButtonName": "arena"
+      },
+      {
+        "colorName": "white",
+        "hex": "#ffffff",
+        "ButtonName": "blanco"
+      },
+      {
+        "colorName": "light grey",
+        "hex": "#c7c8ca",
+        "ButtonName": "gris claro"
+      },
+      {
+        "colorName": "black",
+        "hex": "#000000",
+        "ButtonName": "negro"
+      }
+    ]
+  }
 ]

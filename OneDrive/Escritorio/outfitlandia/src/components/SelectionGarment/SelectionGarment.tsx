@@ -1,29 +1,20 @@
 import "./SelectionGarment.css";
 import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
+import {garmentButtonsType} from "../HomePage/HomePage"
 
-interface garmentButtons {
-  css: string;
-  src: string;
-  name: string;
-  garment: string;
-  nameButton: string;
-  key: string;
-  
-}
 
-interface SelectionGarmentProps {
-
+type SelectionGarmentType = {
 
   onGarmentClick: (id: string) => void;
-  garmentButtons: garmentButtons[];
+  garmentButtons: garmentButtonsType[];
 }
-const SelectionGarment: React.FC<SelectionGarmentProps>  = ({garmentButtons,  onGarmentClick}) => {
+const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentType) => {
 
 
   return (
     <div className="SelectionGarment">
-      {garmentButtons.map((item: garmentButtons) => {
+      {garmentButtons.map((item) => {
         if (item.css === "big") {
           return (
             <div className="inventory--big" key={item.key}>
@@ -39,7 +30,7 @@ const SelectionGarment: React.FC<SelectionGarmentProps>  = ({garmentButtons,  on
         }
       })}
       <div className="SelectionGarment--small">
-        {garmentButtons.map((item: garmentButtons) => {
+        {garmentButtons.map((item ) => {
           if (item.css === "small") {
             return (
               <ClothingButton

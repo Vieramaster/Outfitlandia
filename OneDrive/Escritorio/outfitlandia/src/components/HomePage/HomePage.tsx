@@ -5,12 +5,20 @@ import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
 import Weather from "../Weather/Weather";
 
-type filteredColorType = {
+export type filteredColorType = {
   colorName: string;
   hex: string;
   imgColor: string;
 };
+export type garmentButtonsType = {
+  css: string;
+  src: string;
+  name: string;
+  garment: string;
+  nameButton: string;
+  key: string;
 
+}
 export type clothesType = {
   garment: string;
   name: string;
@@ -20,12 +28,21 @@ export type clothesType = {
   weather: [string, string];
   colors: filteredColorType[];
 };
+export interface garmentButtons {
+  css: string;
+  src: string;
+  name: string;
+  garment: string;
+  nameButton: string;
+  key: string;
+
+}
 
 const HomePage = () => {
   const defaultGarmentButtons = [
     {
       css: "big",
-      src: "/src/images/default/top.webp",
+      src: "/src/images/default/defaultTop.webp",
       name: "default-top",
       garment: "top",
       nameButton: "parte superior",
@@ -33,7 +50,7 @@ const HomePage = () => {
     },
     {
       css: "big",
-      src: "/src/images/default/coat.webp",
+      src: "/src/images/default/defaultCoat.webp",
       name: "default-coat",
       garment: "coat",
       nameButton: "abrigo",
@@ -41,20 +58,13 @@ const HomePage = () => {
     },
     {
       css: "big",
-      src: "/src/images/default/pants.webp",
+      src: "/src/images/default/defaultPants.webp",
       name: "default-pants",
       garment: "pants",
       nameButton: "pantalones",
       key: "default-pants",
     },
-    {
-      css: "small",
-      src: "/src/images/default/necklace.webp",
-      name: "default-necklace",
-      garment: "necklace",
-      nameButton: "collar",
-      key: "default-necklace",
-    },
+
     {
       css: "small",
       src: "/src/images/default/watch.webp",
@@ -90,6 +100,7 @@ const HomePage = () => {
     defaultGarmentButtons
   );
 
+
   //sustraigo el id de selectionGarment
   const onGarmentClick = (id: string) => {
     setGarmentClickId(id);
@@ -108,14 +119,13 @@ const HomePage = () => {
       const arrayFiltered = data.filter(
         (item) => item.garment === garmentClickId
       );
-      setGarmentCards(arrayFiltered);
+      arrayFiltered && setGarmentCards(arrayFiltered)
     }
   }, [garmentClickId, data]);
 
   //vuelve con el nombre de la prenda
   const onClothesClick = (id: string) => {
     setClothesClickId(id);
-
     setTimeout(() => {
       setShowButtonsBUtton(false);
     }, 200);
@@ -123,7 +133,8 @@ const HomePage = () => {
   //se hace el array de colores
   useEffect(() => {
     const garmentChoise = data.filter((item) => item.name === clothesClickId);
-    setClothesElection(garmentChoise);
+
+    garmentChoise && setClothesElection(garmentChoise)
   }, [clothesClickId, data]);
 
   const onColorsClick = (id: string) => {
@@ -131,12 +142,36 @@ const HomePage = () => {
   };
 
 
-  const fafa = clothesElection.map((item) => {
-    return {
-      ...item,
-      colors: colorClick,
-    };
-  });
+  useEffect(() => {
+
+    const fafa = clothesElection.map((item) => {
+      return {
+        ...item,
+        colors: colorClick,
+      };
+    });
+
+    const fafa2 = fafa.map((item) => {
+      return {
+        css: item.css,
+        src: item.image,
+        name: item.name,
+        garment: item.garment,
+        nameButton: item.name,
+        key: item.name,
+      };
+    });
+
+    const fafa3 = filteredGarmentButtons.map((itemOld) => {
+      const itemNew = fafa2.find((itemNew) => itemNew.name === itemOld.name);
+      return itemNew ? itemNew : itemOld;
+
+
+    });
+
+
+  }, [colorClick, clothesElection, filteredGarmentButtons])
+
 
   return (
     <section className="HomePage">

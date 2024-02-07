@@ -20,8 +20,9 @@ const ClothingButton = ({ css, garment, onClick, src, nameButton }:ClothingButto
           aria-label={nameButton }
           id={garment}
           onClick={(event) => onClick(event.currentTarget.id)}
+          title={nameButton}
           >
-          <img src={src} />
+          <img src={src} alt={nameButton}/>
         </button>
   );
 };

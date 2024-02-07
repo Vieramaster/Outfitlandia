@@ -1,5 +1,5 @@
 import "./SelectionClothes.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
 import ColorButton from "../ColorButton/ColorButton";
 import { clothesType } from "../HomePage/HomePage";
