@@ -99,78 +99,75 @@ const HomePage = () => {
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
     defaultGarmentButtons
   );
-
+  const { data } = useDataBase();
 
   //sustraigo el id de selectionGarment
   const onGarmentClick = (id: string) => {
     setGarmentClickId(id);
     setTimeout(() => {
       setFilteredGarmentButtons(defaultGarmentButtons);
+      //cambia el div
       setShowButtonsBUtton(true);
+  //mando array nuevo con la prenda seleccionada al hijo 1
+      const arrayFiltered = data.filter((item) => item.garment === id);
+      setGarmentCards(arrayFiltered);
     }, 200);
   };
+  
 
-  const { data } = useDataBase();
+
 
   //mando para info para mapear SelectionClothes
 
-  useEffect(() => {
-    if (garmentCards) {
-      const arrayFiltered = data.filter(
-        (item) => item.garment === garmentClickId
-      );
-      arrayFiltered && setGarmentCards(arrayFiltered)
-    }
-  }, [garmentClickId, data]);
+
 
   //vuelve con el nombre de la prenda
   const onClothesClick = (id: string) => {
     setClothesClickId(id);
     setTimeout(() => {
       setShowButtonsBUtton(false);
+      const garmentChoise = data.filter((item) => item.name === id);
+      setClothesElection(garmentChoise)
     }, 200);
   };
-  //se hace el array de colores
-  useEffect(() => {
-    const garmentChoise = data.filter((item) => item.name === clothesClickId);
 
-    garmentChoise && setClothesElection(garmentChoise)
-  }, [clothesClickId, data]);
+
 
   const onColorsClick = (id: string) => {
     setColorClick(id);
+
+    setTimeout(()=>{
+      //crea el nuevo objeto con el nuevo color
+      const newGarment = clothesElection.map((item)=>{
+        return{
+          ...item,
+          colors: colorClick
+        }
+      })
+
+      const newButtonGarment = newGarment.map((item)=>{
+        return {
+          css: item.css,
+          src: item.image,
+          name: item.name,
+          garment: item.garment,
+          nameButton: item.name,
+          key: item.name,
+        };
+      })
+
+      const addNewButton = newGarment.map((itemOld) => {
+        const itemNew = newButtonGarment.find((itemNew) => itemNew.name === itemOld.name);
+        return itemNew ? itemNew : itemOld;
+        
+        
+      });
+      
+    },200)
   };
 
 
-  useEffect(() => {
 
-    const fafa = clothesElection.map((item) => {
-      return {
-        ...item,
-        colors: colorClick,
-      };
-    });
-
-    const fafa2 = fafa.map((item) => {
-      return {
-        css: item.css,
-        src: item.image,
-        name: item.name,
-        garment: item.garment,
-        nameButton: item.name,
-        key: item.name,
-      };
-    });
-
-    const fafa3 = filteredGarmentButtons.map((itemOld) => {
-      const itemNew = fafa2.find((itemNew) => itemNew.name === itemOld.name);
-      return itemNew ? itemNew : itemOld;
-
-
-    });
-
-
-  }, [colorClick, clothesElection, filteredGarmentButtons])
 
 
   return (

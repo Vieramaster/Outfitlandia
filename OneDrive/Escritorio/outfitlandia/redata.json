@@ -8,9 +8,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -87,7 +87,6 @@
         "colorName": "chocolate",
         "hex": "#45322e",
         "ButtonName": "chocolate"
-
       },
       {
         "colorName": "camel",
@@ -155,9 +154,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -304,9 +303,9 @@
     "weather": ["heat", "mild"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "Purple",
@@ -438,10 +437,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -467,7 +463,6 @@
         "hex": "#f3a399",
         "ButtonName": "salmón"
       }
-
     ]
   },
   {
@@ -479,9 +474,9 @@
     "weather": ["heat", "mild"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "Purple",
@@ -614,10 +609,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -659,9 +651,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -946,9 +938,9 @@
     "weather": ["heat", "mild"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -961,10 +953,16 @@
         "ButtonName": "aero"
       },
       {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
+      },
+      {
         "colorName": "navy blue",
         "hex": "#19284c",
         "ButtonName": "azul navy"
       },
+
       {
         "colorName": "french blue",
         "hex": "#318CE7",
@@ -1094,9 +1092,9 @@
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -1107,6 +1105,11 @@
         "colorName": "aero",
         "hex": "#416aa2",
         "ButtonName": "aero"
+      },
+      {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
       },
       {
         "colorName": "navy blue",
@@ -1242,9 +1245,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lilac",
@@ -1393,6 +1396,11 @@
         "colorName": "aero",
         "hex": "#416aa2",
         "ButtonName": "aero"
+      },
+      {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
       },
       {
         "colorName": "navy blue",
@@ -1553,10 +1561,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -1578,9 +1583,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "aero",
@@ -1683,10 +1688,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -1782,10 +1784,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -1802,9 +1801,9 @@
     "weather": ["mild"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "aero",
@@ -1896,29 +1895,11 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
         "ButtonName": "borgoña"
-      },
-      {
-        "colorName": "red",
-        "hex": "#cf010b",
-        "ButtonName": "rojo"
-      },
-      {
-        "colorName": "baby pink",
-        "hex": "#eedbe5",
-        "ButtonName": "rosa bebe"
-      },
-      {
-        "colorName": "old pink",
-        "hex": "#a4767a",
-        "ButtonName": "rosa viejo"
       }
     ]
   },
@@ -1931,9 +1912,9 @@
     "weather": ["cold"],
     "colors": [
       {
-        "colorName": "violeta",
+        "colorName": "purpura",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "aero",
@@ -1986,7 +1967,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -2066,6 +2047,11 @@
         "ButtonName": "aero"
       },
       {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
+      },
+      {
         "colorName": "azul navy",
         "hex": "#19284c",
         "ButtonName": "azul navy"
@@ -2101,7 +2087,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -2161,9 +2147,9 @@
     "weather": ["mild", "heat"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "aero",
@@ -2307,9 +2293,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violet",
+        "colorName": "purple",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "Purple",
@@ -2325,6 +2311,11 @@
         "colorName": "aero",
         "hex": "#416aa2",
         "ButtonName": "aero"
+      },
+      {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
       },
       {
         "colorName": "navy blue",
@@ -2416,7 +2407,6 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      
 
       {
         "colorName": "burgundy",
@@ -2705,7 +2695,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -2785,7 +2775,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -2865,7 +2855,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -2913,345 +2903,6 @@
         "colorName": "black",
         "hex": "#000000",
         "ButtonName": "negro"
-      }
-    ]
-  },
-  {
-    "garment": "watch",
-    "name": "deportivo",
-    "image": "/src/images/image-json/watch/watchSport.webp",
-    "css": "small",
-    "style": ["basic"],
-    "weather": ["heat", "mild", "cold"],
-    "colors": [
-      {
-        "colorName": "aero",
-        "hex": "#416aa2",
-        "ButtonName": "aero"
-      },
-      {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
-      },
-      {
-        "colorName": "french blue",
-        "hex": "#318CE7",
-        "ButtonName": "azul francia(2°)"
-      },
-      {
-        "colorName": "dark green",
-        "hex": "#363d10",
-        "ButtonName": "verde oscuro"
-      },
-      {
-        "colorName": "army green",
-        "hex": "#899478",
-        "ButtonName": "verde militar"
-      },
-      {
-        "colorName": "sand",
-        "hex": "#FFE4B5",
-        "ButtonName": "arena"
-      },
-      {
-        "colorName": "white",
-        "hex": "#ffffff",
-        "ButtonName": "blanco"
-      },
-      {
-        "colorName": "light grey",
-        "hex": "#c7c8ca",
-        "ButtonName": "gris claro"
-      },
-      {
-        "colorName": "dark grey",
-        "hex": "#708090",
-        "ButtonName": "gris topo"
-      },
-      {
-        "colorName": "black",
-        "hex": "#000000",
-        "ButtonName": "negro"
-      },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
-      {
-        "colorName": "burgundy",
-        "hex": "#800020",
-        "ButtonName": "borgoña"
-      },
-      {
-        "colorName": "red",
-        "hex": "#cf010b",
-        "ButtonName": "rojo"
-      }
-    ]
-  },
-  {
-    "garment": "watch",
-    "name": "aviador",
-    "image": "/src/images/image-json/watch/watchAviator.webp",
-    "css": "small",
-    "style": ["casual", "elegant"],
-    "weather": ["heat", "mild", "cold"],
-    "colors": [
-      {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
-      },
-      {
-        "colorName": "dark green",
-        "hex": "#363d10",
-        "ButtonName": "verde oscuro"
-      },
-      {
-        "colorName": "army green",
-        "hex": "#899478",
-        "ButtonName": "verde militar"
-      },
-      {
-        "colorName": "red brick",
-        "hex": "#a94c2b",
-        "ButtonName": "ladrillo"
-      },
-      {
-         "colorName": "windsor tan",
-        "hex": "#8B4513",
-        "ButtonName": "suela"
-      },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "ButtonName": "cacahuate"
-      },
-      {
-        "colorName": "chocolate",
-        "hex": "#45322e",
-        "ButtonName": "chocolate"
-      },
-      {
-        "colorName": "camel",
-        "hex": "#b18a61",
-        "ButtonName": "camel"
-      },
-      {
-        "colorName": "beige",
-        "hex": "#d1bc8a",
-        "ButtonName": "beige"
-      },
-      {
-        "colorName": "sand",
-        "hex": "#FFE4B5",
-        "ButtonName": "arena"
-      },
-      {
-        "colorName": "white",
-        "hex": "#ffffff",
-        "ButtonName": "blanco"
-      },
-      {
-        "colorName": "light grey",
-        "hex": "#c7c8ca",
-        "ButtonName": "gris claro"
-      },
-      {
-        "colorName": "black",
-        "hex": "#000000",
-        "ButtonName": "negro"
-      }
-    ]
-  },
-  {
-    "garment": "watch",
-    "name": "inteligente",
-    "image": "/src/images/image-json/watch/watchSmart.webp",
-    "css": "small",
-    "style": ["basic"],
-    "weather": ["heat", "mild", "cold"],
-    "colors": [
-      {
-        "colorName": "black",
-        "hex": "#000000",
-        "ButtonName": "negro"
-      },
-      {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
-      },
-      {
-        "colorName": "dark grey",
-        "hex": "#708090",
-        "ButtonName": "gris topo"
-      },
-      {
-        "colorName": "light grey",
-        "hex": "#c7c8ca",
-        "ButtonName": "gris claro"
-      },
-      {
-        "colorName": "white",
-        "hex": "#ffffff",
-        "ButtonName": "blanco"
-      }
-    ]
-  },
-  {
-    "garment": "watch",
-    "name": "dress",
-    "image": "/src/images/image-json/watch/watchDress.webp",
-    "css": "small",
-    "style": ["elegant", "casual"],
-    "weather": ["heat", "mild", "cold"],
-    "colors": [
-      {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
-      },
-      {
-        "colorName": "red brick",
-        "hex": "#a94c2b",
-        "ButtonName": "ladrillo"
-      },
-      {
-         "colorName": "windsor tan",
-        "hex": "#8B4513",
-        "ButtonName": "suela"
-      },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "ButtonName": "cacahuate"
-      },
-      {
-        "colorName": "chocolate",
-        "hex": "#45322e",
-        "ButtonName": "chocolate"
-      },
-      {
-        "colorName": "camel",
-        "hex": "#b18a61",
-        "ButtonName": "camel"
-      },
-      {
-        "colorName": "beige",
-        "hex": "#d1bc8a",
-        "ButtonName": "beige"
-      },
-      {
-        "colorName": "sand",
-        "hex": "#FFE4B5",
-        "ButtonName": "arena"
-      },
-      {
-        "colorName": "light grey",
-        "hex": "#c7c8ca",
-        "ButtonName": "gris claro"
-      },
-      {
-        "colorName": "dark grey",
-        "hex": "#708090",
-        "ButtonName": "gris topo"
-      },
-      {
-        "colorName": "black",
-        "hex": "#000000",
-        "ButtonName": "negro"
-      },
-      {
-        "colorName": "silver",
-        "hex": "#a5a9b4",
-        "ButtonName": "plata"
-      },
-      {
-        "colorName": "gold",
-        "hex": "#d4af37", 
-        "ButtonName":"oro"
-      },
-      {
-        "colorName": "burgundy",
-        "hex": "#800020",
-        "ButtonName": "borgoña"
-      }
-    ]
-  },
-  {
-    "garment": "watch",
-    "name": "de tela",
-    "image": "/src/images/image-json/watch/watchCloth.webp",
-    "css": "small",
-    "style": ["basic", "casual"],
-    "weather": ["heat", "mild"],
-    "colors": [
-      {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
-      },
-      {
-        "colorName": "red brick",
-        "hex": "#a94c2b",
-        "ButtonName": "ladrillo"
-      },
-      {
-         "colorName": "windsor tan",
-        "hex": "#8B4513",
-        "ButtonName": "suela"
-      },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "ButtonName": "cacahuate"
-      },
-      {
-        "colorName": "chocolate",
-        "hex": "#45322e",
-        "ButtonName": "chocolate"
-      },
-      {
-        "colorName": "camel",
-        "hex": "#b18a61",
-        "ButtonName": "camel"
-      },
-      {
-        "colorName": "beige",
-        "hex": "#d1bc8a",
-        "ButtonName": "beige"
-      },
-      {
-        "colorName": "sand",
-        "hex": "#FFE4B5",
-        "ButtonName": "arena"
-      },
-      {
-        "colorName": "light grey",
-        "hex": "#c7c8ca",
-        "ButtonName": "gris claro"
-      },
-      {
-        "colorName": "dark grey",
-        "hex": "#708090",
-        "ButtonName": "gris topo"
-      },
-      {
-        "colorName": "black",
-        "hex": "#000000",
-        "ButtonName": "negro"
-      },
-      {
-        "colorName": "silver",
-        "hex": "#a5a9b4",
-        "ButtonName": "plata"
-      },
-      {
-        "colorName": "burgundy",
-        "hex": "#800020",
-        "ButtonName": "borgoña"
       }
     ]
   },
@@ -3269,6 +2920,11 @@
         "ButtonName": "aero"
       },
       {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
+      },
+      {
         "colorName": "azul navy",
         "hex": "#19284c",
         "ButtonName": "azul navy"
@@ -3299,7 +2955,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -3342,6 +2998,11 @@
         "colorName": "dark grey",
         "hex": "#708090",
         "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "worn black",
+        "hex": "#2d2d2d",
+        "ButtonName": "negro gastado"
       },
       {
         "colorName": "black",
@@ -3359,9 +3020,9 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "violeta",
+        "colorName": "purpura",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "Purple",
@@ -3438,7 +3099,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -3487,10 +3148,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -3511,7 +3169,6 @@
         "hex": "#f3a399",
         "ButtonName": "salmón"
       }
-
     ]
   },
   {
@@ -3523,9 +3180,9 @@
     "weather": ["heat"],
     "colors": [
       {
-        "colorName": "violeta",
+        "colorName": "purpura",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "Purple",
@@ -3602,7 +3259,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -3651,10 +3308,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -3675,13 +3329,12 @@
         "hex": "#f3a399",
         "ButtonName": "salmón"
       }
-
     ]
   },
 
   {
     "garment": "pants",
-    "name": "gabardina/Jean",
+    "name": "gabardina/jean",
     "image": "/src/images/image-json/pants/pantsDenimGabardine.webp",
     "css": "big",
     "style": ["casual", "elegant"],
@@ -3691,6 +3344,11 @@
         "colorName": "aero",
         "hex": "#416aa2",
         "ButtonName": "aero"
+      },
+      {
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
       },
       {
         "colorName": "azul navy",
@@ -3744,7 +3402,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -3789,14 +3447,16 @@
         "ButtonName": "gris topo"
       },
       {
+        "colorName": "worn black",
+        "hex": "#2d2d2d",
+        "ButtonName": "negro gastado"
+      },
+      {
         "colorName": "black",
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -3818,10 +3478,12 @@
         "ButtonName": "aero"
       },
       {
-        "colorName": "azul navy",
-        "hex": "#19284c",
-        "ButtonName": "azul navy"
+        "colorName": "jean",
+        "hex": "#132b59",
+        "ButtonName": "jean"
       },
+
+
       {
         "colorName": "french blue",
         "hex": "#318CE7",
@@ -3869,7 +3531,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -3912,6 +3574,11 @@
         "colorName": "dark grey",
         "hex": "#708090",
         "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "worn black",
+        "hex": "#2d2d2d",
+        "ButtonName": "negro gastado"
       },
       {
         "colorName": "black",
@@ -3969,7 +3636,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4012,6 +3679,11 @@
         "colorName": "dark grey",
         "hex": "#708090",
         "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "worn black",
+        "hex": "#2d2d2d",
+        "ButtonName": "negro gastado"
       },
       {
         "colorName": "black",
@@ -4064,7 +3736,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4107,6 +3779,11 @@
         "colorName": "dark grey",
         "hex": "#708090",
         "ButtonName": "gris topo"
+      },
+      {
+        "colorName": "worn black",
+        "hex": "#2d2d2d",
+        "ButtonName": "negro gastado"
       },
       {
         "colorName": "black",
@@ -4159,7 +3836,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4244,7 +3921,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4304,9 +3981,9 @@
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
-        "colorName": "violeta",
+        "colorName": "purpura",
         "hex": "#603085",
-        "ButtonName": "violeta"
+        "ButtonName": "purpura"
       },
       {
         "colorName": "lila",
@@ -4359,7 +4036,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4432,13 +4109,12 @@
         "hex": "#f3a399",
         "ButtonName": "salmón"
       }
-
     ]
   },
   {
     "garment": "shoes",
     "name": "sneakers",
-    "image": "",
+    "image": "/src/images/image-json/shoes/shoesSneakers.webp",
     "css": "small",
     "style": ["casual"],
     "weather": ["heat", "mild", "cold"],
@@ -4464,7 +4140,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4513,10 +4189,7 @@
         "hex": "#000000",
         "ButtonName": "negro"
       },
-      {
-        "colorName": "rojo sangre",
-        "hex": "#710c04"
-      },
+
       {
         "colorName": "burgundy",
         "hex": "#800020",
@@ -4527,7 +4200,7 @@
   {
     "garment": "shoes",
     "name": "nautico",
-    "image": "",
+    "image": "/src/images/image-json/shoes/shoesNautic.webp",
     "css": "small",
     "style": ["casual"],
     "weather": ["cold", "mild"],
@@ -4553,7 +4226,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4633,7 +4306,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4698,7 +4371,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4768,7 +4441,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4833,7 +4506,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
@@ -4893,7 +4566,7 @@
         "ButtonName": "ladrillo"
       },
       {
-         "colorName": "windsor tan",
+        "colorName": "windsor tan",
         "hex": "#8B4513",
         "ButtonName": "suela"
       },
