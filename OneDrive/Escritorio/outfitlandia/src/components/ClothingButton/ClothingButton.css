@@ -1,4 +1,4 @@
-.clothingButton{
+.clothingButton {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -8,8 +8,6 @@
   transition: all 0.5s;
   display: grid;
   place-items: center;
-  
-
 }
 
 .clothingButton:hover {
@@ -23,19 +21,23 @@
 
 .clothingButton img {
   width: 100%;
+}
+.small {
+  width: 6.5rem;
+  height: 8.5rem;
+}
+.shoes {
+  width: 15rem;
+  height: 8.5rem;
+}
+.shoes img{
+  height: 100%;
 
 }
-
-
 
 .big {
   width: 15rem;
   height: 20rem;
-}
-
-.small {
-  width: 6.5rem;
-  height: 8.5rem;
 }
 
 @media (width <= 1280px) {

@@ -6,11 +6,11 @@ export type ColorButtonType = {
   color: string;
   name: string;
   onClick: (id: string) => void;
-  
+  buttonName:string;
 };
 
 
-const ColorButton = ({ color, name, onClick }: ColorButtonType) => {
+const ColorButton = ({ color, name, buttonName, onClick }: ColorButtonType) => {
   return (
     <button
       className="colorButton"
@@ -18,7 +18,7 @@ const ColorButton = ({ color, name, onClick }: ColorButtonType) => {
       aria-label={name}
       id={name}
       onClick={(event) => onClick(event.currentTarget.id)}
-      title={name}
+      title={buttonName}
     />
   );
 };

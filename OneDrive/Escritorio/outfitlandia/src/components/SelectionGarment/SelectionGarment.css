@@ -2,21 +2,19 @@
  
   width: 35rem;
   height: 45rem;
- 
-}
-
-.SelectionGarment,
-.SelectionGarment--small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   grid-gap: 1px;
 }
 
+
+
 .SelectionGarment--big,
 .SelectionGarment--small {
   width: 100%;
   height: 100%;
+  
 
 }
 
@@ -24,8 +22,16 @@
   display: flex;
   align-items: center;
   place-content: center;
+  
 }
 
+.SelectionGarment--small{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem 2rem
+}
 
 
 @media (width <= 1280px) {

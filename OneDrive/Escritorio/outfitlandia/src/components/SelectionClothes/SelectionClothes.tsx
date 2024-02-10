@@ -2,26 +2,27 @@ import "./SelectionClothes.css";
 import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
 import ColorButton from "../ColorButton/ColorButton";
-import { clothesType } from "../HomePage/HomePage";
+import {newColors,dataJsonTypes} from "../arrayHooks/arrayHooks"
 
-type SelectionClothesTypes = {
-  garmentCards: clothesType[];
-  onClothesClick: (id: string) => void;
-  clothesElection: clothesType[];
-  onColorsClick: (colorName: string) => void;
-  showClothesButton:boolean;
 
-};
+type selectionTypes ={
+  garmentCards: dataJsonTypes[];
+  onClothesClick:(id: string) => void;
+  colorsElection: newColors[];
+  onColorsClick:(id: string) => void;
+  showClothesButton: boolean
+}
+
+
+
 const SelectionClothes = ({
   garmentCards,
   onClothesClick,
-  clothesElection,
+  colorsElection,
   onColorsClick,
-  showClothesButton, 
-
-}: SelectionClothesTypes) => {
- 
-
+  showClothesButton,
+}:
+(selectionTypes)) => {
   return (
     <div className="SelectionClothes">
       <div className="SelectionClothes--box" key="SelectionClothes--box">
@@ -34,24 +35,22 @@ const SelectionClothes = ({
                 src={item.image}
                 key={item.name}
                 garment={item.name}
-                nameButton={item.name}
+                buttonName={item.name}
               />
             );
           })}
       </div>
       <div className="SelectionClothes--color">
         {!showClothesButton &&
-          clothesElection.map((item) => {
-            return item.colors.map((color) => {
-              return (
-                <ColorButton
-                  color={color.hex}
-                  name={color.colorName}
-                  onClick={onColorsClick}
-                  key={color.colorName}
-                />
-              );
-            });
+          colorsElection.map((item) => {
+            return (
+              <ColorButton
+                color={item.hex}
+                name={item.title}
+                buttonName={item.colorName}
+                onClick={onColorsClick}
+              />
+            );
           })}
       </div>
     </div>

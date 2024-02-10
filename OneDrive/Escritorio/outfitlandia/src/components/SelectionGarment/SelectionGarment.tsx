@@ -1,16 +1,24 @@
 import "./SelectionGarment.css";
 import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
-import {garmentButtonsType} from "../HomePage/HomePage"
 
+
+
+type garmentButtonsType ={
+  css: string;
+  src: string;
+  name: string;
+  garment: string;
+  buttonName: string;
+  key: string;
+}
 
 type SelectionGarmentType = {
-
   onGarmentClick: (id: string) => void;
   garmentButtons: garmentButtonsType[];
 }
-const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentType) => {
 
+const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentType) => {
 
   return (
     <div className="SelectionGarment">
@@ -23,7 +31,7 @@ const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentTyp
                 css={item.css}
                 src={item.src}
                 garment={item.garment}
-                nameButton={item.nameButton}
+                buttonName={item.buttonName}
               />
             </div>
           );
@@ -31,7 +39,7 @@ const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentTyp
       })}
       <div className="SelectionGarment--small">
         {garmentButtons.map((item ) => {
-          if (item.css === "small") {
+          if (item.css === "small" || item.css === "shoes") {
             return (
               <ClothingButton
                 onClick={onGarmentClick}
@@ -39,7 +47,7 @@ const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentTyp
                 src={item.src}
                 key={item.key}
                 garment={item.garment}
-                nameButton={item.nameButton}
+                buttonName={item.buttonName}
               />
             );
           }
