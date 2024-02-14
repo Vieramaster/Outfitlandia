@@ -67,44 +67,49 @@ const HomePage = () => {
   const [garmentCards, setGarmentCards] = useState<dataJsonTypes[]>([]);
   const [colorsElection, setColorsElection] = useState<newColors[]>([]);
   const [showClothesButton, setShowButtonsBUtton] = useState(false);
-  const [colorClick, setColorClick] = useState("string");
+  const [colorClick, setColorClick] = useState("");
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
     defaultGarmentButtons
   );
   const { data } = useDataBase();
 
-  //sustraigo el id de selectionGarment
+  //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
   const onGarmentClick = (id: string) => {
     setGarmentClickId(id);
     setTimeout(() => {
       setFilteredGarmentButtons(defaultGarmentButtons);
-      //cambia el div
+
       setShowButtonsBUtton(true);
-      //mando array nuevo con la prenda seleccionada al hijo 1
+
       const arrayFiltered = data.filter((item) => item.garment === id);
       setGarmentCards(arrayFiltered);
     }, 200);
   };
 
+  // con el ID se busca el objeto del array y sus colores, se usa la parte "colors" para buscar info de dataColor y que devuelta nueva informacion, y con eso llevarla al segundo hijo nuevamente
   const onClothesClick = (id: string) => {
     setClothesClickId(id);
     setTimeout(() => {
       setShowButtonsBUtton(false);
       const garmentChoise = data.find((item) => item.name === id);
-
       const colorFilter = garmentChoise
         ? dataColor.filter((item) =>
             garmentChoise.colors.includes(item.colorName)
           )
         : [];
-
       setColorsElection(colorFilter);
     }, 200);
   };
 
+  //se utiliza la nueva informacion para actualizar las cards de selectionGarment segun el color que se elija,  se unifica las 2 busquedas para crear un objetos con los 2 resultados (prenda y color) para hacer la busqueda de combinaciones.
   const onColorsClick = (id: string) => {
     setColorClick(id);
 
+    const searchColor = dataColor.find((item) =>{
+      return item.title === id
+    })
+    
+    console.log(searchColor)
     setTimeout(() => {}, 200);
   };
 

@@ -43,7 +43,7 @@ export const dataColor =[
     "colorName": "purple",
     "hex": "#603085",
     "title": "purpura",
-    "hue": "hola"
+    "hue": "hue-rotate(278deg) brightness(80%)"
   },
   {
     "colorName": "lilac",
@@ -53,7 +53,7 @@ export const dataColor =[
   },
   {
     "colorName": "aero",
-    "hex": "#416aa2",
+    "hex": "#53718d",
     "title": "aero",
     "hue": "hola"
   },
@@ -65,7 +65,7 @@ export const dataColor =[
   },
   {
     "colorName": "navy blue",
-    "hex": "#19284c",
+    "hex": "#202a44",
     "title": "azul navy",
     "hue": "hola"
   },
@@ -121,14 +121,14 @@ export const dataColor =[
 
   {
     "colorName": "yellow",
-    "hex": "#ffe1a0",
+    "hex": "#ffe759",
     "title": "amarillo",
     "hue": "hola"
   },
 
   {
     "colorName": "mustard",
-    "hex": "#e1ad01",
+    "hex": "#b28024",
     "title": "mostaza",
     "hue": "hola"
   },
@@ -165,7 +165,7 @@ export const dataColor =[
   
   {
     "colorName": "camel",
-    "hex": "#b18a61",
+    "hex": "#c19a6b",
     "title": "camel",
     "hue": "hola"
   },
@@ -202,7 +202,7 @@ export const dataColor =[
   },
   {
     "colorName": "dark grey",
-    "hex": "#708090",
+    "hex": "#48494a",
     "title": "gris topo",
     "hue": "hola"
   },
@@ -220,7 +220,7 @@ export const dataColor =[
   },
   {
     "colorName": "burgundy",
-    "hex": "#800020",
+    "hex": "#5e041b",
     "title": "borgoña",
     "hue": "hola"
   },
@@ -232,7 +232,7 @@ export const dataColor =[
   },
   {
     "colorName": "baby pink",
-    "hex": "#eedbe5",
+    "hex": "#f8c8dc",
     "title": "rosa bebe",
     "hue": "hola"
   },
@@ -249,3 +249,8 @@ export const dataColor =[
     "hue": "hola"
   }
 ]
+    {
+      "colorName":"",
+      "imageColor":""
+    },
+

@@ -49,6 +49,7 @@ const SelectionClothes = ({
                 name={item.title}
                 buttonName={item.colorName}
                 onClick={onColorsClick}
+                key={item.title}
               />
             );
           })}
