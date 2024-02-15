@@ -2,7 +2,7 @@
   {
     "garment": "top",
     "name": "hoodie",
-    "image": "./src/images/image-json/top/topHoodie.webp",
+    "image": "/src/images/image-json/top/topHoodie.webp",
     "css": "big",
     "style": ["basic", "casual"],
     "weather": ["mild", "cold"],
@@ -1070,48 +1070,46 @@
     "weather": ["heat", "mild"],
     "colors": [
       {
-        "colorName":"skyblue",
-        "imageColor":"/src/images/image-json/coat/coatDenimskyblue.webp"
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/coat/coatDenimskyblue.webp"
       },
-  
-  
+
       {
-        "colorName":"jean",
-        "imageColor":"/src/images/image-json/coat/coatDenimjean.webp"
-      },
-      {
-        "colorName":"chocolate",
-        "imageColor":"/src/images/image-json/coat/coatDenimChocolate.webp"
+        "colorName": "jean",
+        "imageColor": "/src/images/image-json/coat/coatDenimjean.webp"
       },
       {
-        "colorName":"beige",
-        "imageColor":"/src/images/image-json/coat/coatDenimBeige.webp"
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatDenimChocolate.webp"
       },
       {
-        "colorName":"white",
-        "imageColor":"/src/images/image-json/coat/coatDenim.webp"
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatDenimBeige.webp"
       },
       {
-        "colorName":"light grey",
-        "imageColor":"/src/images/image-json/coat/coatDenimLightgrey.webp"
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/coat/coatDenim.webp"
       },
       {
-        "colorName":"dark grey",
-        "imageColor":"/src/images/image-json/coat/coatDenimdarkgrey.webp"
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatDenimLightgrey.webp"
       },
       {
-        "colorName":"black",
-        "imageColor":"/src/images/image-json/coat/coatDenimBlack.webp"
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatDenimdarkgrey.webp"
       },
       {
-        "colorName":"old pink",
-        "imageColor":"/src/images/image-json/coat/coatDenimOldPink.webp"
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatDenimBlack.webp"
       },
       {
-        "colorName":"baby pink",
-        "imageColor":"/src/images/image-json/coat/coatDenimBabyPink.webp"
+        "colorName": "old pink",
+        "imageColor": "/src/images/image-json/coat/coatDenimOldPink.webp"
+      },
+      {
+        "colorName": "baby pink",
+        "imageColor": "/src/images/image-json/coat/coatDenimBabyPink.webp"
       }
-                    
     ]
   },
 
@@ -1177,128 +1175,316 @@
     "garment": "coat",
     "name": "campera inflable",
     "image": "/src/images/image-json/coat/coatInflatableJacket.webp",
-    "imageRed": "/src/images/image-json/coat/coatInflatableJacketRed.webp",
     "css": "big",
     "style": ["basic"],
     "weather": ["mild", "cold"],
     "colors": [
-      "purple",
-      "aero",
-      "navy blue",
-      "french blue",
-      "skyblue",
-      "aquamarine",
-      "dark esmerald",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "orange",
-      "windsor tan",
-      "chocolate",
-      "camel",
-      "beige",
-      "Champagne",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red",
-      "old pink"
+      {
+        "colorName": "purple",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketpurple.webp"
+      },
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketaero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketnavy.webp"
+      },
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketskyblue.webp"
+      },
+      {
+        "colorName": "aquamarine",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketaquamarine.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketfrench.webp"
+      },
+      {
+        "colorName": "dark esmerald",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketesmerald.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketdarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketarmy.webp"
+      },
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketivory.webp"
+      },
+      {
+        "colorName": "yellow",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketyellow.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketmustard.webp"
+      },
+
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketchocolate.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacket.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketred.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "parka",
     "image": "/src/images/image-json/coat/coatParka.webp",
-    "imageRed": "/src/images/image-json/coat/coatParkaRed.webp",
     "css": "big",
     "style": ["basic", "casual"],
     "weather": ["cold"],
     "colors": [
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "red brick",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "sand",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatParkanavy.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/coat/coatParkaDarkGreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatParkaArmy.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/coat/coatParkaMustard.webp"
+      },
+
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/coat/coatParkaRedBrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/coat/coatParkawindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatParkachocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/coat/coatParkapeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatParkacamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatParkabeige.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatParkadarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatParkablack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatParkaburgundy.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "camisaco",
     "image": "/src/images/image-json/coat/coatShacket.webp",
-    "imageRed": "/src/images/image-json/coat/coatShacketRed.webp",
     "css": "big",
     "style": ["basic", "casual"],
     "weather": ["mild"],
     "colors": [
-      "purple",
-      "aero",
-      "navy blue",
-      "french blue",
-      "dark esmerald",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "purple",
+        "imageColor": "/src/images/image-json/coat/coatShacketpurple.webp"
+      },
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/coat/coatShacketaero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatShacketnavy.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/coat/coatShacketfrench.webp"
+      },
+      {
+        "colorName": "dark esmerald",
+        "imageColor": "/src/images/image-json/coat/coatShacketesmerald.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/coat/coatShacketdarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatShacketarmy.webp"
+      },
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/coat/coatShacketivory.webp"
+      },
+      {
+        "colorName": "yellow",
+        "imageColor": "/src/images/image-json/coat/coatShacketyellow.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/coat/coatShacketmustard.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/coat/coatShacketwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatShacketchocolate.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatShacketbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/coat/coatShacket.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatShacketlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatShacketdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatShacketblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatShacketburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/coat/coatShacketred.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "campera bomber",
     "image": "/src/images/image-json/coat/coatBomber.webp",
-    "imageRed": "/src/images/image-json/coat/coatBomberRed.webp",
     "css": "big",
     "style": ["basic", "casual"],
     "weather": ["cold"],
     "colors": [
-      "aero",
-      "navy blue",
-      "french blue",
-      "dark esmerald",
-      "dark green",
-      "army green",
-      "ivory",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/coat/coatBomberaero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatBombernavy.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/coat/coatBomberfrench.webp"
+      },
+
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/coat/coatBomberdarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatBomberarmy.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/coat/coatBomberwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatBomberchocolate.webp"
+      },
+
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatBombercamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatBomberbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/coat/coatBomber.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatBomberlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatBomberdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatBomberblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatBomberburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/coat/coatBomberred.webp"
+      }
     ]
   },
   {
@@ -1310,155 +1496,300 @@
     "style": ["basic", "casual"],
     "weather": ["cold"],
     "colors": [
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "Champagne",
-      "red brick",
-      "windsor tan",
-      "peanut",
-      "chocolate",
-      "camel",
-      "beige",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "black",
-      "old pink",
-      "baby pink"
+      {
+        "colorName": "jean",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterjean.webp"
+      },
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterskyblue.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinternavy.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterarmy.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterbeige.webp"
+      },
+      {
+        "colorName": "worn black",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterwornblack.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterblack.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "windbraker",
     "image": "/src/images/image-json/coat/coatWindbreaker.webp",
-    "imageRed": "/src/images/image-json/coat/coatWindbreakerRed.webp",
     "css": "big",
     "style": ["basic"],
     "weather": ["mild", "heat"],
     "colors": [
-      "purple",
-      "lilac",
-      "aero",
-      "jean",
-      "navy blue",
-      "french blue",
-      "skyblue",
-      "dark esmerald",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "orange",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red",
-      "old pink"
+      {
+        "colorName": "purple",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerpurple.webp"
+      },
+      {
+        "colorName": "lilac",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerlilac.webp"
+      },
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakeraero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakernavy.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerfrench.webp"
+      },
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerskyblue.webp"
+      },
+      {
+        "colorName": "dark esmerald",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakeresmerald.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerarmy.webp"
+      },
+      {
+        "colorName": "yellow",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakeryellow.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerchocolate.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/coat/coatWindbreaker.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerred.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "blazer",
     "image": "/src/images/image-json/coat/coatBlazer.webp",
-    "imageRed": "/src/images/image-json/coat/coatBlazerRed.webp",
     "css": "big",
     "style": ["casual", "elegant"],
     "weather": ["mild", "cold"],
     "colors": [
-      "purple",
-      "lilac",
-      "aero",
-      "jean",
-      "navy blue",
-      "french blue",
-      "skyblue",
-      "dark green",
-      "chocolate",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "light grey",
-      "dark grey",
-      "black",
-      "burgundy",
-      "old pink"
+      {
+        "colorName": "purple",
+        "imageColor": "/src/images/image-json/coat/coatBlazerpurple.webp"
+      },
+      {
+        "colorName": "lilac",
+        "imageColor": "/src/images/image-json/coat/coatBlazerlilac.webp"
+      },
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/coat/coatBlazeraero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatBlazernavy.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/coat/coatBlazerfrench.webp"
+      },
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/coat/coatBlazerskyblue.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/coat/coatBlazermustard.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatBlazerchocolate.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatBlazercamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatBlazerbeige.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatBlazerlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatBlazerdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatBlazerblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/coat/coatBlazerburgundy.webp"
+      },
+      {
+        "colorName": "old pink",
+        "imageColor": "/src/images/image-json/coat/coatBlazeroldpink.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "saco cruzado",
     "image": "/src/images/image-json/coat/coatShortOvercoat.webp",
-    "imageRed": "/src/images/image-json/coat/coatShortOvercoatRed.webp",
     "css": "big",
     "style": ["casual", "elegant"],
     "weather": ["cold"],
     "colors": [
-      "navy blue",
-      "ivory",
-      "chocolate",
-      "camel",
-      "beige",
-      "sand",
-      "light grey",
-      "dark grey",
-      "black"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatnavy.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatchocolate.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatcamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatbeige.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatShortOvercoatblack.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "sobretodo",
     "image": "/src/images/image-json/coat/coatGaban.webp",
-    "imageRed": "/src/images/image-json/coat/coatGabanRed.webp",
     "css": "big",
     "style": ["casual", "elegant"],
     "weather": ["cold"],
     "colors": [
-      "navy blue",
-      "ivory",
-      "chocolate",
-      "camel",
-      "beige",
-      "sand",
-      "light grey",
-      "dark grey",
-      "black"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatGabannavy.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatGabanchocolate.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatGabancamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatGabanbeige.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatGabanlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatGabandarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatGabanblack.webp"
+      }
     ]
   },
   {
     "garment": "coat",
     "name": "montgomery",
     "image": "/src/images/image-json/coat/coatDuffle.webp",
-    "imageRed": "/src/images/image-json/coat/coatDuffleRed.webp",
     "css": "big",
     "style": ["casual", "basic"],
     "weather": ["cold"],
     "colors": [
-      "navy blue",
-      "ivory",
-      "mustard",
-      "chocolate",
-      "camel",
-      "beige",
-      "sand",
-      "light grey",
-      "dark grey",
-      "black"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/coat/coatDufflenavy.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/coat/coatDufflemustard.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/coat/coatDufflechocolate.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/coat/coatDufflecamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/coat/coatDufflebeige.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/coat/coatDufflelightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/coat/coatDuffledarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/coat/coatDuffleblack.webp"
+      }
     ]
   },
 
@@ -1466,128 +1797,313 @@
     "garment": "belt",
     "name": "tradicional",
     "image": "/src/images/image-json/belt/beltClasic.webp",
-    "imageRed": "/src/images/image-json/belt/beltClasicRed.webp",
     "css": "css",
     "style": ["casual", "basic"],
     "weather": ["heat", "cold", "heat"],
     "colors": [
-      "navy blue",
-      "ivory",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "black",
-      "burgundy"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/belt/beltClasicnavy.webp"
+      },
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/belt/beltClasicredbrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/belt/beltClasicwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/belt/beltClasicchocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/belt/beltClasicpeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/belt/beltClasiccamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/belt/beltClasicbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/belt/beltClasic.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/belt/beltClasiclightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/belt/beltClasicdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/belt/beltClasicblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/belt/beltClasicburgundy.webp"
+      }
     ]
   },
   {
     "garment": "belt",
     "name": "de tela",
     "image": "/src/images/image-json/belt/beltCloth.webp",
-    "imageRed": "/src/images/image-json/belt/beltClothRed.webp",
     "css": "small",
     "style": ["basic"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
-      "aero",
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/belt/beltClothaero.webp"
+      },
+
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/belt/beltClothnavy.webp"
+      },
+      {
+        "colorName": "dark esmerald",
+        "imageCo|lor": "/src/images/image-json/belt/beltClothesmerald.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/belt/beltClothdark.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/belt/beltClotharmy.webp"
+      },
+      {
+        "colorName": "yellow",
+        "imageCo|lor": "/src/images/image-json/belt/beltClothyellow.webp"
+      },
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/belt/beltClothredbrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/belt/beltClothwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/belt/beltClothchocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/belt/beltClothpeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/belt/beltClothcamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/belt/beltClothbeige.webp"
+      },
+
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/belt/beltClothlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/belt/beltClothdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/belt/beltClothblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/belt/beltClothburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/belt/beltClothred.webp"
+      }
     ]
   },
   {
     "garment": "belt",
     "name": "trenzado",
     "image": "/src/images/image-json/belt/beltBraided.webp",
-    "imageRed": "/src/images/image-json/belt/beltBraidedRed.webp",
     "css": "small",
     "style": ["basic", "casual"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
-      "aero",
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/belt/beltBraidedaero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/belt/beltBraidednavy.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/belt/beltBraideddarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/belt/beltBraidedarmy.webp"
+      },
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/belt/beltBraidedredbrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/belt/beltBraidedwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/belt/beltBraidedchocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/belt/beltBraidedpeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/belt/beltBraidedcamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/belt/beltBraidedbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/belt/beltBraided.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/belt/beltBraidedlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/belt/beltBraideddarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/belt/beltBraidedblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/belt/beltBraidedburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/belt/beltBraidedred.webp"
+      }
     ]
   },
-  {
-    "garment": "pants",
-    "name": "babucha",
-    "image": "/src/images/image-json/pants/pantsSlipper.webp",
-    "imageRed": "/src/images/image-json/pants/pantsSlipperRed.webp",
-    "css": "big",
-    "style": ["casual", "basic"],
-    "weather": ["heat", "mild"],
-    "colors": [
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black"
-    ]
-  },
+
   {
     "garment": "pants",
     "name": "joggin",
     "image": "/src/images/image-json/pants/pantsJoggin.webp",
-    "imageRed": "/src/images/image-json/pants/pantsJogginRed.webp",
     "css": "big",
     "style": ["basic"],
     "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "purple",
+        "imageColor": "/src/images/image-json/pants/pantsJogginPurple.webp"
+      },
+      {
+        "colorName": "lilac",
+        "imageColor": "/src/images/image-json/pants/pantsJogginLilac.webp"
+      },
+      {
+        "colorName": "aero",
+        "imageColor": "/src/images/image-json/pants/pantsJogginaero.webp"
+      },
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/pants/pantsJogginnavy.webp"
+      },
+      {
+        "colorName": "french blue",
+        "imageColor": "/src/images/image-json/pants/pantsJogginfrench.webp"
+      },
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/pants/pantsJogginskyblue.webp"
+      },
+      {
+        "colorName": "aquamarine",
+        "imageColor": "/src/images/image-json/pants/pantsJogginaquamarine.webp"
+      },
+
+      {
+        "colorName": "dark esmerald",
+        "imageColor": "/src/images/image-json/pants/pantsJogginesmerald.webp"
+      },
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/pants/pantsJoggindarkgreen.webp"
+      },
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/pants/pantsJogginivory.webp"
+      },
+      {
+        "colorName": "yellow",
+        "imageColor": "/src/images/image-json/pants/pantsJogginyellow.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/pants/pantsJogginchocolate.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/pants/pantsJoggin.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsJogginlightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/pants/pantsJoggindarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/pants/pantsJogginBlack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/pants/pantsJogginburgundy.webp"
+      },
+      {
+        "colorName": "red",
+        "imageColor": "/src/images/image-json/pants/pantsJogginred.webp"
+      },
+      {
+        "colorName": "baby pink",
+        "imageColor": "/src/images/image-json/pants/pantsJogginbabypink.webp"
+      },
+      {
+        "colorName": "old pink",
+        "imageColor": "/src/images/image-json/pants/pantsJogginoldpink.webp"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "bermuda joggin",
+    "image": "/src/images/image-json/pants/pantsShortJoggin.webp",
+    "css": "big",
+    "style": ["basic"],
+    "weather": ["heat"],
     "colors": [
       {
         "colorName": "purple",
@@ -1680,105 +2196,204 @@
       }
     ]
   },
-  {
-    "garment": "pants",
-    "name": "bermuda joggin",
-    "image": "/src/images/image-json/pants/pantsShortJoggin.webp",
-    "imageRed": "/src/images/image-json/pants/pantsShortJogginRed.webp",
-    "css": "big",
-    "style": ["basic"],
-    "weather": ["heat"],
-    "colors": [
-      "purple",
-      "lilac",
-      "aero",
-      "navy blue",
-      "french blue",
-      "skyblue",
-      "aquamarine",
-      "dark esmerald",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "chocolate",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red",
-      "baby pink",
-      "old pink",
-      "salmon"
-    ]
-  },
 
   {
     "garment": "pants",
-    "name": "gabardina/jean",
-    "image": "/src/images/image-json/pants/pantsDenimGabardine.webp",
-    "imageRed": "/src/images/image-json/pants/pantsDenimGabardineRed.webp",
+    "name": "pantalon jean",
+    "image": "/src/images/image-json/pants/pantsjean.webp",
     "css": "big",
-    "style": ["casual", "elegant"],
+    "style": ["casual", "basic"],
     "weather": ["mild", "cold"],
     "colors": [
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/pants/pantsJeanSkyBlue.webp"
+      },
+      {
+        "colorName": "jean",
+        "imageColor": "/src/images/image-json/pants/pantsJeanJean.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsJeanLightgrey.webp"
+      },
+      {
+        "colorName": "worn black",
+        "imageColor": "/src/images/image-json/pants/pantsJeanwornblack.webp"
+      }
     ]
   },
   {
     "garment": "pants",
-    "name": "bermuda gabardina/jean",
-    "image": "/src/images/image-json/pants/pantsShortsDeminGab.webp",
-    "imageRed": "/src/images/image-json/pants/pantsShortsDeminGabRed.webp",
+    "name": "bermuda jean",
+    "image": "/src/images/image-json/pants/pantsshortjean.webp",
+    "css": "big",
+    "style": ["casual", "basic"],
+    "weather": ["heat"],
+    "colors": [
+      {
+        "colorName": "skyblue",
+        "imageColor": "/src/images/image-json/pants/pantsshortJeanSkyBlue.webp"
+      },
+      {
+        "colorName": "jean",
+        "imageColor": "/src/images/image-json/pants/pantshortJeanJean.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsshortJeanLightgrey.webp"
+      },
+      {
+        "colorName": "worn black",
+        "imageColor": "/src/images/image-json/pants/pantsshortJeanwornblack.webp"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "gabardina",
+    "image": "/src/images/image-json/pants/pantsGabardine.webp",
+    "imageRed": "/src/images/image-json/pants/pantsDenimGabardineRed.webp",
+    "css": "big",
+    "style": ["casual"],
+    "weather": ["mild", "cold"],
+    "colors": [
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinenavy.webp"
+      },
+
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinedarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinearmy.webp"
+      },
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/pants/pantsGabardineivory.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinemustard.webp"
+      },
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/pants/pantsGabardineredbrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinewindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinechocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinepeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinecamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinebeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/pants/pantsGabardine.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinelightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/pants/pantsGabardinedarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/pants/pantsGabardineblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/pants/pantsGabardineburgundy.webp"
+      }
+    ]
+  },
+  {
+    "garment": "pants",
+    "name": "bermuda gabardina",
+    "image": "/src/images/image-json/pants/pantsShortsGab.webp",
     "css": "big",
     "style": ["casual"],
     "weather": ["heat"],
     "colors": [
-      "jean",
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabnavy.webp"
+      },
+
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabdarkgreen.webp"
+      },
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabarmy.webp"
+      },
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabmustard.webp"
+      },
+      {
+        "colorName": "red brick",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabredbrick.webp"
+      },
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabwindsortan.webp"
+      },
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabchocolate.webp"
+      },
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabpeanut.webp"
+      },
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabcamel.webp"
+      },
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabbeige.webp"
+      },
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGab.webp"
+      },
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGablightgrey.webp"
+      },
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabdarkgrey.webp"
+      },
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/pants/pantsShortsGabburgundy.webp"
+      }
     ]
   },
   {
@@ -1790,27 +2405,79 @@
     "style": ["elegant", "casual"],
     "weather": ["mild", "cold"],
     "colors": [
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "navy blue",
+        "imageColor": ""
+      },
+
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/pants/pantsChinosDarkgreen.webp"
+      },
+
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/pants/pantsChinosarmy.webp"
+      },
+
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/pants/pantsChinosivory.webp"
+      },
+
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/pants/pantsChinosmustard.webp"
+      },
+
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/pants/pantsChinoswindsortan.webp"
+      },
+
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/pants/pantsChinoschocolate.webp"
+      },
+
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/pants/pantsChinospeanut.webp"
+      },
+
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/pants/pantsChinoscamel.webp"
+      },
+
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/pants/pantsChinosbeige.webp"
+      },
+
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/pants/pantsChinos.webp"
+      },
+
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsChinoslightgrey.webp"
+      },
+
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/pants/pantsChinosdarkgrey.webp"
+      },
+
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/pants/pantsChinosblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/pants/pantsChinosburgundy.webp"
+      }
     ]
   },
   {
@@ -1822,27 +2489,79 @@
     "style": ["casual"],
     "weather": ["heat"],
     "colors": [
-      "navy blue",
-      "dark green",
-      "army green",
-      "ivory",
-      "yellow",
-      "mustard",
-      "red brick",
-      "windsor tan",
-      "chocolate",
-      "peanut",
-      "camel",
-      "beige",
-      "Champagne",
-      "sand",
-      "white",
-      "light grey",
-      "dark grey",
-      "worn black",
-      "black",
-      "burgundy",
-      "red"
+      {
+        "colorName": "navy blue",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinonavy.webp"
+      },
+
+      {
+        "colorName": "dark green",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinodarkgreen.webp"
+      },
+
+      {
+        "colorName": "army green",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinoarmy.webp"
+      },
+
+      {
+        "colorName": "ivory",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinoivory.webp"
+      },
+
+      {
+        "colorName": "mustard",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinomustard.webp"
+      },
+
+      {
+        "colorName": "windsor tan",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinowindsortan.webp"
+      },
+
+      {
+        "colorName": "chocolate",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinochocolate.webp"
+      },
+
+      {
+        "colorName": "peanut",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinopeanut.webp"
+      },
+
+      {
+        "colorName": "camel",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinocamel.webp"
+      },
+
+      {
+        "colorName": "beige",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinobeige.webp"
+      },
+
+      {
+        "colorName": "white",
+        "imageColor": "/src/images/image-json/pants/pantsShortChino.webp"
+      },
+
+      {
+        "colorName": "light grey",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinolightgrey.webp"
+      },
+
+      {
+        "colorName": "dark grey",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinodarkgrey.webp"
+      },
+
+      {
+        "colorName": "black",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinoblack.webp"
+      },
+      {
+        "colorName": "burgundy",
+        "imageColor": "/src/images/image-json/pants/pantsShortChinoburgundy.webp"
+      }
     ]
   },
   {
