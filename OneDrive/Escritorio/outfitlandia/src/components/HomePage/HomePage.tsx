@@ -2,9 +2,8 @@ import "./HomePage.css";
 import React, { useState } from "react";
 import {
   dataJsonTypes,
-  dataColor,
   useDataBase,
-  newColors,
+  colorData,
 } from "../arrayHooks/arrayHooks";
 import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
@@ -65,7 +64,7 @@ const HomePage = () => {
   const [garmentClickId, setGarmentClickId] = useState("");
   const [clothesClickId, setClothesClickId] = useState("");
   const [garmentCards, setGarmentCards] = useState<dataJsonTypes[]>([]);
-  const [colorsElection, setColorsElection] = useState<newColors[]>([]);
+  const [colorsElection, setColorsElection] = useState<colorData[]>([]);
   const [showClothesButton, setShowButtonsBUtton] = useState(false);
   const [colorClick, setColorClick] = useState("");
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
@@ -92,11 +91,9 @@ const HomePage = () => {
     setTimeout(() => {
       setShowButtonsBUtton(false);
       const garmentChoise = data.find((item) => item.name === id);
-      const colorFilter = garmentChoise
-        ? dataColor.filter((item) =>
-            garmentChoise.colors.includes(item.colorName)
-          )
-        : [];
+
+      const colorFilter = garmentChoise ? garmentChoise.colors : [];
+
       setColorsElection(colorFilter);
     }, 200);
   };
@@ -105,11 +102,8 @@ const HomePage = () => {
   const onColorsClick = (id: string) => {
     setColorClick(id);
 
-    const searchColor = dataColor.find((item) =>{
-      return item.title === id
-    })
-    
-    console.log(searchColor)
+
+
     setTimeout(() => {}, 200);
   };
 
