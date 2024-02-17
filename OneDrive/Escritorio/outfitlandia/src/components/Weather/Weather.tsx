@@ -1,5 +1,4 @@
 import "./Weather.css"
-import React from "react"
 const Weather = ()=>{
 
     return(

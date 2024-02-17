@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   dataJsonTypes,
   useDataBase,
@@ -61,8 +61,8 @@ const HomePage = () => {
       key: "default-shoes",
     },
   ];
-  const [garmentClickId, setGarmentClickId] = useState("");
-  const [clothesClickId, setClothesClickId] = useState("");
+  const [garmentId, setGarmentId] = useState("");
+  const [clothesId, setClothesId] = useState("");
   const [garmentCards, setGarmentCards] = useState<dataJsonTypes[]>([]);
   const [colorsElection, setColorsElection] = useState<colorData[]>([]);
   const [showClothesButton, setShowButtonsBUtton] = useState(false);
@@ -74,7 +74,7 @@ const HomePage = () => {
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
   const onGarmentClick = (id: string) => {
-    setGarmentClickId(id);
+    setGarmentId(id);
     setTimeout(() => {
       setFilteredGarmentButtons(defaultGarmentButtons);
 
@@ -87,7 +87,7 @@ const HomePage = () => {
 
   // con el ID se busca el objeto del array y sus colores, se usa la parte "colors" para buscar info de dataColor y que devuelta nueva informacion, y con eso llevarla al segundo hijo nuevamente
   const onClothesClick = (id: string) => {
-    setClothesClickId(id);
+    setClothesId(id);
     setTimeout(() => {
       setShowButtonsBUtton(false);
       const garmentChoise = data.find((item) => item.name === id);

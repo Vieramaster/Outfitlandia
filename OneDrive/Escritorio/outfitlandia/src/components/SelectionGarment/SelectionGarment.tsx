@@ -1,5 +1,4 @@
 import "./SelectionGarment.css";
-import React from "react";
 import ClothingButton from "../ClothingButton/ClothingButton";
 
 

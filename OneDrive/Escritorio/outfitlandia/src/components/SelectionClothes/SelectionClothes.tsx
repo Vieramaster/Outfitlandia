@@ -1,14 +1,14 @@
 import "./SelectionClothes.css";
-import React from "react";
+
 import ClothingButton from "../ClothingButton/ClothingButton";
 import ColorButton from "../ColorButton/ColorButton";
-import {newColors,dataJsonTypes} from "../arrayHooks/arrayHooks"
+import  {colorData ,dataJsonTypes} from "../arrayHooks/arrayHooks"
 
 
 type selectionTypes ={
   garmentCards: dataJsonTypes[];
   onClothesClick:(id: string) => void;
-  colorsElection: newColors[];
+  colorsElection: colorData[];
   onColorsClick:(id: string) => void;
   showClothesButton: boolean
 }
