@@ -2,18 +2,15 @@ import "./SelectionClothes.css";
 
 import ClothingButton from "../ClothingButton/ClothingButton";
 import ColorButton from "../ColorButton/ColorButton";
-import  {colorData ,dataJsonTypes} from "../arrayHooks/arrayHooks"
+import { colorData, dataJsonTypes } from "../arrayHooks/ArrayHooks";
 
-
-type selectionTypes ={
+type selectionTypes = {
   garmentCards: dataJsonTypes[];
-  onClothesClick:(id: string) => void;
+  onClothesClick: (id: string) => void;
   colorsElection: colorData[];
-  onColorsClick:(id: string) => void;
-  showClothesButton: boolean
-}
-
-
+  onColorsClick: (id: string) => void;
+  showClothesButton: boolean;
+};
 
 const SelectionClothes = ({
   garmentCards,
@@ -21,8 +18,7 @@ const SelectionClothes = ({
   colorsElection,
   onColorsClick,
   showClothesButton,
-}:
-(selectionTypes)) => {
+}: selectionTypes) => {
   return (
     <div className="SelectionClothes">
       <div className="SelectionClothes--box" key="SelectionClothes--box">
@@ -42,14 +38,14 @@ const SelectionClothes = ({
       </div>
       <div className="SelectionClothes--color">
         {!showClothesButton &&
-          colorsElection.map((item) => {
+          colorsElection.map((item, index) => {
             return (
               <ColorButton
                 color={item.hex}
                 name={item.title}
                 buttonName={item.colorName}
                 onClick={onColorsClick}
-                key={item.title}
+                key={item.title + index}
               />
             );
           })}

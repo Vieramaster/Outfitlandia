@@ -18,7 +18,7 @@ export type dataJsonTypes ={
   css:string;
   style:string[];
   weather:string[];
-  colors:colorData[] 
+  colors:colorData[] |string
   }
   
   
