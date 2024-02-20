@@ -1,0 +1,50 @@
+.Weather{
+    width: 8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .Weather--info {
+    width: 6rem;
+    height: 6rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    user-select: none;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+  }
+  
+  .winter img{
+    width: 70%;
+  }
+  .winter span{
+   color: var(--primary-color);
+   margin-bottom: 5px;
+  }
+  
+  @media (width <= 1280px) {
+    .weather-box--info {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+  
+  .Weather--info p {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  @media (width <= 1280px) {
+    .Weather{
+      width: 5rem;
+    }
+  }
