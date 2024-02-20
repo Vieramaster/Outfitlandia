@@ -80,12 +80,10 @@ const HomePage = () => {
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
   const onGarmentClick = (id: string) => {
     setGarmentId(id);
-    setTimeout(() => {
-      setFilteredGarmentButtons(defaultGarmentButtons);
-      setGarmentColor(undefined);
-      setShowButtonsBUtton(true);
-      setGarmentCards(data.filter((item) => item.garment === id));
-    }, 200);
+    setFilteredGarmentButtons(defaultGarmentButtons);
+    setGarmentColor(undefined);
+    setShowButtonsBUtton(true);
+    setGarmentCards(data.filter((item) => item.garment === id));
   };
 
   const garmentCard = (value: string) => {
@@ -96,15 +94,13 @@ const HomePage = () => {
 
   // con el ID se busca el objeto del array y sus colores, se usa la parte "colors" para buscar info de dataColor y que devuelta nueva informacion, y con eso llevarla al segundo hijo nuevamente
   const onClothesClick = (id: string) => {
-    setTimeout(() => {
-      setShowButtonsBUtton(false);
-      const garmentChoise = data.find((item) => item.name === id);
-      if (!garmentChoise || typeof garmentChoise.colors === "string") return;
+    setShowButtonsBUtton(false);
+    const garmentChoise = data.find((item) => item.name === id);
+    if (!garmentChoise || typeof garmentChoise.colors === "string") return;
 
-      setGarmentObject(garmentChoise);
-      setColorsElection(garmentChoise.colors);
-      setFilteredGarmentButtons(garmentCard(garmentChoise.image));
-    }, 200);
+    setGarmentObject(garmentChoise);
+    setColorsElection(garmentChoise.colors);
+    setFilteredGarmentButtons(garmentCard(garmentChoise.image));
   };
 
   //se utiliza la nueva informacion para actualizar las cards de selectionGarment segun el color que se elija,  se unifica las 2 busquedas para crear un objetos con los 2 resultados (prenda y color) para hacer la busqueda de combinaciones.
@@ -125,24 +121,51 @@ const HomePage = () => {
 
   const { arrayColorsData } = useColorsData();
 
-  //genera las combinaciones de ropa
 
+  //genera las combinaciones de ropa
   const onCombineClothes = () => {
     if (garmentObject && garmentColor) {
       garmentObject.colors = garmentColor;
+      
       //busca los que coincidan con style y weather
       const arrayGarmentResults = data.filter((item) => {
         let styleMatch = item.style.some((style) =>
           garmentObject.style.includes(style)
         );
         let weatherMatch = item.weather.some((weather) =>
-          garmentObject.weather.includes(weather)
+          (garmentObject).weather.includes(weather)
         );
         return (
           item.garment !== garmentObject.garment && styleMatch && weatherMatch
         );
       });
-      //usa el color que se eligio para buscar en el json de colores las combinaciones
+
+      // separa los por estilos
+      let groupedByStyle = arrayGarmentResults.reduce((acc: {[key: string]: dataJsonTypes[]}, item: dataJsonTypes) => {
+        item.style.forEach((style: string) => {
+            if (!acc[style]) {
+                acc[style] = [];
+            }
+            acc[style].push(item);
+        });
+        return acc;
+    }, {});
+    //usa el color que se eligio para buscar en el json de colores las combinaciones
+    const arrayColorResult = arrayColorsData.filter((item) =>
+    item.includes(garmentColor)
+  );
+    
+    console.log(groupedByStyle)
+
+      const fafa  = groupedByStyle.array.filter( element => {
+
+        element.colors.includes( arrayColorResult)
+      })
+
+
+
+
+    /*  
       const arrayColorResult = arrayColorsData.filter((item) =>
         item.includes(garmentColor)
       );
@@ -164,7 +187,9 @@ const HomePage = () => {
       );
 
       const fafa = result.map((item) => {});
-      console.log(result);
+
+      
+      console.log(result);*/
     }
   };
 
