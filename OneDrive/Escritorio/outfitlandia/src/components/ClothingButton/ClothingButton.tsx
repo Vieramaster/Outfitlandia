@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./ClothingButton.css";
 
 type ClothingButtonType = {

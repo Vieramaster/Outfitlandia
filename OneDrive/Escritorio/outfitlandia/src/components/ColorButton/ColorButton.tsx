@@ -1,6 +1,5 @@
 import "./ColorButton.css";
 
-import React from "react";
 
 export type ColorButtonType = {
   color: string;

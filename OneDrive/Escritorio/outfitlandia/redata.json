@@ -1382,10 +1382,6 @@
         "imageColor": "/src/images/image-json/top/topLongTShirtlilac.webp"
       },
       {
-        "color|Name": "aero",
-        "imageColor": "/src/images/image-json/top/topLongTShirtaero.webp"
-      },
-      {
         "colorName": "navy blue",
         "hex": "#202a44",
         "title": "azul navy",
@@ -1500,7 +1496,7 @@
         "imageColor": "/src/images/image-json/top/topLongTShirtwornblack.webp"
       },
       {
-        "colorName": "worn black",
+        "colorName": "black",
         "hex": "#000000",
         "title": "negro",
         "imageColor": "/src/images/image-json/top/topLongTShirtblack.webp"
@@ -1614,7 +1610,7 @@
     "name": "campera de cuero",
     "image": "/src/images/image-json/coat/coatLeather.webp",
     "css": "big",
-    "style": ["basic", "casual"],
+    "style": ["casual"],
     "weather": ["heat", "mild"],
     "colors": [
       {
@@ -1833,7 +1829,7 @@
     "name": "parka",
     "image": "/src/images/image-json/coat/coatParka.webp",
     "css": "big",
-    "style": ["basic", "casual"],
+    "style": ["casual"],
     "weather": ["cold"],
     "colors": [
       {
@@ -2149,7 +2145,7 @@
     "image": "/src/images/image-json/coat/coatDenimWinter.webp",
     "imageRed": "/src/images/image-json/coat/coatDenimWinterRed.webp",
     "css": "big",
-    "style": ["basic", "casual"],
+    "style": ["casual"],
     "weather": ["cold"],
     "colors": [
       {
@@ -2313,7 +2309,7 @@
     "name": "blazer",
     "image": "/src/images/image-json/coat/coatBlazer.webp",
     "css": "big",
-    "style": ["casual", "elegant"],
+    "style": ["elegant"],
     "weather": ["mild", "cold"],
     "colors": [
       {
@@ -2413,7 +2409,7 @@
     "name": "saco cruzado",
     "image": "/src/images/image-json/coat/coatShortOvercoat.webp",
     "css": "big",
-    "style": ["casual", "elegant"],
+    "style": ["elegant"],
     "weather": ["cold"],
     "colors": [
       {
@@ -2465,7 +2461,7 @@
     "name": "sobretodo",
     "image": "/src/images/image-json/coat/coatGaban.webp",
     "css": "big",
-    "style": ["casual", "elegant"],
+    "style": ["elegant"],
     "weather": ["cold"],
     "colors": [
       {
@@ -2517,7 +2513,7 @@
     "name": "montgomery",
     "image": "/src/images/image-json/coat/coatDuffle.webp",
     "css": "big",
-    "style": ["casual", "basic"],
+    "style": ["casual"],
     "weather": ["cold"],
     "colors": [
       {
@@ -4140,7 +4136,7 @@
     "name": "botines de vestir",
     "image": "/src/images/image-json/shoes/shoesShortBoots.webp",
     "css": "shoes",
-    "style": ["casual", "elegant"],
+    "style": ["elegant"],
     "weather": ["cold"],
     "colors": [
       {
@@ -4222,7 +4218,7 @@
     "name": "borcego",
     "image": "/src/images/image-json/shoes/shoesBorcego.webp",
     "css": "shoes",
-    "style": ["basic", "casual"],
+    "style": ["casual"],
     "weather": ["cold"],
     "colors": [
       {
@@ -4294,7 +4290,7 @@
     "name": "zapato oxford",
     "image": "/src/images/image-json/shoes/shoesOxford.webp",
     "css": "shoes",
-    "style": ["casual", "elegant"],
+    "style": ["elegant"],
     "weather": ["mild", "cold"],
     "colors": [
       {
@@ -4377,7 +4373,7 @@
     "name": "zapato brogue",
     "image": "/src/images/image-json/shoes/shoesBrogue.webp",
     "css": "shoes",
-    "style": ["casual"],
+    "style": ["elegant"],
     "weather": ["mild", "cold"],
     "colors": [
       {

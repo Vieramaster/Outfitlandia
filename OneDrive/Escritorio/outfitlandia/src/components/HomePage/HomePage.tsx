@@ -4,6 +4,7 @@ import {
   dataJsonTypes,
   useDataBase,
   colorData,
+  useColorsData,
 } from "../arrayHooks/ArrayHooks";
 import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
@@ -73,6 +74,7 @@ const HomePage = () => {
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
     defaultGarmentButtons
   );
+ 
   const { data } = useDataBase();
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
@@ -80,6 +82,7 @@ const HomePage = () => {
     setGarmentId(id);
     setTimeout(() => {
       setFilteredGarmentButtons(defaultGarmentButtons);
+      setGarmentColor(undefined);
       setShowButtonsBUtton(true);
       setGarmentCards(data.filter((item) => item.garment === id));
     }, 200);
@@ -96,37 +99,74 @@ const HomePage = () => {
     setTimeout(() => {
       setShowButtonsBUtton(false);
       const garmentChoise = data.find((item) => item.name === id);
-      if (!garmentChoise || typeof garmentChoise.colors === 'string') return;
-  
+      if (!garmentChoise || typeof garmentChoise.colors === "string") return;
+
       setGarmentObject(garmentChoise);
       setColorsElection(garmentChoise.colors);
       setFilteredGarmentButtons(garmentCard(garmentChoise.image));
     }, 200);
   };
-  
 
   //se utiliza la nueva informacion para actualizar las cards de selectionGarment segun el color que se elija,  se unifica las 2 busquedas para crear un objetos con los 2 resultados (prenda y color) para hacer la busqueda de combinaciones.
   const onColorsClick = (id: string) => {
     const newCardGarmentColor = colorsElection.find(
       (item) => item.title === id
     );
+
     if (!newCardGarmentColor) return;
 
     setGarmentColor(newCardGarmentColor.colorName);
     setFilteredGarmentButtons(garmentCard(newCardGarmentColor.imageColor));
   };
+  // habilita el boton para combinar
 
-  //genera las combinaciones en base a l
+
+  const validButton = Boolean( garmentObject && garmentColor)
+
+  const { arrayColorsData } = useColorsData();
+
+  //genera las combinaciones de ropa
+
   const onCombineClothes = () => {
-    const finishGarment = () => {
-      if (garmentObject && garmentColor) {
-        garmentObject.colors = garmentColor;
-        return garmentObject;
-      }
-    };
-  };
+    if (garmentObject && garmentColor) {
+      garmentObject.colors = garmentColor;
+      //busca los que coincidan con style y weather
+      const arrayGarmentResults = data.filter((item) => {
+        let styleMatch = item.style.some((style) =>
+          garmentObject.style.includes(style)
+        );
+        let weatherMatch = item.weather.some((weather) =>
+          garmentObject.weather.includes(weather)
+        );
+        return (
+          item.garment !== garmentObject.garment && styleMatch && weatherMatch
+        );
+      });
+      //usa el color que se eligio para buscar en el json de colores las combinaciones
+      const arrayColorResult = arrayColorsData.filter((item) =>
+        item.includes(garmentColor)
+      );
+      //devuelve lo
+      const findMatchingColors = (
+        {colors, ...item}: (typeof arrayGarmentResults)[number] ,
+        colorArray: string[]
+      ) => {
+        const matchingColors = Array.isArray(colors)?colors.filter((color) =>
+          colorArray.includes(color.colorName)
+        ):[]
+        return { ...item, colors: matchingColors };
+      };
 
-  
+      const result = arrayColorResult.map((colorArray) =>
+        arrayGarmentResults
+          .map((item) => findMatchingColors(item, colorArray))
+          .filter((item) => item.colors.length > 0)
+      );
+
+      const fafa = result.map((item) => {});
+      console.log(result);
+    }
+  };
 
   return (
     <section className="HomePage">
@@ -135,7 +175,10 @@ const HomePage = () => {
           garmentButtons={filteredGarmentButtons}
           onGarmentClick={onGarmentClick}
         />
-        <Weather onCombineClothes={onCombineClothes} />
+        <Weather
+          onCombineClothes={onCombineClothes}
+          onValidButton={validButton}
+        />
         <SelectionClothes
           garmentCards={garmentCards}
           onClothesClick={onClothesClick}
