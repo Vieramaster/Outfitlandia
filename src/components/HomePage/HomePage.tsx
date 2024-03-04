@@ -74,7 +74,7 @@ const HomePage = () => {
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
     defaultGarmentButtons
   );
-
+  const [randomColorStrings, setRandomColorStrings] = useState<string[]>();
   const { data } = useDataBase();
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
@@ -145,25 +145,52 @@ const HomePage = () => {
           item.includes(garmentColor)
         );
         let random = Math.floor(Math.random() * colorCombination.length);
-
         let color = colorCombination[random];
-
         return color;
       };
-      
-      const  filteredObjects = arrayGarmentResults.map(obj => {
-        let filteredColors = obj.colors.filter(color => randomColor().includes(color.colorName));
-        return {...obj, colors: filteredColors};
-      });
+      setRandomColorStrings(randomColor());
 
-
-
-
-
-
-
-      
+      let fafa = () =>{
+        const filteredObjects = arrayGarmentResults.map((obj) => {
+          let filteredColors = obj.colors.filter((color) =>
+          randomColorStrings?.includes(color.colorName)
+          );
+          return { ...obj, colors: filteredColors };
+        });
+  
+        const filteredMap = filteredObjects.flatMap((item) => {
+          return item.colors.map((color) => {
+            return {
+              garment: item.garment,
+              name: item.name,
+              image: color.imageColor,
+              css: item.css,
+              style: item.style,
+              weather: item.weather,
+              color: color,
+            };
+          });
+        });
+  
+        let groupedByStyle = filteredMap.reduce(
+          (acc: { [key: string]: dataJsonTypes[] }, item: dataJsonTypes) => {
+            item.style.forEach((style: string) => {
+              if (!acc[style]) {
+                acc[style] = [];
+              }
+              acc[style].push(item);
+            });
+            return acc;
+          },
+          {}
+        );
+        return groupedByStyle
+  
+      }
+      console.log(fafa())
+      console.log(randomColorStrings)
     }
+
   };
 
   return (
