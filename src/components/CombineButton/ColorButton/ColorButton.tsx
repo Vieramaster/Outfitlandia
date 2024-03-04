@@ -23,4 +23,4 @@ const ColorButton = ({ color, name, buttonName, onClick }: ColorButtonType) => {
 };
 
 export default ColorButton;
-/* */
+/**/

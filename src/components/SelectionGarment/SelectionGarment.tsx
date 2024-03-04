@@ -58,3 +58,4 @@ const SelectionGarment = ({garmentButtons,  onGarmentClick}: SelectionGarmentTyp
 };
 
 export default SelectionGarment;
+/* */

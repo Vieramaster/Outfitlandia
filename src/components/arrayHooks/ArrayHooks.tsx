@@ -52,3 +52,4 @@ export const useColorsData = () => {
     [arrayColorsData, errorColor, loadingColor]
   );
 };
+/* */

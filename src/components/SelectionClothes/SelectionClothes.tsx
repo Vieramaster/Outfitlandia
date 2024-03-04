@@ -55,3 +55,4 @@ const SelectionClothes = ({
 };
 
 export default SelectionClothes;
+/* */

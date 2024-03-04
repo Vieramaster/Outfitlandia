@@ -30,3 +30,4 @@ const ClothingButton = ({
 };
 
 export default ClothingButton;
+/* */

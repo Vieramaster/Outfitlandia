@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   dataJsonTypes,
   useDataBase,
@@ -74,7 +74,7 @@ const HomePage = () => {
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
     defaultGarmentButtons
   );
- 
+
   const { data } = useDataBase();
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
@@ -116,80 +116,53 @@ const HomePage = () => {
   };
   // habilita el boton para combinar
 
-
-  const validButton = Boolean( garmentObject && garmentColor)
+  const validButton = Boolean(garmentObject && garmentColor);
 
   const { arrayColorsData } = useColorsData();
-
 
   //genera las combinaciones de ropa
   const onCombineClothes = () => {
     if (garmentObject && garmentColor) {
       garmentObject.colors = garmentColor;
-      
+
       //busca los que coincidan con style y weather
       const arrayGarmentResults = data.filter((item) => {
         let styleMatch = item.style.some((style) =>
           garmentObject.style.includes(style)
         );
         let weatherMatch = item.weather.some((weather) =>
-          (garmentObject).weather.includes(weather)
+          garmentObject.weather.includes(weather)
         );
         return (
           item.garment !== garmentObject.garment && styleMatch && weatherMatch
         );
       });
+      //
 
-      // separa los por estilos
-      let groupedByStyle = arrayGarmentResults.reduce((acc: {[key: string]: dataJsonTypes[]}, item: dataJsonTypes) => {
-        item.style.forEach((style: string) => {
-            if (!acc[style]) {
-                acc[style] = [];
-            }
-            acc[style].push(item);
-        });
-        return acc;
-    }, {});
-    //usa el color que se eligio para buscar en el json de colores las combinaciones
-    const arrayColorResult = arrayColorsData.filter((item) =>
-    item.includes(garmentColor)
-  );
-    
-    console.log(groupedByStyle)
+      // busca una combinacion de colores aleatoria en base al elegido
+      const randomColor = () => {
+        let colorCombination = arrayColorsData.filter((item) =>
+          item.includes(garmentColor)
+        );
+        let random = Math.floor(Math.random() * colorCombination.length);
 
-      const fafa  = groupedByStyle.array.filter( element => {
+        let color = colorCombination[random];
 
-        element.colors.includes( arrayColorResult)
-      })
-
-
-
-
-    /*  
-      const arrayColorResult = arrayColorsData.filter((item) =>
-        item.includes(garmentColor)
-      );
-      //devuelve lo
-      const findMatchingColors = (
-        {colors, ...item}: (typeof arrayGarmentResults)[number] ,
-        colorArray: string[]
-      ) => {
-        const matchingColors = Array.isArray(colors)?colors.filter((color) =>
-          colorArray.includes(color.colorName)
-        ):[]
-        return { ...item, colors: matchingColors };
+        return color;
       };
+      
+      const  filteredObjects = arrayGarmentResults.map(obj => {
+        let filteredColors = obj.colors.filter(color => randomColor().includes(color.colorName));
+        return {...obj, colors: filteredColors};
+      });
 
-      const result = arrayColorResult.map((colorArray) =>
-        arrayGarmentResults
-          .map((item) => findMatchingColors(item, colorArray))
-          .filter((item) => item.colors.length > 0)
-      );
 
-      const fafa = result.map((item) => {});
+
+
+
+
 
       
-      console.log(result);*/
     }
   };
 

@@ -13,3 +13,4 @@ const CombineButton = ({ onClick, validButton }: combineButtonTypes) => {
 };
 
 export default CombineButton;
+/* */
