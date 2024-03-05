@@ -76,6 +76,7 @@ const HomePage = () => {
   );
   const [randomColorStrings, setRandomColorStrings] = useState<string[]>();
   const { data } = useDataBase();
+  const [finishArray, setFinishArray] = useState <object[]>()
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
   const onGarmentClick = (id: string) => {
@@ -124,7 +125,7 @@ const HomePage = () => {
   const onCombineClothes = () => {
     if (garmentObject && garmentColor) {
       garmentObject.colors = garmentColor;
-
+  
       //busca los que coincidan con style y weather
       const arrayGarmentResults = data.filter((item) => {
         let styleMatch = item.style.some((style) =>
@@ -138,26 +139,32 @@ const HomePage = () => {
         );
       });
       //
-
+  
+      // Crea numeros aleatorios en base a los objetos de los array
+      const randomNumber = (objectArray) => {
+        return Math.floor(Math.random() * objectArray.length);
+      };
+  
       // busca una combinacion de colores aleatoria en base al elegido
       const randomColor = () => {
         let colorCombination = arrayColorsData.filter((item) =>
           item.includes(garmentColor)
         );
-        let random = Math.floor(Math.random() * colorCombination.length);
+        let random = randomNumber(colorCombination);
         let color = colorCombination[random];
         return color;
       };
       setRandomColorStrings(randomColor());
-
-      let fafa = () =>{
+  
+      const finishProduct = () => {
+        //filtra los colores en base a las combinaciones
         const filteredObjects = arrayGarmentResults.map((obj) => {
           let filteredColors = obj.colors.filter((color) =>
-          randomColorStrings?.includes(color.colorName)
+            randomColorStrings?.includes(color.colorName)
           );
           return { ...obj, colors: filteredColors };
         });
-  
+        // se crea un nuevo objeto por cada color
         const filteredMap = filteredObjects.flatMap((item) => {
           return item.colors.map((color) => {
             return {
@@ -171,10 +178,10 @@ const HomePage = () => {
             };
           });
         });
-  
-        let groupedByStyle = filteredMap.reduce(
-          (acc: { [key: string]: dataJsonTypes[] }, item: dataJsonTypes) => {
-            item.style.forEach((style: string) => {
+        // se agrupa en estilos para armar el conjunto
+        const groupedByStyle = filteredMap.reduce(
+          (acc, item) => {
+            item.style.forEach((style) => {
               if (!acc[style]) {
                 acc[style] = [];
               }
@@ -184,14 +191,39 @@ const HomePage = () => {
           },
           {}
         );
-        return groupedByStyle
   
-      }
-      console.log(fafa())
-      console.log(randomColorStrings)
-    }
+            const pickStyle = ()=>{
+              const garmentsFilter = ['coat', 'pants', 'belt', 'shoes', 'top'].filter(item => item !== garmentId);
+              let selectedItems = {};
+        
+              for (let style of Object.keys(groupedByStyle)) {
+                selectedItems[style] = {};
+                for (let garment of garmentsFilter) {
+                  let items = groupedByStyle[style].filter(item => item.garment === garment);
+                  if (items.length > 0) {
+                    selectedItems[style][garment] = items[randomNumber(items)];
+                  }
+                }
+              }
+              return selectedItems
+                
+            }
+            const keys = Object.keys(pickStyle());
+            const randomKey = keys[randomNumber(keys)];
 
-  };
+          
+          const watch = () =>{
+            const fafa = data.filter( item => item.garment === "watch")
+            const fafa2 = randomKey.filter( item => item.garment === "shoes")
+
+            
+
+          }  
+      };
+      console.log(finishProduct())
+    }
+  }
+  
 
   return (
     <section className="HomePage">

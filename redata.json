@@ -2572,7 +2572,7 @@
     "name": "tradicional",
     "image": "/src/images/image-json/belt/beltClasic.webp",
     "css": "small",
-    "style": ["casual", "basic"],
+    "style": ["casual", "elegant"],
     "weather": ["heat", "cold", "heat"],
     "colors": [
       {
