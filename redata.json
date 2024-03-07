@@ -1918,7 +1918,7 @@
     "name": "camisaco",
     "image": "/src/images/image-json/coat/coatShacket.webp",
     "css": "big",
-    "style": ["basic", "casual"],
+    "style": [ "casual"],
     "weather": ["mild"],
     "colors": [
       {
@@ -3958,7 +3958,7 @@
     "name": "sneakers",
     "image": "/src/images/image-json/shoes/shoesSneakers.webp",
     "css": "shoes",
-    "style": ["casual"],
+    "style": ["casual", "elegant"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
@@ -4554,5 +4554,345 @@
         "imageColor": "/src/images/image-json/shoes/shoesCanvasoldpink.webp"
       }
     ]
-  }
+  },
+  {
+  "garment": "watch",
+  "name": "deportivo",
+  "image": "/src/images/image-json/watch/watchSport.webp",
+  "css": "small",
+  "style": ["basic"],
+  "weather": ["heat", "mild", "cold"],
+  "colors": [
+    {
+      "colorName": "aero",
+      "hex": "#416aa2",
+      "title": "aero",
+      "imageColor": "/src/"
+    },
+    {
+      "colorName": "azul navy",
+      "hex": "#19284c",
+      "title": "azul navy"
+    },
+    {
+      "colorName": "french blue",
+      "hex": "#318CE7",
+      "title": "azul francia(2°)"
+    },
+    {
+      "colorName": "dark green",
+      "hex": "#363d10",
+      "title": "verde oscuro"
+    },
+    {
+      "colorName": "army green",
+      "hex": "#899478",
+      "title": "verde militar"
+    },
+    {
+      "colorName": "sand",
+      "hex": "#FFE4B5",
+      "title": "arena"
+    },
+    {
+      "colorName": "white",
+      "hex": "#ffffff",
+      "title": "blanco"
+    },
+    {
+      "colorName": "light grey",
+      "hex": "#c7c8ca",
+      "title": "gris claro"
+    },
+    {
+      "colorName": "dark grey",
+      "hex": "#708090",
+      "title": "gris topo"
+    },
+    {
+      "colorName": "black",
+      "hex": "#000000",
+      "title": "negro"
+    },
+    {
+      "colorName": "rojo sangre",
+      "hex": "#710c04"
+    },
+    {
+      "colorName": "burgundy",
+      "hex": "#800020",
+      "title": "borgoña"
+    },
+    {
+      "colorName": "red",
+      "hex": "#cf010b",
+      "title": "rojo"
+    }
+  ]
+},
+{
+  "garment": "watch",
+  "name": "aviador",
+  "image": "/src/images/image-json/watch/watchAviator.webp",
+  "css": "small",
+  "style": ["casual", "elegant"],
+  "weather": ["heat", "mild", "cold"],
+  "colors": [
+    {
+      "colorName": "azul navy",
+      "hex": "#19284c",
+      "title": "azul navy"
+    },
+    {
+      "colorName": "dark green",
+      "hex": "#363d10",
+      "title": "verde oscuro"
+    },
+    {
+      "colorName": "army green",
+      "hex": "#899478",
+      "title": "verde militar"
+    },
+    {
+      "colorName": "red brick",
+      "hex": "#a94c2b",
+      "title": "ladrillo"
+    },
+    {
+       "colorName": "windsor tan",
+      "hex": "#8B4513",
+      "title": "suela"
+    },
+    {
+      "colorName": "peanut",
+      "hex": "#766142",
+      "title": "cacahuate"
+    },
+    {
+      "colorName": "chocolate",
+      "hex": "#45322e",
+      "title": "chocolate"
+    },
+    {
+      "colorName": "camel",
+      "hex": "#b18a61",
+      "title": "camel"
+    },
+    {
+      "colorName": "beige",
+      "hex": "#d1bc8a",
+      "title": "beige"
+    },
+    {
+      "colorName": "sand",
+      "hex": "#FFE4B5",
+      "title": "arena"
+    },
+    {
+      "colorName": "white",
+      "hex": "#ffffff",
+      "title": "blanco"
+    },
+    {
+      "colorName": "light grey",
+      "hex": "#c7c8ca",
+      "title": "gris claro"
+    },
+    {
+      "colorName": "black",
+      "hex": "#000000",
+      "title": "negro"
+    }
+  ]
+},
+{
+  "garment": "watch",
+  "name": "inteligente",
+  "image": "/src/images/image-json/watch/watchSmart.webp",
+  "css": "small",
+  "style": ["basic"],
+  "weather": ["heat", "mild", "cold"],
+  "colors": [
+    {
+      "colorName": "black",
+      "hex": "#000000",
+      "title": "negro"
+    },
+    {
+      "colorName": "azul navy",
+      "hex": "#19284c",
+      "title": "azul navy"
+    },
+    {
+      "colorName": "dark grey",
+      "hex": "#708090",
+      "title": "gris topo"
+    },
+    {
+      "colorName": "light grey",
+      "hex": "#c7c8ca",
+      "title": "gris claro"
+    },
+    {
+      "colorName": "white",
+      "hex": "#ffffff",
+      "title": "blanco"
+    }
+  ]
+},
+{
+  "garment": "watch",
+  "name": "dress",
+  "image": "/src/images/image-json/watch/watchDress.webp",
+  "css": "small",
+  "style": ["elegant", "casual"],
+  "weather": ["heat", "mild", "cold"],
+  "colors": [
+    {
+      "colorName": "azul navy",
+      "hex": "#19284c",
+      "title": "azul navy"
+    },
+    {
+      "colorName": "red brick",
+      "hex": "#a94c2b",
+      "title": "ladrillo"
+    },
+    {
+       "colorName": "windsor tan",
+      "hex": "#8B4513",
+      "title": "suela"
+    },
+    {
+      "colorName": "peanut",
+      "hex": "#766142",
+      "title": "cacahuate"
+    },
+    {
+      "colorName": "chocolate",
+      "hex": "#45322e",
+      "title": "chocolate"
+    },
+    {
+      "colorName": "camel",
+      "hex": "#b18a61",
+      "title": "camel"
+    },
+    {
+      "colorName": "beige",
+      "hex": "#d1bc8a",
+      "title": "beige"
+    },
+    {
+      "colorName": "sand",
+      "hex": "#FFE4B5",
+      "title": "arena"
+    },
+    {
+      "colorName": "light grey",
+      "hex": "#c7c8ca",
+      "title": "gris claro"
+    },
+    {
+      "colorName": "dark grey",
+      "hex": "#708090",
+      "title": "gris topo"
+    },
+    {
+      "colorName": "black",
+      "hex": "#000000",
+      "title": "negro"
+    },
+    {
+      "colorName": "silver",
+      "hex": "#a5a9b4",
+      "title": "plata"
+    },
+    {
+      "colorName": "gold",
+      "hex": "#d4af37", 
+      "title":"oro"
+    },
+    {
+      "colorName": "burgundy",
+      "hex": "#800020",
+      "title": "borgoña"
+    }
+  ]
+},
+{
+  "garment": "watch",
+  "name": "de tela",
+  "image": "/src/images/image-json/watch/watchCloth.webp",
+  "css": "small",
+  "style": ["basic", "casual"],
+  "weather": ["heat", "mild"],
+  "colors": [
+    {
+      "colorName": "azul navy",
+      "hex": "#19284c",
+      "title": "azul navy"
+    },
+    {
+      "colorName": "red brick",
+      "hex": "#a94c2b",
+      "title": "ladrillo"
+    },
+    {
+       "colorName": "windsor tan",
+      "hex": "#8B4513",
+      "title": "suela"
+    },
+    {
+      "colorName": "peanut",
+      "hex": "#766142",
+      "title": "cacahuate"
+    },
+    {
+      "colorName": "chocolate",
+      "hex": "#45322e",
+      "title": "chocolate"
+    },
+    {
+      "colorName": "camel",
+      "hex": "#b18a61",
+      "title": "camel"
+    },
+    {
+      "colorName": "beige",
+      "hex": "#d1bc8a",
+      "title": "beige"
+    },
+    {
+      "colorName": "sand",
+      "hex": "#FFE4B5",
+      "title": "arena"
+    },
+    {
+      "colorName": "light grey",
+      "hex": "#c7c8ca",
+      "title": "gris claro"
+    },
+    {
+      "colorName": "dark grey",
+      "hex": "#708090",
+      "title": "gris topo"
+    },
+    {
+      "colorName": "black",
+      "hex": "#000000",
+      "title": "negro"
+    },
+    {
+      "colorName": "silver",
+      "hex": "#a5a9b4",
+      "title": "plata"
+    },
+    {
+      "colorName": "burgundy",
+      "hex": "#800020",
+      "title": "borgoña"
+    }
+  ]
+}
 ]

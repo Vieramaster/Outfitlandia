@@ -11,7 +11,7 @@ export type dataJsonTypes = {
   garment: string;
   name: string;
   image: string;
-  imageRed: string;
+
   css: string;
   style: string[];
   weather: string[];

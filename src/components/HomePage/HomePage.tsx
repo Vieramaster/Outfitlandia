@@ -68,7 +68,7 @@ const HomePage = () => {
     dataJsonTypes | undefined
   >();
   const [colorsElection, setColorsElection] = useState<colorData[]>([]);
-  const [showClothesButton, setShowButtonsBUtton] = useState(false);
+  const [showClothesButton, setShowButtonsButton] = useState(false);
   const [garmentColor, setGarmentColor] = useState<string | undefined>();
 
   const [filteredGarmentButtons, setFilteredGarmentButtons] = useState(
@@ -76,14 +76,15 @@ const HomePage = () => {
   );
   const [randomColorStrings, setRandomColorStrings] = useState<string[]>();
   const { data } = useDataBase();
-  const [finishArray, setFinishArray] = useState <object[]>()
+
+
 
   //con el ID se prepara para buscar y mandar la nueva informacion a su segundo hijo, pero si se hace nuevamente click, reinicia gameCards
   const onGarmentClick = (id: string) => {
     setGarmentId(id);
     setFilteredGarmentButtons(defaultGarmentButtons);
     setGarmentColor(undefined);
-    setShowButtonsBUtton(true);
+    setShowButtonsButton(true);
     setGarmentCards(data.filter((item) => item.garment === id));
   };
 
@@ -95,7 +96,7 @@ const HomePage = () => {
 
   // con el ID se busca el objeto del array y sus colores, se usa la parte "colors" para buscar info de dataColor y que devuelta nueva informacion, y con eso llevarla al segundo hijo nuevamente
   const onClothesClick = (id: string) => {
-    setShowButtonsBUtton(false);
+    setShowButtonsButton(false);
     const garmentChoise = data.find((item) => item.name === id);
     if (!garmentChoise || typeof garmentChoise.colors === "string") return;
 
@@ -114,6 +115,8 @@ const HomePage = () => {
 
     setGarmentColor(newCardGarmentColor.colorName);
     setFilteredGarmentButtons(garmentCard(newCardGarmentColor.imageColor));
+
+
   };
   // habilita el boton para combinar
 
@@ -121,21 +124,34 @@ const HomePage = () => {
 
   const { arrayColorsData } = useColorsData();
 
+  
+ 
+
   //genera las combinaciones de ropa
   const onCombineClothes = () => {
     if (garmentObject && garmentColor) {
-      garmentObject.colors = garmentColor;
-  
+      
+      const garmentWithColor =() =>{
+
+        let newObject = {...garmentObject}
+
+        let objectColor = newObject.colors.find(item => item.colorName === garmentColor)
+        
+        newObject.image = objectColor.imageColor
+        newObject.colors = garmentColor
+        return newObject
+      }
+
       //busca los que coincidan con style y weather
       const arrayGarmentResults = data.filter((item) => {
         let styleMatch = item.style.some((style) =>
-          garmentObject.style.includes(style)
+        garmentWithColor().style.includes(style)
         );
         let weatherMatch = item.weather.some((weather) =>
-          garmentObject.weather.includes(weather)
+        garmentWithColor().weather.includes(weather)
         );
         return (
-          item.garment !== garmentObject.garment && styleMatch && weatherMatch
+          item.garment !==  garmentWithColor().garment && styleMatch && weatherMatch
         );
       });
       //
@@ -192,38 +208,85 @@ const HomePage = () => {
           {}
         );
   
-            const pickStyle = ()=>{
-              const garmentsFilter = ['coat', 'pants', 'belt', 'shoes', 'top'].filter(item => item !== garmentId);
-              let selectedItems = {};
-        
-              for (let style of Object.keys(groupedByStyle)) {
-                selectedItems[style] = {};
-                for (let garment of garmentsFilter) {
+        const pickStyle = () => {
+          const garmentsFilter = ['coat', 'pants', 'belt', 'shoes', 'top'].filter(item => item !== garmentId);
+          let selectedItems = {};
+      
+          for (let style of Object.keys(groupedByStyle)) {
+              selectedItems[style] = {};
+              for (let garment of garmentsFilter) {
                   let items = groupedByStyle[style].filter(item => item.garment === garment);
                   if (items.length > 0) {
-                    selectedItems[style][garment] = items[randomNumber(items)];
+                      selectedItems[style][garment] = items[randomNumber(items)];
                   }
-                }
               }
-              return selectedItems
-                
-            }
-            const keys = Object.keys(pickStyle());
-            const randomKey = keys[randomNumber(keys)];
-
+          }
+          console.log(selectedItems)
+          const keys = Object.keys(selectedItems);
+          const randomKey = keys[randomNumber(keys)];
+          const ready = selectedItems[randomKey];
+          const outfit = Object.values(ready);
+      
+          if (outfit.length < 4) {
+              return pickStyle();
+          }
+      
+          outfit.push(garmentWithColor());
+      
+          // se filtra que top y coat no tengan el mismo color
+          const topItem = outfit.find(item => item.garment === 'top');
+          const coatItem = outfit.find(item => item.garment === 'coat');
+          let topColor, coatColor;
+      
+          if (topItem && typeof topItem.colors === 'object') {
+              topColor = topItem.colors.colorName;
+          } else {
+              topColor = topItem?.colors;
+          }
+      
+          if (coatItem && typeof coatItem.colors === 'object') {
+              coatColor = coatItem.colors.colorName;
+          } else {
+              coatColor = coatItem?.colors;
+          }
+      
+          if (topColor && coatColor && topColor === coatColor) {
+              return pickStyle();
+          }else return outfit
+      
           
-          const watch = () =>{
-            const fafa = data.filter( item => item.garment === "watch")
-            const fafa2 = randomKey.filter( item => item.garment === "shoes")
-
+      }
+      
+      console.log(pickStyle())
             
 
-          }  
+
+
+
+            const newButtons = defaultGarmentButtons.map(item => {
+              const element = pickStyle().find(element => item.garment === element.garment);
+              if (element) {
+                  return {
+                      ...item,
+                      src: element.image,
+                      name: element.name,
+                      buttonName: element.name,
+                      key: element.name + element.color,
+                  };
+              }
+              return item;
+          });
+
+            return newButtons
+          
+           
       };
-      console.log(finishProduct())
+      setFilteredGarmentButtons(finishProduct())
+
     }
+ 
   }
-  
+
 
   return (
     <section className="HomePage">
