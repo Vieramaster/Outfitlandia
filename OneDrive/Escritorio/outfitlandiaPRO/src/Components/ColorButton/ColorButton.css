@@ -1,0 +1,16 @@
+.colorButton {
+    width: 6rem;
+    height: 4rem;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: skew(-20deg);
+  }
+  
+  .colorButton:hover {
+    transform: skew(-20deg) translateY(-6px);
+  }
+/**/

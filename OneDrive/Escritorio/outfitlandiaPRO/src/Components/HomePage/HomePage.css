@@ -1,0 +1,9 @@
+.HomePage{
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+     
+}

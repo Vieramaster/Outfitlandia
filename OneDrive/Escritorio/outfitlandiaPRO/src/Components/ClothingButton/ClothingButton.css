@@ -1,0 +1,55 @@
+.clothingButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: grid;
+  place-items: center;
+}
+
+.clothingButton:hover {
+  border: 1px solid var(--fourth-color);
+  transform: scale(1.04);
+}
+
+.clothingButton:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.clothingButton img {
+  width: 100%;
+  pointer-events: none;
+}
+.small {
+  width: 6.5rem;
+  height: 8.5rem;
+  
+}
+
+.shoes {
+  width: 15rem;
+  height: 8.5rem;
+}
+.shoes img {
+  height: 100%;
+}
+
+.big {
+  width: 15rem;
+  height: 20rem;
+}
+
+@media (width <= 1280px) {
+  .big {
+    width: calc(14rem * 0.7);
+    height: calc(20rem * 0.7);
+  }
+
+  .small {
+    width: calc(9rem * 0.65);
+    height: calc(9rem * 0.65);
+  }
+}

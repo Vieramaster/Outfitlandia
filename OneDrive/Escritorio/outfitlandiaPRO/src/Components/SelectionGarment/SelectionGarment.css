@@ -1,0 +1,45 @@
+.SelectionGarment {
+  width: 35rem;
+  height: 45rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  grid-gap: 1px;
+}
+
+.SelectionGarment__big {
+  align-items: center;
+  place-content: center;
+}
+
+.SelectionGarment__big,
+.SelectionGarment__box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.SelectionGarment__box {
+  flex-direction: column;
+
+  justify-content: space-between;
+  margin: auto;
+}
+
+.SelectionGarment__box--first {
+  width: 85%;
+  height: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.SelectionGarment__box--shoes {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  place-content: center;
+  margin-top: 0.5rem;
+}

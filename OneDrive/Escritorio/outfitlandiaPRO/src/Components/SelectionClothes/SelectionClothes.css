@@ -1,0 +1,44 @@
+.SelectionClothes {
+  height: 45rem;
+  width: 60%;
+
+  overflow: auto;
+}
+.SelectionClothes__box {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  place-items: center;
+  padding: 2rem;
+
+  row-gap: 2rem;
+}
+
+.SelectionClothes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.SelectionClothes::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+.SelectionClothes::-webkit-scrollbar-thumb {
+  background: var(--fourth-color);
+}
+
+.SelectionClothes::-webkit-scrollbar-thumb:hover {
+  background: var(--third-color);
+}
+
+
+.SelectionClothes__colors{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 2rem;
+  padding: 0 4rem;
+  place-content: center;
+}
