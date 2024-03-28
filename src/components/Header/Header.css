@@ -9,10 +9,10 @@ header{
 
 }
 
-.header--logo{
+.header__logo{
   font-size: 2rem;
 }
-.header--logo, .header--button{
+.header__logo, .header__button{
     font-family: var(--primary-font);
 
     margin: auto 3rem;
@@ -21,7 +21,7 @@ header{
 }
 
 
-.header--button{
+.header__button{
     padding: 0.4em 1em;
     border: 2px solid var(--fourth-color);
     position: relative;
@@ -38,7 +38,7 @@ header{
     cursor: pointer;
    }
    
-   .header--button::before {
+   .header__button::before {
     content: '';
     width: 0;
     height: 300%;
@@ -53,11 +53,11 @@ header{
  
    }
    
-   .header--button:hover::before {
+   .header__button:hover::before {
     width: 105%;
    }
    
-   .header--button:hover {
+   .header__button:hover {
     color: #111;
    }
    

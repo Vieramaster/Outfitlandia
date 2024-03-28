@@ -21,18 +21,20 @@
 
 .clothingButton img {
   width: 100%;
+  pointer-events: none;
 }
 .small {
   width: 6.5rem;
   height: 8.5rem;
+  
 }
+
 .shoes {
   width: 15rem;
   height: 8.5rem;
 }
-.shoes img{
+.shoes img {
   height: 100%;
-
 }
 
 .big {

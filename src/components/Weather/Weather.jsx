@@ -1,11 +1,6 @@
 import "./Weather.css";
-import CombineButton from "../CombineButton/CombineButton";
 
-type weatherTypes = {
-    onCombineClothes: (event: React.MouseEvent<HTMLButtonElement>) => void;
-    onValidButton: boolean
-};
-const Weather = ({ onCombineClothes, onValidButton  }: weatherTypes) => {
+export default function Weather() {
   return (
     <div className="Weather">
       <div className="Weather--info">
@@ -18,9 +13,6 @@ const Weather = ({ onCombineClothes, onValidButton  }: weatherTypes) => {
         <img src="/src/images/wind.svg" alt="ico" />
         <span>12km/h</span>
       </div>
-      <CombineButton onClick={onCombineClothes}   validButton={onValidButton} />
     </div>
   );
-};
-
-export default Weather;
+}
