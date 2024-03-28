@@ -21,7 +21,6 @@
 
 .SelectionGarment__box {
   flex-direction: column;
-
   justify-content: space-between;
   margin: auto;
 }
@@ -29,7 +28,6 @@
 .SelectionGarment__box--first {
   width: 85%;
   height: 50%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;

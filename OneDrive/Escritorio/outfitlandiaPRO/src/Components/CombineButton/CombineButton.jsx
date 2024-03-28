@@ -1,10 +1,9 @@
-import "CombineButton.css"
+import "CombineButton.css";
 
-
-export default function CombineButton(){
-
-
+export default function CombineButton() {
+  return (
     <button className="CombineButton">
-        <img src="" alt="" />
+      <img src="" alt="" />
     </button>
+  );
 }

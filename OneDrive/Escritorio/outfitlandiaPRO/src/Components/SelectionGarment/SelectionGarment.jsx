@@ -1,5 +1,5 @@
-import "./SelectionGarment.css";
 import useCustomButtonClothes from "../CustomHooks/useCustomButtonClothes";
+import "./SelectionGarment.css";
 
 export default function SelectionGarment({ onClickGarment }) {
   const [firstModifiedButton] = useCustomButtonClothes();

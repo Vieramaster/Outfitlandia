@@ -76,8 +76,8 @@ export default function useCustomButtonClothes() {
   //estructura para botones de ropa principales
   const firstModifiedButton = (idProperty, CssType, customClick) => {
     return infoGarment.map((item, index) => {
-      return item.css === CssType
-        ? modifiedButton(item, index, idProperty, customClick)
+      return item.css === CssType ?
+          modifiedButton(item, index, idProperty, customClick)
         : null;
     });
   };
@@ -94,9 +94,7 @@ export default function useCustomButtonClothes() {
     const fafa = () => {
       const newGarmet = JSON.parse(JSON.stringify(infoGarment));
 
-      const itemFound = newGarmet.find(
-        (item) => item.garment === chosenGarment
-      );
+      const itemFound = newGarmet.find(item => item.garment === chosenGarment);
       itemFound ? (itemFound.src = chosenColor) : null;
       return newGarmet;
     };

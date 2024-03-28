@@ -7,14 +7,13 @@ export default function useDataJson() {
 
   useEffect(() => {
     fetch("/garmentData.json")
-      .then((response) => response.json())
+      .then(response => response.json())
       .then(setDataJson)
       .catch(setError)
       .finally(() => setLoading(false));
   }, []);
 
   return useMemo(() => {
-    return {dataJson, loading, error };
+    return { dataJson, loading, error };
   }, [dataJson, loading, error]);
-  
 }
