@@ -1,13 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./ClothingButton.css";
 
-export default function ClothingButton({
-  css,
-  src,
-  id,
-  buttonName,
-  onClick
-}) {
+export default function ClothingButton({ css, src, id, buttonName, onClick }) {
   return (
     <button
       className={`clothingButton ${css}`}

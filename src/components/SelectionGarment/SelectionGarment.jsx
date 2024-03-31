@@ -6,13 +6,13 @@ export default function SelectionGarment({ onClickGarment, infoGarment }) {
 
   return (
     <section className="SelectionGarment">
-      {firstModifiedButton(infoGarment,"garment", "big", onClickGarment)}
+      {firstModifiedButton(infoGarment, "garment", "big", onClickGarment)}
       <div className="SelectionGarment__box">
         <div className="SelectionGarment__box--first">
-          {firstModifiedButton(infoGarment,"garment", "small", onClickGarment)}
+          {firstModifiedButton(infoGarment, "garment", "small", onClickGarment)}
         </div>
         <div className="SelectionGarment__box--shoes">
-          {firstModifiedButton(infoGarment,"garment", "shoes", onClickGarment)}
+          {firstModifiedButton(infoGarment, "garment", "shoes", onClickGarment)}
         </div>
       </div>
     </section>

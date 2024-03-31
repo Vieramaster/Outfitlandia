@@ -8,10 +8,9 @@ export default function SelectionClothes({
   OnClickClothes,
   divSwap,
   showColors,
-  onClickColor
+  onClickColor,
 }) {
   const [, secondModifiedButton] = useCustomButtonClothes();
-
 
   return (
     <div className="SelectionClothes">

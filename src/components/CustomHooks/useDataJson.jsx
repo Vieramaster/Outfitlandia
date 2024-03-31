@@ -14,7 +14,6 @@ export default function useDataJson() {
   }, []);
 
   return useMemo(() => {
-    return {dataJson, loading, error };
+    return { dataJson, loading, error };
   }, [dataJson, loading, error]);
-  
 }

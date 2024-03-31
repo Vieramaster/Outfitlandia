@@ -5,58 +5,7 @@ import Weather from "../Weather/Weather";
 
 import { useState } from "react";
 import useDataJson from "../CustomHooks/useDataJson";
-
-let defaultGarmentButtons = [
-  {
-    css: "big",
-    src: "/src/images/default/defaultTop.webp",
-    name: "default-top",
-    garment: "top",
-    buttonName: "parte superior",
-    key: "default-top",
-  },
-  {
-    css: "big",
-    src: "/src/images/default/defaultCoat.webp",
-    name: "default-coat",
-    garment: "coat",
-    buttonName: "abrigo",
-    key: "default-coat",
-  },
-  {
-    css: "big",
-    src: "/src/images/default/defaultPants.webp",
-    name: "default-pants",
-    garment: "pants",
-    buttonName: "pantalones",
-    key: "default-pants",
-  },
-
-  {
-    css: "small",
-    src: "/src/images/default/watch.webp",
-    name: "default-watch",
-    garment: "watch",
-    buttonName: "reloj",
-    key: "default-watch",
-  },
-  {
-    css: "small",
-    src: "/src/images/default/belt.webp",
-    name: "default-belt",
-    garment: "belt",
-    buttonName: "cinturón",
-    key: "default-belt",
-  },
-  {
-    css: "shoes",
-    src: "/src/images/default/shoes.webp",
-    name: "default-shoes",
-    garment: "shoes",
-    buttonName: "calzado",
-    key: "default-shoes",
-  },
-];
+import { defaultGarmentButtons } from "../CustomHooks/defaultGarmentButtons";
 
 export default function HomePage() {
   const { dataJson } = useDataJson();
@@ -74,7 +23,6 @@ export default function HomePage() {
 
   // Ingresa el ID para identificar la parte específica de la prenda que debemos buscar. Luego, reiniciamos todos los useState para evitar posibles errores, y finalmente almacenamos la prenda en un estado (useState).
   const onClickGarment = (id) => {
-   
     setDivSwap(false);
     setShowClothes({});
     setShowColors({});
@@ -100,19 +48,22 @@ export default function HomePage() {
     const [{ imageColor }] = imageButton;
     setNewImageSrc(imageColor);
 
-    const  newImageButton = () => {
+    const newImageButton = () => {
       const newGarmet = JSON.parse(JSON.stringify(infoGarment));
 
       const itemFound = newGarmet.find((item) => item.garment === idGarment);
       itemFound ? (itemFound.src = imageColor) : null;
       return newGarmet;
     };
-    setInfoGarment(newImageButton())
+    setInfoGarment(newImageButton());
   };
 
   return (
     <section className="HomePage">
-      <SelectionGarment onClickGarment={onClickGarment} infoGarment={infoGarment}/>
+      <SelectionGarment
+        onClickGarment={onClickGarment}
+        infoGarment={infoGarment}
+      />
       <Weather />
       <SelectionClothes
         showGarments={showGarments}
