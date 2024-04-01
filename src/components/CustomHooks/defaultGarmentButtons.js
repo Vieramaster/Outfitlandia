@@ -15,6 +15,7 @@ export const defaultGarmentButtons = [
     buttonName: "abrigo",
     key: "default-coat",
   },
+  
   {
     css: "big",
     src: "/src/images/default/defaultPants.webp",

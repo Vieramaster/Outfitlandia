@@ -14,5 +14,6 @@ export default function SelectionGarment({ onClickGarment, infoGarment }) {
         </div>
       </div>
     </section>
+    
   );
 }

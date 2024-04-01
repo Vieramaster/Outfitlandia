@@ -11,4 +11,5 @@ export default function ColorButton({ colorName, hex, title, onClick }) {
       onClick={(event) => onClick(event.currentTarget.id)}
     />
   );
+  
 }

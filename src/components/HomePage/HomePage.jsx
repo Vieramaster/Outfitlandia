@@ -17,6 +17,7 @@ export default function HomePage() {
   const [divSwap, setDivSwap] = useState(false);
   const [newImageSrc, setNewImageSrc] = useState("");
 
+  
   const findGarments = (garment, search) => {
     return dataJson.filter((item) => item[search] === garment);
   };

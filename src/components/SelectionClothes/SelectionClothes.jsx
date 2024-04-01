@@ -10,6 +10,7 @@ export default function SelectionClothes({
 }) {
 
 
+  
   return (
     <div className="SelectionClothes">
       {divSwap === false ? (

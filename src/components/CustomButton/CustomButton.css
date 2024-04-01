@@ -10,6 +10,7 @@
   place-items: center;
 }
 
+
 .clothingButton:hover {
   border: 1px solid var(--fourth-color);
   transform: scale(1.04);

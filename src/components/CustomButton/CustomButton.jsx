@@ -14,6 +14,7 @@ export const customButton = (array, idProperty, CssType, customClick) => {
     );
   };
 
+  
   return CssType
     ? array.map((item, index) => {
         return item.css === CssType ? BasicButton(item, index) : null;

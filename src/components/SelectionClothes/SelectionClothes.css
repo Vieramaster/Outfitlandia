@@ -20,6 +20,7 @@
   width: 10px;
 }
 
+
 .SelectionClothes::-webkit-scrollbar-track {
   background: var(--primary-color);
 }
