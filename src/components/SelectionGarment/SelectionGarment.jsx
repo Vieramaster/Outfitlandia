@@ -1,18 +1,16 @@
 import "./SelectionGarment.css";
-import useCustomButtonClothes from "../CustomHooks/useCustomButtonClothes";
+import { customButton } from "../CustomButton/CustomButton";
 
 export default function SelectionGarment({ onClickGarment, infoGarment }) {
-  const [firstModifiedButton] = useCustomButtonClothes();
-
   return (
     <section className="SelectionGarment">
-      {firstModifiedButton(infoGarment, "garment", "big", onClickGarment)}
+      {customButton(infoGarment, "garment", "big", onClickGarment)}
       <div className="SelectionGarment__box">
         <div className="SelectionGarment__box--first">
-          {firstModifiedButton(infoGarment, "garment", "small", onClickGarment)}
+          {customButton(infoGarment, "garment", "small", onClickGarment)}
         </div>
         <div className="SelectionGarment__box--shoes">
-          {firstModifiedButton(infoGarment, "garment", "shoes", onClickGarment)}
+          {customButton(infoGarment, "garment", "shoes", onClickGarment)}
         </div>
       </div>
     </section>

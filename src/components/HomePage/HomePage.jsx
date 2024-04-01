@@ -58,6 +58,8 @@ export default function HomePage() {
     setInfoGarment(newImageButton());
   };
 
+
+  
   return (
     <section className="HomePage">
       <SelectionGarment

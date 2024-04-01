@@ -1,8 +1,6 @@
 import "./SelectionClothes.css";
-import "../CustomHooks/useCustomButtonClothes";
-import useCustomButtonClothes from "../CustomHooks/useCustomButtonClothes";
 import ColorButton from "../ColorButton/ColorButton";
-
+import { customButton } from "../CustomButton/CustomButton";
 export default function SelectionClothes({
   showGarments,
   OnClickClothes,
@@ -10,13 +8,13 @@ export default function SelectionClothes({
   showColors,
   onClickColor,
 }) {
-  const [, secondModifiedButton] = useCustomButtonClothes();
+
 
   return (
     <div className="SelectionClothes">
       {divSwap === false ? (
         <div className="SelectionClothes__box">
-          {secondModifiedButton(showGarments, "name", OnClickClothes)}
+          {customButton(showGarments, "name", null ,OnClickClothes)}
         </div>
       ) : null}
       {divSwap === true ? (
