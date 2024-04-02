@@ -30,6 +30,28 @@
   color: var(--primary-color);
   margin-bottom: 5px;
 }
+.combineButton img {
+  width: 100%;
+
+}
+
+.combineButton {
+  background-color: transparent;
+  width: 6rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+
+.activeButton {
+  background-color: red;
+}
 
 @media (width <= 1280px) {
   .weather-box--info {
@@ -49,4 +71,5 @@
     width: 5rem;
   }
 }
-/**/
+
+

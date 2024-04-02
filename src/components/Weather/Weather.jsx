@@ -1,9 +1,16 @@
 import "./Weather.css";
 
-
-export default function Weather() {
+export default function Weather({ onClickCombine, addColorButtonCombine }) {
   return (
     <div className="Weather">
+      <button
+        className={`combineButton ${
+          addColorButtonCombine ? "activeButton" : ""
+        }`}
+        onClick={onClickCombine}
+      >
+        <img src="src/images/icos/combineButton.webp" alt="" />
+      </button>
       <div className="Weather--info">
         <img src="/src/images/09d.svg" alt="ico" />
       </div>
@@ -17,4 +24,3 @@ export default function Weather() {
     </div>
   );
 }
-

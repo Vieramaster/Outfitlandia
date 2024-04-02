@@ -3958,7 +3958,7 @@
     "name": "sneakers",
     "image": "/src/images/image-json/shoes/shoesSneakers.webp",
     "css": "shoes",
-    "style": ["casual", "elegant"],
+    "style": ["basic","casual", "elegant"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
