@@ -112,7 +112,7 @@ export default function HomePage() {
         item.combine.includes(garmentColor)
       );
 
-      const { combine: outfitColor, combineShoes } =
+      const { combine: outfitColor, combineShoes: shoesColor } =
         randomNumber(arrayColorResult);
 
       const outfitFilter = filteredObjects(matchingItems, outfitColor);
@@ -141,13 +141,12 @@ export default function HomePage() {
               if (randomItem !== null) {
                 styleItems[garment] = randomItem;
               } else {
-                // Si no hay suficientes objetos nos lo salteamos
                 styleItems = null;
                 break;
               }
             }
           }
-          //agregamos los definidos
+
           if (
             styleItems !== null &&
             !Object.values(styleItems).includes(undefined)
@@ -155,7 +154,7 @@ export default function HomePage() {
             selectedItems[style] = styleItems;
           }
         }
-        // Eliminamos los estilos vacios
+
         for (let style in selectedItems) {
           if (Object.keys(selectedItems[style]).length === 0) {
             delete selectedItems[style];
@@ -171,6 +170,7 @@ export default function HomePage() {
 
       const findAcc = (attempt = 0) => {
         const maxAttempts = 15;
+
         if (attempt >= maxAttempts) {
           return null;
         }
@@ -185,17 +185,75 @@ export default function HomePage() {
           garmentWeather.every((val) => item.weather.includes(val))
         );
 
-        let finishShoes = filteredObjects(searchWeather, combineShoes);
+        let finishShoes = filteredObjects(searchWeather, shoesColor);
 
-        let randomShoes = randomNumber(finishShoes);
-
-        randomShoes ? randomShoes : findAcc(attempt + 1);
-
-        const accesoryColors = randomShoes.color.colorName
-        return accesoryColors
+        if (finishShoes.length === 0) {
+          return findAcc(attempt + 1);
+        } else if (finishShoes.length === 1) {
+          return finishShoes;
+        } else if (finishShoes.length > 1) {
+          return randomNumber(finishShoes);
+        }
       };
 
-      console.log(findAcc());
+      const shoes = findAcc();
+
+      const searchBelt = () => {
+        const colorshoes = shoes.color.colorName;
+        const searchBelt = dataJson.filter((item) => item.garment === "belt");
+        const filteredStyle = searchBelt.filter((item) =>
+          item.style.includes(randomKey)
+        );
+
+        const filteredColor = filteredObjects(filteredStyle, colorshoes);
+        const randomBelt = randomNumber(filteredColor);
+        const pants = finishClothes.pants.name;
+
+
+        if(pants === "joggin" || pants === "bermuda joggin"){
+          return null
+        }else if( randomBelt === null){
+          return filteredStyle.filter((item) =>
+          item.color.includes((el) => el.colorName === "black")
+        );
+        }else return randomBelt
+      };
+      const belt = searchBelt();
+      const pushShoes = { ...finishClothes, shoes };
+      const outfitComplete = { ...pushShoes, belt };
+      const quitNames = Object.values(outfitComplete);
+
+      const clothesArray = quitNames.map((item) => {
+        if (item === null) {
+          return null;
+        } else {
+          return {
+            css: item.css,
+            src: item.color.imageColor,
+            name: item.name,
+            garment: item.garment,
+            buttonName: item.name,
+            key: item.garment,
+          };
+        }
+      });
+
+      const buttonsCopy = JSON.parse(JSON.stringify(infoGarment));
+      const buttonsOufit = buttonsCopy.find(item =>{
+          clothesArray.map(clothes =>{
+
+            if(clothes.garment === item.garment){
+              return 
+            }
+          })
+      })
+      /*
+         
+
+      const itemFound = newGarmet.find((item) => item.garment === idGarment);
+      itemFound ? (itemFound.src = imageColor) : null;
+      return newGarmet;
+      */
     }
   };
 
@@ -218,5 +276,4 @@ export default function HomePage() {
       />
     </section>
   );
-  
 }

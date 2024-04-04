@@ -45,7 +45,7 @@
   },
   {
     "combine":["purple","darkGrey", "black"],
-    "combineShoes":[]
+    "combineShoes":["white", "black","purple"]
   },
   {
     "combine":["purple","ivory" ,"lightGrey"],
