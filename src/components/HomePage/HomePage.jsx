@@ -15,11 +15,30 @@ export default function HomePage() {
   const [garmentColor, setGarmentColor] = useState("");
   const [showColors, setShowColors] = useState({});
   const [divSwap, setDivSwap] = useState(false);
-  const [newImageSrc, setNewImageSrc] = useState("");
+  const [firstButton, setFirstButton] = useState({});
+
   const [addColorButtonCombine, setAddColorButtonCombine] = useState(false);
 
-  const findGarments = (garment, search) => {
-    return dataJson.filter((item) => item[search] === garment);
+  const filteredObjects = (array, arrayColor) => {
+    return array.flatMap((obj) => {
+      return obj.colors
+        .filter((color) => arrayColor?.includes(color.colorName))
+        .map((color) => {
+          return {
+            garment: obj.garment,
+            name: obj.name,
+            image: color.imageColor,
+            css: obj.css,
+            style: obj.style,
+            weather: obj.weather,
+            color: color,
+          };
+        });
+    });
+  };
+
+  const findGarments = (data, garment, search) => {
+    return data.filter((item) => item[search] === garment);
   };
 
   // Ingresa el ID para identificar la parte específica de la prenda que debemos buscar. Luego, reiniciamos todos los useState para evitar posibles errores, y finalmente almacenamos la prenda en un estado (useState).
@@ -27,17 +46,16 @@ export default function HomePage() {
     setDivSwap(false);
     setShowClothes({});
     setShowColors({});
-    setNewImageSrc("");
     setIdGarment(id);
     setInfoGarment(defaultGarmentButtons);
     setAddColorButtonCombine(false);
-    const newGarmet = findGarments(id, "garment");
+    const newGarmet = findGarments(dataJson, id, "garment");
     setShowGarments(newGarmet);
   };
 
   //Ingresas el ID, que corresponde al nombre de la prenda seleccionada. Luego, buscamos los colores asociados a esa prenda y los almacenamos en un estado (useState). Además, creamos un estado booleano para alternar entre mostrar las prendas o los colores en la misma sección.
   const OnClickClothes = (id) => {
-    const chosenGarment = findGarments(id, "name");
+    const chosenGarment = findGarments(dataJson, id, "name");
     setShowClothes(chosenGarment);
     const [{ colors }] = chosenGarment;
     setShowColors(colors);
@@ -47,19 +65,33 @@ export default function HomePage() {
   // El ID proporciona el nombre del color, lo que nos permite buscar su imagen correspondiente y mostrarla en los botones principales. Así se logra la asociación visual entre los colores y las prendas.
   const onClickColor = (id) => {
     setGarmentColor(id);
-    const imageButton = showColors.filter((item) => item.colorName === id);
-    const [{ imageColor }] = imageButton;
-    setNewImageSrc(imageColor);
+    const imageButton = showColors.find((item) => item.colorName === id);
 
+    const filterForButton = filteredObjects(showClothes, imageButton.colorName);
+
+    const newButton = filterForButton.map((item) => {
+      return {
+        css: item.css,
+        src: item.color.imageColor,
+        name: item.name,
+        garment: item.garment,
+        buttonName: item.name,
+        key: item.garment,
+      };
+    });
+    setFirstButton(newButton[0]);
     const newImageButton = () => {
       const newGarmet = JSON.parse(JSON.stringify(infoGarment));
 
-      const itemFound = newGarmet.find((item) => item.garment === idGarment);
-      itemFound ? (itemFound.src = imageColor) : null;
+      const index = newGarmet.findIndex((item) => item.garment === idGarment);
+      if (index !== -1) {
+        newGarmet[index] = newButton[0];
+      }
       return newGarmet;
     };
-    setAddColorButtonCombine(true);
+
     setInfoGarment(newImageButton());
+    setAddColorButtonCombine(true);
   };
 
   const onClickCombine = () => {
@@ -70,24 +102,6 @@ export default function HomePage() {
       }
       const result = Math.floor(Math.random() * value.length);
       return value[result];
-    };
-
-    const filteredObjects = (array, arrayColor) => {
-      return array.flatMap((obj) => {
-        return obj.colors
-          .filter((color) => arrayColor?.includes(color.colorName))
-          .map((color) => {
-            return {
-              garment: obj.garment,
-              name: obj.name,
-              image: color.imageColor,
-              css: obj.css,
-              style: obj.style,
-              weather: obj.weather,
-              color: color,
-            };
-          });
-      });
     };
 
     //si se hace click sobre abrigo, superior o pantalones
@@ -197,6 +211,7 @@ export default function HomePage() {
       };
 
       const shoes = findAcc();
+      const pushShoes = { ...finishClothes, shoes };
 
       const searchBelt = () => {
         const colorshoes = shoes.color.colorName;
@@ -209,20 +224,18 @@ export default function HomePage() {
         const randomBelt = randomNumber(filteredColor);
         const pants = finishClothes.pants.name;
 
-
-        if(pants === "joggin" || pants === "bermuda joggin"){
-          return null
-        }else if( randomBelt === null){
+        if (pants === "joggin" || pants === "bermuda joggin") {
+          return null;
+        } else if (randomBelt === null) {
           return filteredStyle.filter((item) =>
-          item.color.includes((el) => el.colorName === "black")
-        );
-        }else return randomBelt
+            item.color.includes((el) => el.colorName === "black")
+          );
+        } else return randomBelt;
       };
       const belt = searchBelt();
-      const pushShoes = { ...finishClothes, shoes };
+
       const outfitComplete = { ...pushShoes, belt };
       const quitNames = Object.values(outfitComplete);
-
       const clothesArray = quitNames.map((item) => {
         if (item === null) {
           return null;
@@ -238,22 +251,17 @@ export default function HomePage() {
         }
       });
 
+      const addButton = [...clothesArray, firstButton];
+    
       const buttonsCopy = JSON.parse(JSON.stringify(infoGarment));
-      const buttonsOufit = buttonsCopy.find(item =>{
-          clothesArray.map(clothes =>{
+      const buttonsOufit = buttonsCopy.map((button) => {
+        const matchingClothes = addButton.find(
+          (clothes) => clothes && clothes.garment === button.garment
+        );
+        return matchingClothes || { ...button, src: "" };
+      });
 
-            if(clothes.garment === item.garment){
-              return 
-            }
-          })
-      })
-      /*
-         
-
-      const itemFound = newGarmet.find((item) => item.garment === idGarment);
-      itemFound ? (itemFound.src = imageColor) : null;
-      return newGarmet;
-      */
+      setInfoGarment(buttonsOufit)
     }
   };
 
