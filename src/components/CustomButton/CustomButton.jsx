@@ -8,6 +8,7 @@ export const customButton = (array, idProperty, CssType, customClick) => {
         id={item[idProperty]}
         key={index + item.name}
         onClick={(event) => customClick(event.currentTarget.id)}
+        title ={item.name}
       >
         <img src={item.src || item.image} alt={item.name} />
       </button>

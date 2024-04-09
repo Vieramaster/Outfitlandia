@@ -3242,12 +3242,6 @@
         "imageColor": "/src/images/image-json/pants/pantsGabardinearmy.webp"
       },
       {
-        "colorName": "ivory",
-        "hex": "#e1dfd1",
-        "title": "marfil",
-        "imageColor": "/src/images/image-json/pants/pantsGabardineivory.webp"
-      },
-      {
         "colorName": "mustard",
         "hex": "#b28024",
         "title": "mostaza",
@@ -4040,7 +4034,7 @@
     "name": "nautico",
     "image": "/src/images/image-json/shoes/shoesNautic.webp",
     "css": "shoes",
-    "style": ["casual"],
+    "style": ["elegant"],
     "weather": ["cold", "mild"],
     "colors": [
       {

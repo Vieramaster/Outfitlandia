@@ -49,6 +49,7 @@ export default function HomePage() {
     setIdGarment(id);
     setInfoGarment(defaultGarmentButtons);
     setAddColorButtonCombine(false);
+    setFirstButton({});
     const newGarmet = findGarments(dataJson, id, "garment");
     setShowGarments(newGarmet);
   };
@@ -69,24 +70,13 @@ export default function HomePage() {
 
     const filterForButton = filteredObjects(showClothes, imageButton.colorName);
 
-    const newButton = filterForButton.map((item) => {
-      return {
-        css: item.css,
-        src: item.color.imageColor,
-        name: item.name,
-        garment: item.garment,
-        buttonName: item.name,
-        key: item.garment,
-      };
-    });
-    setFirstButton(newButton[0]);
+    setFirstButton(filterForButton[0]);
+
     const newImageButton = () => {
       const newGarmet = JSON.parse(JSON.stringify(infoGarment));
 
-      const index = newGarmet.findIndex((item) => item.garment === idGarment);
-      if (index !== -1) {
-        newGarmet[index] = newButton[0];
-      }
+      const foundItem = newGarmet.find((item) => item.garment === idGarment);
+      foundItem ? (foundItem.src = filterForButton[0].image) : null;
       return newGarmet;
     };
 
@@ -177,13 +167,27 @@ export default function HomePage() {
         return selectedItems;
       };
 
-      const styles = pickStyle();
-      const keys = Object.keys(styles);
-      const randomKey = randomNumber(keys);
-      const finishClothes = styles[randomKey];
+      let finishClothes, coatColor, topColor;
+      let selectedItems, randomKey;
+
+      do {
+        selectedItems = pickStyle();
+        let keys = Object.keys(selectedItems);
+        randomKey = randomNumber(keys);
+        let finishRandom = selectedItems[randomKey];
+        finishClothes = { ...finishRandom, firstButton };
+
+        for (let key in finishClothes) {
+          if (finishClothes[key].garment === "coat") {
+            coatColor = finishClothes[key].color.colorName;
+          } else if (finishClothes[key].garment === "top") {
+            topColor = finishClothes[key].color.colorName;
+          }
+        }
+      } while (coatColor === topColor);
 
       const findAcc = (attempt = 0) => {
-        const maxAttempts = 15;
+        const maxAttempts = 20;
 
         if (attempt >= maxAttempts) {
           return null;
@@ -204,13 +208,27 @@ export default function HomePage() {
         if (finishShoes.length === 0) {
           return findAcc(attempt + 1);
         } else if (finishShoes.length === 1) {
-          return finishShoes;
+          return finishShoes[0];
         } else if (finishShoes.length > 1) {
-          return randomNumber(finishShoes);
+          let random = randomNumber(finishShoes);
+          if (
+            random.color.colorName !== finishClothes["pants"].color.colorName
+          ) {
+            return random;
+          } else {
+            let blackShoes = finishShoes.find(
+              (shoe) =>
+                shoe.color.colorName === "black" ||
+                shoe.color.colorName === "white"
+            );
+
+            return blackShoes;
+          }
         }
       };
 
       const shoes = findAcc();
+      console.log(shoes);
       const pushShoes = { ...finishClothes, shoes };
 
       const searchBelt = () => {
@@ -251,17 +269,15 @@ export default function HomePage() {
         }
       });
 
-      const addButton = [...clothesArray, firstButton];
-    
       const buttonsCopy = JSON.parse(JSON.stringify(infoGarment));
       const buttonsOufit = buttonsCopy.map((button) => {
-        const matchingClothes = addButton.find(
+        const matchingClothes = clothesArray.find(
           (clothes) => clothes && clothes.garment === button.garment
         );
         return matchingClothes || { ...button, src: "" };
       });
 
-      setInfoGarment(buttonsOufit)
+      setInfoGarment(buttonsOufit);
     }
   };
 
