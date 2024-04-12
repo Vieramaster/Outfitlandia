@@ -112,27 +112,37 @@ export default function HomePage() {
         )
       );
 
-      const arrayColorResult = dataColor.filter((item) =>
-        item.combine.includes(garmentColor)
-      );
+      
+      let shoesColor
 
-      const { combine: outfitColor, combineShoes: shoesColor } =
-        randomNumber(arrayColorResult);
+      const pickStyle = (attempt = 0) => {
+        const maxAttempts = 20;
+        
+        if (attempt === maxAttempts) {
+          return null;
+        }
+        const arrayColorResult = dataColor.filter((item) =>
+          item.combine.includes(garmentColor)
+        );
 
-      const outfitFilter = filteredObjects(matchingItems, outfitColor);
+        const { combine: outfitColor, combineShoes: shoesColorFunction } =
+          randomNumber(arrayColorResult);
 
-      const groupedByStyle = outfitFilter.reduce((acc, item) => {
-        item.style.forEach((style) => {
-          if (!acc[style]) {
-            acc[style] = [];
-          }
-          acc[style].push(item);
-        });
-        return acc;
-      }, {});
 
-      const pickStyle = () => {
+
+        const outfitFilter = filteredObjects(matchingItems, outfitColor);
+
+        const groupedByStyle = outfitFilter.reduce((acc, item) => {
+          item.style.forEach((style) => {
+            if (!acc[style]) {
+              acc[style] = [];
+            }
+            acc[style].push(item);
+          });
+          return acc;
+        }, {});
         let selectedItems = [];
+
         for (let style of Object.keys(groupedByStyle)) {
           let styleItems = [];
 
@@ -140,7 +150,7 @@ export default function HomePage() {
             let items = groupedByStyle[style].filter(
               (item) => item.garment === garment
             );
-            if ((items.length = 2)) {
+            if (items.length > 2) {
               let randomItem = randomNumber(items);
               if (randomItem !== null) {
                 styleItems[garment] = randomItem;
@@ -160,13 +170,24 @@ export default function HomePage() {
         }
 
         for (let style in selectedItems) {
-          if (Object.keys(selectedItems[style]).length === 0) {
+          if (Object.keys(selectedItems[style]).length < 2) {
             delete selectedItems[style];
           }
         }
-        return selectedItems;
+
+        
+        if (Object.keys(selectedItems).length > 0) {
+          shoesColor = shoesColorFunction
+          return selectedItems;
+
+        } else {
+          return pickStyle(attempt + 1);
+        }
+        
       };
 
+      
+      
       let finishClothes, coatColor, topColor;
       let selectedItems, randomKey;
 
@@ -185,11 +206,11 @@ export default function HomePage() {
           }
         }
       } while (coatColor === topColor);
-
+      
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
 
-        if (attempt >= maxAttempts) {
+        if (attempt === maxAttempts) {
           return null;
         }
 
@@ -228,9 +249,8 @@ export default function HomePage() {
       };
 
       const shoes = findAcc();
-      console.log(shoes);
       const pushShoes = { ...finishClothes, shoes };
-
+      console.log(finishClothes)
       const searchBelt = () => {
         const colorshoes = shoes.color.colorName;
         const searchBelt = dataJson.filter((item) => item.garment === "belt");
