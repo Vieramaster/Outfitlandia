@@ -111,26 +111,40 @@ export default function HomePage() {
             item.weather.some((element) => garmentWeather.includes(element))
         )
       );
-
-      
-      let shoesColor
+      let shoesColor;
 
       const pickStyle = (attempt = 0) => {
         const maxAttempts = 20;
-        
+
         if (attempt === maxAttempts) {
           return null;
         }
-        const arrayColorResult = dataColor.filter((item) =>
-          item.combine.includes(garmentColor)
+
+        let findColors = dataColor.filter(
+          (item) => item.combineClothes[idGarment] === garmentColor
         );
 
-        const { combine: outfitColor, combineShoes: shoesColorFunction } =
-          randomNumber(arrayColorResult);
+        let randomCombineColor = randomNumber(findColors);
 
+        let { combineShoes } = randomCombineColor;
 
+        shoesColor = combineShoes;
 
-        const outfitFilter = filteredObjects(matchingItems, outfitColor);
+        const filteredColors = (obj) => {
+          let searchColor = randomCombineColor.combineClothes[obj];
+          let findGarments = matchingItems.filter(
+            (item) => item.garment === obj
+          );
+          let findColor = findGarments.filter((item) =>
+            item.colors.some((color) => color.colorName === searchColor)
+          );
+          return filteredObjects(findColor, searchColor);
+        };
+
+        let firstObject = filteredColors(partResults[0]);
+        let secondObject = filteredColors(partResults[1]);
+
+        let outfitFilter = firstObject.concat(secondObject);
 
         const groupedByStyle = outfitFilter.reduce((acc, item) => {
           item.style.forEach((style) => {
@@ -141,72 +155,51 @@ export default function HomePage() {
           });
           return acc;
         }, {});
+
         let selectedItems = [];
 
         for (let style of Object.keys(groupedByStyle)) {
-          let styleItems = [];
+          selectedItems[style] = [];
 
-          for (let garment of partResults) {
-            let items = groupedByStyle[style].filter(
-              (item) => item.garment === garment
-            );
-            if (items.length > 2) {
-              let randomItem = randomNumber(items);
-              if (randomItem !== null) {
-                styleItems[garment] = randomItem;
-              } else {
-                styleItems = null;
-                break;
+          for (let style of Object.keys(groupedByStyle)) {
+            selectedItems[style] = [];
+
+            for (let garment of partResults) {
+              let returnItem = [];
+              let items = groupedByStyle[style].filter(
+                (item) => item.garment === garment
+              );
+              if (items.length === 0) {
+                returnItem = null;
+              } else if (items.length === 1) {
+                returnItem = items[0];
+              } else if (items.length > 1) {
+                returnItem = randomNumber(items);
               }
+              selectedItems[style].push(returnItem);
+            }
+
+            if (selectedItems[style].includes(null)) {
+              delete selectedItems[style];
             }
           }
-
-          if (
-            styleItems !== null &&
-            !Object.values(styleItems).includes(undefined)
-          ) {
-            selectedItems[style] = styleItems;
+          if (Object.keys(selectedItems).length === 0) {
+            return pickStyle(attempt + 1);
+          } else if (Object.keys(selectedItems).length === 1) {
+            return [Object.keys(selectedItems), selectedItems];
+          } else if (Object.keys(selectedItems).length > 1) {
+            let randomStyle = randomNumber(Object.keys(selectedItems));
+            return [randomStyle, selectedItems[randomStyle]];
           }
         }
-
-        for (let style in selectedItems) {
-          if (Object.keys(selectedItems[style]).length < 2) {
-            delete selectedItems[style];
-          }
-        }
-
-        
-        if (Object.keys(selectedItems).length > 0) {
-          shoesColor = shoesColorFunction
-          return selectedItems;
-
-        } else {
-          return pickStyle(attempt + 1);
-        }
-        
       };
 
-      
-      
-      let finishClothes, coatColor, topColor;
-      let selectedItems, randomKey;
+      const filteredClothes = pickStyle();
+      const styleClothes = filteredClothes[0];
+      const clothes = filteredClothes[1];
 
-      do {
-        selectedItems = pickStyle();
-        let keys = Object.keys(selectedItems);
-        randomKey = randomNumber(keys);
-        let finishRandom = selectedItems[randomKey];
-        finishClothes = { ...finishRandom, firstButton };
+      const finishClothes = [...clothes, firstButton];
 
-        for (let key in finishClothes) {
-          if (finishClothes[key].garment === "coat") {
-            coatColor = finishClothes[key].color.colorName;
-          } else if (finishClothes[key].garment === "top") {
-            topColor = finishClothes[key].color.colorName;
-          }
-        }
-      } while (coatColor === topColor);
-      
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
 
@@ -214,10 +207,10 @@ export default function HomePage() {
           return null;
         }
 
-        const findShoes = dataJson.filter((item) => item.garment === "shoes");
+        let findShoes = dataJson.filter((item) => item.garment === "shoes");
 
         let styleResult = findShoes.filter((item) => {
-          return item.style.includes(randomKey);
+          return item.style.includes(styleClothes);
         });
 
         let searchWeather = styleResult.filter((item) =>
@@ -232,9 +225,10 @@ export default function HomePage() {
           return finishShoes[0];
         } else if (finishShoes.length > 1) {
           let random = randomNumber(finishShoes);
-          if (
-            random.color.colorName !== finishClothes["pants"].color.colorName
-          ) {
+
+          let pants = finishClothes.find((item) => item.garment === "pants");
+
+          if (random.color.colorName !== pants.color.colorName) {
             return random;
           } else {
             let blackShoes = finishShoes.find(
@@ -249,18 +243,19 @@ export default function HomePage() {
       };
 
       const shoes = findAcc();
-      const pushShoes = { ...finishClothes, shoes };
-      console.log(finishClothes)
+      const pushShoes = [...finishClothes, shoes];
+      console.log(pushShoes);
+
       const searchBelt = () => {
         const colorshoes = shoes.color.colorName;
         const searchBelt = dataJson.filter((item) => item.garment === "belt");
         const filteredStyle = searchBelt.filter((item) =>
-          item.style.includes(randomKey)
+          item.style.includes(styleClothes)
         );
 
         const filteredColor = filteredObjects(filteredStyle, colorshoes);
         const randomBelt = randomNumber(filteredColor);
-        const pants = finishClothes.pants.name;
+        const pants = finishClothes.find((item) => item.garment === "pants");
 
         if (pants === "joggin" || pants === "bermuda joggin") {
           return null;
