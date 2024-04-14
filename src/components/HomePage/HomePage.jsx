@@ -113,12 +113,7 @@ export default function HomePage() {
       );
       let shoesColor;
 
-      const pickStyle = (attempt = 0) => {
-        const maxAttempts = 20;
-
-        if (attempt === maxAttempts) {
-          return null;
-        }
+      const pickStyle = ( ) => {
 
         let findColors = dataColor.filter(
           (item) => item.combineClothes[idGarment] === garmentColor
@@ -156,6 +151,25 @@ export default function HomePage() {
           return acc;
         }, {});
 
+        const weatherFilter = (array) => {
+          let result = null;
+
+          for (let i = 0; i < array.length; i++) {
+            for (let j = i + 1; j < array.length; j++) {
+              if (
+                array[i].weather.some((weather) =>
+                  array[j].weather.includes(weather)
+                )
+              ) {
+                result = [array[i], array[j]];
+                break;
+              }
+            }
+            if (result) break;
+          }
+          return result;
+        };
+
         let selectedItems = [];
 
         for (let style of Object.keys(groupedByStyle)) {
@@ -184,22 +198,33 @@ export default function HomePage() {
             }
           }
           if (Object.keys(selectedItems).length === 0) {
-            return pickStyle(attempt + 1);
+            return pickStyle();
           } else if (Object.keys(selectedItems).length === 1) {
-            return [Object.keys(selectedItems), selectedItems];
+            let key = Object.keys(selectedItems)[0];
+            let result = selectedItems[key];
+            let weather = weatherFilter(result);
+
+            if (weather !== null) {
+              return [style, result];
+            } else pickStyle();
           } else if (Object.keys(selectedItems).length > 1) {
             let randomStyle = randomNumber(Object.keys(selectedItems));
-            return [randomStyle, selectedItems[randomStyle]];
+
+            let weather2 = weatherFilter(selectedItems[randomStyle]);
+
+            if (weather2 !== null) {
+              return [randomStyle, selectedItems[randomStyle]];
+            } else pickStyle();
           }
         }
       };
 
       const filteredClothes = pickStyle();
+      console.log(filteredClothes);
       const styleClothes = filteredClothes[0];
       const clothes = filteredClothes[1];
 
       const finishClothes = [...clothes, firstButton];
-
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
 
@@ -244,20 +269,19 @@ export default function HomePage() {
 
       const shoes = findAcc();
       const pushShoes = [...finishClothes, shoes];
-      console.log(pushShoes);
 
       const searchBelt = () => {
-        const colorshoes = shoes.color.colorName;
-        const searchBelt = dataJson.filter((item) => item.garment === "belt");
-        const filteredStyle = searchBelt.filter((item) =>
+        let colorshoes = shoes.color.colorName;
+        let searchBelt = dataJson.filter((item) => item.garment === "belt");
+        let filteredStyle = searchBelt.filter((item) =>
           item.style.includes(styleClothes)
         );
 
-        const filteredColor = filteredObjects(filteredStyle, colorshoes);
-        const randomBelt = randomNumber(filteredColor);
-        const pants = finishClothes.find((item) => item.garment === "pants");
+        let filteredColor = filteredObjects(filteredStyle, colorshoes);
+        let randomBelt = randomNumber(filteredColor);
+        let pants = finishClothes.find((item) => item.garment === "pants");
 
-        if (pants === "joggin" || pants === "bermuda joggin") {
+        if (pants.name === "joggin" || pants.name === "bermuda joggin") {
           return null;
         } else if (randomBelt === null) {
           return filteredStyle.filter((item) =>
@@ -268,6 +292,7 @@ export default function HomePage() {
       const belt = searchBelt();
 
       const outfitComplete = { ...pushShoes, belt };
+
       const quitNames = Object.values(outfitComplete);
       const clothesArray = quitNames.map((item) => {
         if (item === null) {

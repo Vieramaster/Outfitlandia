@@ -38,10 +38,10 @@
         "imageColor": "/src/images/image-json/top/topHoodiefrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topHoodieskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topHoodieskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -199,10 +199,10 @@
         "imageColor": "/src/images/image-json/top/topSweatshirtfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topSweatshirtskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topSweatshirtskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -361,10 +361,10 @@
         "imageColor": "/src/images/image-json/top/topTShirtfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topTShirtskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topTShirtskyBlue.webp"
       },
 
       {
@@ -525,10 +525,10 @@
         "imageColor": "/src/images/image-json/top/topPolofrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topPoloskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topPoloskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -688,10 +688,10 @@
         "imageColor": "/src/images/image-json/top/topSweaterfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topSweaterskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topSweaterskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -915,7 +915,7 @@
     "image": "/src/images/image-json/top/topShortShirt.webp",
     "css": "big",
     "style": ["elegant"],
-    "weather": ["heat", "mild"],
+    "weather": ["heat"],
     "colors": [
       {
         "colorName": "purple",
@@ -948,10 +948,10 @@
         "imageColor": "/src/images/image-json/top/topShortShirtfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topShortShirtskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topShortShirtskyBlue.webp"
       },
 
       {
@@ -1099,10 +1099,10 @@
         "imageColor": "/src/images/image-json/top/topLongShirtfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topLongShirtskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topLongShirtskyBlue.webp"
       },
 
       {
@@ -1239,10 +1239,10 @@
         "imageColor": "/src/images/image-json/top/topLongTShirtfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topLongTShirtskyblue.webp"
+        "imageColor": "/src/images/image-json/top/topLongTShirtskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -1369,10 +1369,10 @@
     "weather": ["heat", "mild"],
     "colors": [
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/coat/coatDenimskyblue.webp"
+        "imageColor": "/src/images/image-json/coat/coatDenimskyBlue.webp"
       },
 
       {
@@ -1535,10 +1535,10 @@
         "imageColor": "/src/images/image-json/coat/coatInflatableJacketNavy.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/coat/coatInflatableJacketskyblue.webp"
+        "imageColor": "/src/images/image-json/coat/coatInflatableJacketskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -1925,10 +1925,10 @@
         "imageColor": "/src/images/image-json/coat/coatDenimWinterjean.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/coat/coatDenimWinterskyblue.webp"
+        "imageColor": "/src/images/image-json/coat/coatDenimWinterskyBlue.webp"
       },
       {
         "colorName": "navy",
@@ -2001,10 +2001,10 @@
         "imageColor": "/src/images/image-json/coat/coatWindbreakerfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/coat/coatWindbreakerskyblue.webp"
+        "imageColor": "/src/images/image-json/coat/coatWindbreakerskyBlue.webp"
       },
       {
         "colorName": "Esmerald",
@@ -2113,10 +2113,10 @@
         "imageColor": "/src/images/image-json/coat/coatBlazerfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/coat/coatBlazerskyblue.webp"
+        "imageColor": "/src/images/image-json/coat/coatBlazerskyBlue.webp"
       },
       {
         "colorName": "mustard",
@@ -2685,10 +2685,10 @@
         "imageColor": "/src/images/image-json/pants/pantsJogginfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/pants/pantsJogginskyblue.webp"
+        "imageColor": "/src/images/image-json/pants/pantsJogginskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -2804,10 +2804,10 @@
         "imageColor": "/src/images/image-json/pants/pantsShortJogginFrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/pants/pantsShortJogginSkyBlue.webp"
+        "imageColor": "/src/images/image-json/pants/pantsShortJogginskyBlue.webp"
       },
       {
         "colorName": "Esmerald",
@@ -2899,10 +2899,10 @@
     "weather": ["mild", "cold"],
     "colors": [
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/pants/pantsJeanSkyBlue.webp"
+        "imageColor": "/src/images/image-json/pants/pantsJeanskyBlue.webp"
       },
       {
         "colorName": "jean",
@@ -2933,10 +2933,10 @@
     "weather": ["heat"],
     "colors": [
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/pants/pantsshortJeanSkyBlue.webp"
+        "imageColor": "/src/images/image-json/pants/pantsshortJeanskyBlue.webp"
       },
       {
         "colorName": "jean",
@@ -3422,10 +3422,10 @@
         "imageColor": "/src/images/image-json/shoes/shoesSportfrench.webp"
       },
       {
-        "colorName": "skyblue",
+        "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/shoes/shoesSportskyblue.webp"
+        "imageColor": "/src/images/image-json/shoes/shoesSportskyBlue.webp"
       },
       {
         "colorName": "aquamarine",
@@ -3518,7 +3518,7 @@
     "name": "sneakers",
     "image": "/src/images/image-json/shoes/shoesSneakers.webp",
     "css": "shoes",
-    "style": ["basic","casual", "elegant"],
+    "style": ["basic", "casual", "elegant"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
@@ -4455,5 +4455,4 @@
       }
     ]
   }
-  
 ]
