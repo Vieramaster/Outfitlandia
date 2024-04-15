@@ -11,12 +11,12 @@
 }
 
 
-.clothingButton:hover {
+.big:hover {
   border: 1px solid var(--fourth-color);
   transform: scale(1.04);
 }
 
-.clothingButton:active {
+.big:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
@@ -27,11 +27,13 @@
 .small {
   width: 6.5rem;
   height: 8.5rem;
+  pointer-events: none;
 }
 
 .shoes {
   width: 15rem;
   height: 8.5rem;
+  pointer-events: none;
 }
 .shoes img {
   height: 100%;

@@ -16,6 +16,7 @@ export default function HomePage() {
   const [showColors, setShowColors] = useState({});
   const [divSwap, setDivSwap] = useState(false);
   const [firstButton, setFirstButton] = useState({});
+  const [buttonDisabled, setButtonDisabled] = useState(false)
 
   const [addColorButtonCombine, setAddColorButtonCombine] = useState(false);
 
@@ -85,7 +86,14 @@ export default function HomePage() {
   };
 
   const onClickCombine = () => {
+    //prevenir el spam del click
+    setButtonDisabled(true)
+    setTimeout(() => {
+      setButtonDisabled(false);
+      }, 500); 
+
     const partGarments = ["top", "pants", "coat"];
+    // funcion generica para elegir objetos aleatoriamente
     const randomNumber = (value) => {
       if (value.length === 0) {
         return null;
@@ -113,8 +121,7 @@ export default function HomePage() {
       );
       let shoesColor;
 
-      const pickStyle = ( ) => {
-
+      const pickStyle = () => {
         let findColors = dataColor.filter(
           (item) => item.combineClothes[idGarment] === garmentColor
         );
@@ -151,25 +158,34 @@ export default function HomePage() {
           return acc;
         }, {});
 
-        const weatherFilter = (array) => {
+        // se fija que todos tengan una key en comun
+        const keyFilter = (array, key) => {
           let result = null;
 
           for (let i = 0; i < array.length; i++) {
             for (let j = i + 1; j < array.length; j++) {
-              if (
-                array[i].weather.some((weather) =>
-                  array[j].weather.includes(weather)
-                )
-              ) {
+              if (array[i][key].some((item) => array[j][key].includes(item))) {
                 result = [array[i], array[j]];
                 break;
               }
             }
             if (result) break;
           }
+
           return result;
         };
+        //  me otorga la key en comun
+        const styleFilter = (array) => {
+          let commonStyles = array[0].style;
 
+          for (let i = 1; i < array.length; i++) {
+            commonStyles = commonStyles.filter((style) =>
+              array[i].style.includes(style)
+            );
+          }
+
+          return commonStyles.length > 0 ? commonStyles[0] : null;
+        };
         let selectedItems = [];
 
         for (let style of Object.keys(groupedByStyle)) {
@@ -201,30 +217,39 @@ export default function HomePage() {
             return pickStyle();
           } else if (Object.keys(selectedItems).length === 1) {
             let key = Object.keys(selectedItems)[0];
-            let result = selectedItems[key];
-            let weather = weatherFilter(result);
 
-            if (weather !== null) {
-              return [style, result];
+            let updateoutfit = [...selectedItems[key], firstButton];
+
+            let weather = keyFilter(updateoutfit, "weather");
+            let style = keyFilter(updateoutfit, "style");
+            let styleName = styleFilter(updateoutfit);
+            if (weather !== null && style !== null) {
+              return [styleName, updateoutfit];
             } else pickStyle();
           } else if (Object.keys(selectedItems).length > 1) {
             let randomStyle = randomNumber(Object.keys(selectedItems));
+            let updateoutfit2 = [...selectedItems[randomStyle], firstButton];
+            let weather2 = keyFilter(updateoutfit2, "weather");
+            let style2 = keyFilter(updateoutfit2, "style");
 
-            let weather2 = weatherFilter(selectedItems[randomStyle]);
+            let styleName2 = styleFilter(updateoutfit2);
 
-            if (weather2 !== null) {
-              return [randomStyle, selectedItems[randomStyle]];
+            if (weather2 !== null && style2 !== null) {
+              return [styleName2, updateoutfit2];
             } else pickStyle();
           }
         }
       };
 
       const filteredClothes = pickStyle();
-      console.log(filteredClothes);
-      const styleClothes = filteredClothes[0];
-      const clothes = filteredClothes[1];
 
-      const finishClothes = [...clothes, firstButton];
+      const styleClothes = filteredClothes[0];
+      const finishClothes = filteredClothes[1];
+
+      if (finishClothes === null || finishClothes === undefined) {
+        pickStyle();
+      }
+
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
 
@@ -258,8 +283,8 @@ export default function HomePage() {
           } else {
             let blackShoes = finishShoes.find(
               (shoe) =>
-                shoe.color.colorName === "black" ||
-                shoe.color.colorName === "white"
+                shoe.color.colorName === "white" ||
+                shoe.color.colorName === "black"
             );
 
             return blackShoes;
@@ -268,6 +293,7 @@ export default function HomePage() {
       };
 
       const shoes = findAcc();
+
       const pushShoes = [...finishClothes, shoes];
 
       const searchBelt = () => {
@@ -321,6 +347,7 @@ export default function HomePage() {
     }
   };
 
+
   return (
     <section className="HomePage">
       <SelectionGarment
@@ -330,6 +357,7 @@ export default function HomePage() {
       <Weather
         onClickCombine={onClickCombine}
         addColorButtonCombine={addColorButtonCombine}
+        buttonDisabled={buttonDisabled}
       />
       <SelectionClothes
         showGarments={showGarments}

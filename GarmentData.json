@@ -2544,7 +2544,7 @@
     "name": "trenzado",
     "image": "/src/images/image-json/belt/beltBraided.webp",
     "css": "small",
-    "style": ["basic", "casual"],
+    "style": ["basic"],
     "weather": ["heat", "mild", "cold"],
     "colors": [
       {
