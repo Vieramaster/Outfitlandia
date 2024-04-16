@@ -223,7 +223,8 @@ export default function HomePage() {
             let weather = keyFilter(updateoutfit, "weather");
             let style = keyFilter(updateoutfit, "style");
             let styleName = styleFilter(updateoutfit);
-            if (weather !== null && style !== null) {
+            if (weather !== null && style !== null && updateoutfit !== undefined) {
+
               return [styleName, updateoutfit];
             } else pickStyle();
           } else if (Object.keys(selectedItems).length > 1) {
@@ -234,21 +235,24 @@ export default function HomePage() {
 
             let styleName2 = styleFilter(updateoutfit2);
 
-            if (weather2 !== null && style2 !== null) {
+            if (weather2 !== null && style2 !== null && updateoutfit2 !== undefined) {
+
               return [styleName2, updateoutfit2];
             } else pickStyle();
           }
         }
       };
 
-      const filteredClothes = pickStyle();
-
+      let filteredClothes;
+      do {
+        filteredClothes = pickStyle();
+      } while (filteredClothes === undefined);
+      
       const styleClothes = filteredClothes[0];
+    
       const finishClothes = filteredClothes[1];
 
-      if (finishClothes === null || finishClothes === undefined) {
-        pickStyle();
-      }
+     
 
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
