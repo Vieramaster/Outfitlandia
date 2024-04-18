@@ -121,7 +121,13 @@ export default function HomePage() {
       );
       let shoesColor;
 
-      const pickStyle = () => {
+      const pickStyle = (attempt = 0) => {
+
+        if(attempt === 30){
+          alert("No se encontrado ningun outfit")
+      }
+
+
         let findColors = dataColor.filter(
           (item) => item.combineClothes[idGarment] === garmentColor
         );
@@ -214,7 +220,7 @@ export default function HomePage() {
             }
           }
           if (Object.keys(selectedItems).length === 0) {
-            return pickStyle();
+            return pickStyle(attempt + 1);
           } else if (Object.keys(selectedItems).length === 1) {
             let key = Object.keys(selectedItems)[0];
 
@@ -226,7 +232,7 @@ export default function HomePage() {
             if (weather !== null && style !== null && updateoutfit !== undefined) {
 
               return [styleName, updateoutfit];
-            } else pickStyle();
+            } else pickStyle(attempt + 1);
           } else if (Object.keys(selectedItems).length > 1) {
             let randomStyle = randomNumber(Object.keys(selectedItems));
             let updateoutfit2 = [...selectedItems[randomStyle], firstButton];
@@ -238,14 +244,14 @@ export default function HomePage() {
             if (weather2 !== null && style2 !== null && updateoutfit2 !== undefined) {
 
               return [styleName2, updateoutfit2];
-            } else pickStyle();
+            } else pickStyle(attempt + 1);
           }
         }
       };
 
       let filteredClothes;
       do {
-        filteredClothes = pickStyle();
+        filteredClothes = pickStyle( );
       } while (filteredClothes === undefined);
       
       const styleClothes = filteredClothes[0];
