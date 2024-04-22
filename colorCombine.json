@@ -1545,7 +1545,7 @@
       "pants": "lightGrey",
       "coat": "army"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1553,7 +1553,7 @@
       "pants": "lightGrey",
       "coat": "lightGrey"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1561,7 +1561,7 @@
       "pants": "lightGrey",
       "coat": "wornBlack"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1569,7 +1569,7 @@
       "pants": "lightGrey",
       "coat": "black"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1657,7 +1657,7 @@
       "pants": "lightGrey",
       "coat": "beige"
     },
-    "combineShoes": ["black", "white","beige"]
+    "combineShoes": ["black", "white", "beige"]
   },
 
   {
@@ -1666,7 +1666,7 @@
       "pants": "army",
       "coat": "lightGrey"
     },
-    "combineShoes": ["black", "white","beige"]
+    "combineShoes": ["black", "white", "beige"]
   },
   {
     "combineClothes": {
@@ -1674,7 +1674,7 @@
       "pants": "army",
       "coat": "beige"
     },
-    "combineShoes": ["black", "white","beige", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "beige", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1682,7 +1682,7 @@
       "pants": "beige",
       "coat": "navy"
     },
-    "combineShoes": ["black", "white", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1690,7 +1690,7 @@
       "pants": "beige",
       "coat": "army"
     },
-    "combineShoes": ["black", "white", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1716,7 +1716,7 @@
     },
     "combineShoes": ["white", "black"]
   },
-  
+
   {
     "combineClothes": {
       "top": "yellow",
@@ -1755,7 +1755,7 @@
       "pants": "lightGrey",
       "coat": "army"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1763,7 +1763,7 @@
       "pants": "lightGrey",
       "coat": "lightGrey"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1771,7 +1771,7 @@
       "pants": "lightGrey",
       "coat": "wornBlack"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1779,7 +1779,7 @@
       "pants": "lightGrey",
       "coat": "black"
     },
-    "combineShoes": ["chocolate","white"]
+    "combineShoes": ["chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -1860,7 +1860,7 @@
       "pants": "lightGrey",
       "coat": "beige"
     },
-    "combineShoes": ["black", "white","beige"]
+    "combineShoes": ["black", "white", "beige"]
   },
 
   {
@@ -1869,7 +1869,7 @@
       "pants": "army",
       "coat": "lightGrey"
     },
-    "combineShoes": ["black", "white","beige"]
+    "combineShoes": ["black", "white", "beige"]
   },
   {
     "combineClothes": {
@@ -1877,7 +1877,7 @@
       "pants": "army",
       "coat": "beige"
     },
-    "combineShoes": ["black", "white","beige", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "beige", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1885,7 +1885,7 @@
       "pants": "beige",
       "coat": "navy"
     },
-    "combineShoes": ["black", "white", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1893,7 +1893,7 @@
       "pants": "beige",
       "coat": "army"
     },
-    "combineShoes": ["black", "white", "chocolate","windsorTan"]
+    "combineShoes": ["black", "white", "chocolate", "windsorTan"]
   },
   {
     "combineClothes": {
@@ -1927,7 +1927,7 @@
     },
     "combineShoes": ["white", "black"]
   },
-  
+
   {
     "combineClothes": {
       "top": "mustard",
@@ -2039,7 +2039,7 @@
       "pants": "skyBlue",
       "coat": "navy"
     },
-    "combineShoes": ["white", "black","chocolate"]
+    "combineShoes": ["white", "black", "chocolate"]
   },
   {
     "combineClothes": {
@@ -2071,7 +2071,7 @@
       "pants": "darkGrey",
       "coat": "beige"
     },
-    "combineShoes": ["white","beige","black"]
+    "combineShoes": ["white", "beige", "black"]
   },
   {
     "combineClothes": {
@@ -2079,7 +2079,7 @@
       "pants": "darkGrey",
       "coat": "lightGrey"
     },
-    "combineShoes": ["white","beige","black"]
+    "combineShoes": ["white", "beige", "black"]
   },
   {
     "combineClothes": {
@@ -2087,7 +2087,7 @@
       "pants": "lightGrey",
       "coat": "navy"
     },
-    "combineShoes": ["white","beige","black"]
+    "combineShoes": ["white", "beige", "black"]
   },
   {
     "combineClothes": {
@@ -2097,359 +2097,367 @@
     },
     "combineShoes": ["black"]
   },
+  {
+    "combineClothes": {
+      "top": "orange",
+      "pants": "chocolate",
+      "coat": "beige"
+    },
+    "combineShoes": ["black", "orange", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "darkGrey",
+      "coat": "black"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "beige",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "chocolate",
+      "coat": "beige"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "skyBlue",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "black",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["chocolate", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "black",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "wornblack",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "lightGrey",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "darkGrey",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "beige",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "army",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "wornblack",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "black",
+      "coat": "army"
+    },
+    "combineShoes": ["army", "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "wornblack",
+      "coat": "army"
+    },
+    "combineShoes": ["army", "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "white",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["lightGrey", "white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "black",
+      "coat": "black"
+    },
+    "combineShoes": ["white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "white",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "darkGrey",
+      "coat": "black"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "beige",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "chocolate",
+      "coat": "beige"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "skyBlue",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "black",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["chocolate", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "black",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "wornblack",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "lightGrey",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "darkGrey",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "beige",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "army",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "wornblack",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "black",
+      "coat": "army"
+    },
+    "combineShoes": ["army", "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "wornblack",
+      "coat": "army"
+    },
+    "combineShoes": ["army", "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "white",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["lightGrey", "white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "black",
+      "coat": "black"
+    },
+    "combineShoes": ["white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "navy",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "army",
+      "coat": "beige"
+    },
+    "combineShoes": ["white", "chocolate", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "navy",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "army",
+      "coat": "beige"
+    },
+    "combineShoes": ["white", "chocolate", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "jean",
+      "coat": "darkGrey"
+    },
+    "combineShoes": ["white", "chocolate", "darkgrey"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "jean",
+      "coat": "darkGrey"
+    },
+    "combineShoes": ["white", "chocolate", "darkgrey"]
+  },
+  {
+    "combineClothes": {
+      "top": "camel",
+      "pants": "burgundy",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["white", "chocolate", "darkgrey"]
+  },
+  {
+    "combineClothes": {
+      "top": "windsorTan",
+      "pants": "burgundy",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["white", "chocolate", "darkgrey"]
+  },
+  {
+    "combineClothes": {
+      "top": "beige",
+      "pants": "army",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "beige",
+      "pants": "army",
+      "coat": "black"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "beige",
+      "pants": "army",
+      "coat": "darkGrey"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
 
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "darkGrey",
-      "coat": "black"
-    },
-    "combineShoes": ["black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "beige",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["white", "chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "chocolate",
-      "coat": "beige"
-    },
-    "combineShoes": ["black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "skyBlue",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "black",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["chocolate", "black"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "black",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "wornblack",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "lightGrey",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "darkGrey",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "beige",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "army",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "wornblack",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "black",
-      "coat": "army"
-    },
-    "combineShoes": ["army", "black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "wornblack",
-      "coat": "army"
-    },
-    "combineShoes": ["army", "black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "white",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["lightGrey", "white", "beige"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "black",
-      "coat": "black"
-    },
-    "combineShoes": ["white", "black"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "white",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "darkGrey",
-      "coat": "black"
-    },
-    "combineShoes": ["black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "beige",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["white", "chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "chocolate",
-      "coat": "beige"
-    },
-    "combineShoes": ["black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "skyBlue",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "black",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["chocolate", "black"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "black",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "wornblack",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "lightGrey",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "darkGrey",
-      "coat": "chocolate"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "beige",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "army",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "wornblack",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "black",
-      "coat": "army"
-    },
-    "combineShoes": ["army", "black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "wornblack",
-      "coat": "army"
-    },
-    "combineShoes": ["army", "black", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "white",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["lightGrey", "white", "beige"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "black",
-      "coat": "black"
-    },
-    "combineShoes": ["white", "black"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "navy",
-      "coat": "army"
-    },
-    "combineShoes": ["white", "chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "army",
-      "coat": "beige"
-    },
-    "combineShoes": ["white", "chocolate", "black"]
-  },  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "navy",
-      "coat": "army"
-    },
-    "combineShoes": ["white", "chocolate"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "army",
-      "coat": "beige"
-    },
-    "combineShoes": ["white", "chocolate", "black"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "jean",
-      "coat": "darkGrey"
-    },
-    "combineShoes": ["white", "chocolate","darkgrey"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "jean",
-      "coat": "darkGrey"
-    },
-    "combineShoes": ["white", "chocolate","darkgrey"]
-  },
-  {
-    "combineClothes": {
-      "top": "camel",
-      "pants": "burgundy",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["white", "chocolate","darkgrey"]
-  },
-  {
-    "combineClothes": {
-      "top": "windsorTan",
-      "pants": "burgundy",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["white", "chocolate","darkgrey"]
-  },
-  {
-    "combineClothes": {
-      "top": "beige",
-      "pants": "army",
-      "coat": "lightGrey"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "beige",
-      "pants": "army",
-      "coat": "black"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  {
-    "combineClothes": {
-      "top": "beige",
-      "pants": "army",
-      "coat": "darkGrey"
-    },
-    "combineShoes": ["chocolate", "white"]
-  },
-  
   {
     "combineClothes": {
       "top": "beige",
@@ -2464,7 +2472,7 @@
       "pants": "white",
       "coat": "lightGrey"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate"]
+    "combineShoes": ["beige", "windsorTan", "chocolate"]
   },
   {
     "combineClothes": {
@@ -2472,7 +2480,7 @@
       "pants": "white",
       "coat": "army"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate"]
+    "combineShoes": ["beige", "windsorTan", "chocolate"]
   },
   {
     "combineClothes": {
@@ -2480,7 +2488,7 @@
       "pants": "white",
       "coat": "darkGrey"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate"]
+    "combineShoes": ["beige", "windsorTan", "chocolate"]
   },
   {
     "combineClothes": {
@@ -2488,7 +2496,7 @@
       "pants": "skyBlue",
       "coat": "army"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate", "white"]
+    "combineShoes": ["beige", "windsorTan", "chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -2496,7 +2504,7 @@
       "pants": "lightGrey",
       "coat": "aero"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate", "white"]
+    "combineShoes": ["beige", "windsorTan", "chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -2504,7 +2512,7 @@
       "pants": "darkGrey",
       "coat": "aero"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate", "white"]
+    "combineShoes": ["beige", "windsorTan", "chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -2512,7 +2520,7 @@
       "pants": "darkGrey",
       "coat": "lightGrey"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate", "white"]
+    "combineShoes": ["beige", "windsorTan", "chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -2520,7 +2528,7 @@
       "pants": "windsorTan",
       "coat": "aero"
     },
-    "combineShoes": ["beige", "windsorTan","chocolate", "white"]
+    "combineShoes": ["beige", "windsorTan", "chocolate", "white"]
   },
   {
     "combineClothes": {
@@ -2648,7 +2656,7 @@
       "pants": "black",
       "coat": "burgundy"
     },
-    "combineShoes":  ["white", "black", "beige"]
+    "combineShoes": ["white", "black", "beige"]
   },
   {
     "combineClothes": {
@@ -2657,6 +2665,1816 @@
       "coat": "black"
     },
     "combineShoes": ["white", "black", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "beige"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "camel"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "windsorTan"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "army"
+    },
+    "combineShoes": ["white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "camel",
+      "coat": "army"
+    },
+    "combineShoes": ["white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "windsorTan",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "army"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "chocolate",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "black", "army"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "oldPink"
+    },
+    "combineShoes": ["white", "oldPink"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "babyPink"
+    },
+    "combineShoes": ["white", "babyPink"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "yellow"
+    },
+    "combineShoes": ["white", "yellow"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "lilac",
+      "coat": "beige"
+    },
+    "combineShoes": ["lilac", "white", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "aero",
+      "coat": "beige"
+    },
+    "combineShoes": ["beige", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "oldPink",
+      "coat": "beige"
+    },
+    "combineShoes": ["beige", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "oldPink"
+    },
+    "combineShoes": ["beige", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "babyPink",
+      "coat": "beige"
+    },
+    "combineShoes": ["beige", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "babyPink"
+    },
+    "combineShoes": ["beige", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "oldPink",
+      "coat": "skyBlue"
+    },
+    "combineShoes": ["white", "skyBlue", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "skyBlue",
+      "coat": "oldPink"
+    },
+    "combineShoes": ["white", "oldPink", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "black"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "wornBlack"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "navy",
+      "coat": "purple"
+    },
+    "combineShoes": ["white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "purple",
+      "coat": "darkGrey"
+    },
+    "combineShoes": ["chocolate", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "lightGrey",
+      "coat": "purple"
+    },
+    "combineShoes": ["purple", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "lightGrey",
+      "coat": "lilac"
+    },
+    "combineShoes": ["purple", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "skyBlue",
+      "coat": "lilac"
+    },
+    "combineShoes": ["lilac", "white", "lightGrey"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "jean",
+      "coat": "lilac"
+    },
+    "combineShoes": ["windsorTan", "white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "navy",
+      "coat": "lilac"
+    },
+    "combineShoes": ["lilac", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "lilac"
+    },
+    "combineShoes": ["lilac", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "lilac"
+    },
+    "combineShoes": ["lilac", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "purple"
+    },
+    "combineShoes": ["purple", "white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "purple"
+    },
+    "combineShoes": ["purple", "white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "navy",
+      "coat": "purple"
+    },
+    "combineShoes": ["purple", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "darkGrey",
+      "coat": "black"
+    },
+    "combineShoes": ["white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "wornBlack"
+    },
+    "combineShoes": ["windsorTan", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "darkGrey",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["windsorTan", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "navy"
+    },
+    "combineShoes": ["navy", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "esmerald",
+      "coat": "black"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "esmerald"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "skyBlue",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "skyBlue"
+    },
+    "combineShoes": ["white", "camel", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "jean",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "jean"
+    },
+    "combineShoes": ["white", "camel", "beige"]
+  },
+
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "mustard",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "mustard"
+    },
+    "combineShoes": ["white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "black", "army", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "black"
+    },
+    "combineShoes": ["white", "black", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "black", "army", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "wornBlack"
+    },
+    "combineShoes": ["white", "black", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "army",
+      "coat": "chocolate"
+    },
+    "combineShoes": ["white", "black", "chocolate", "windsorTan"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "chocolate",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "black", "windsorTan"] 
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "aero",
+      "coat": "army"
+    },
+    "combineShoes": ["white", "black", "windsorTan"] 
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "beige",
+      "coat": "yellow"
+    },
+    "combineShoes": ["white", "yellow"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "yellow",
+      "coat": "beige"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "lightGrey",
+      "pants": "black",
+      "coat": "yellow"
+    },
+    "combineShoes": ["black", "yellow"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "yellow"
+    },
+    "combineShoes": ["black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "yellow",
+      "coat": "beige"
+    },
+    "combineShoes": ["white", "beige"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "mustard",
+      "coat": "wornBlack"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "mustard"
+    },
+    "combineShoes": ["black", "white", "mustard"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "lightGrey",
+      "coat": "mustard"
+    },
+    "combineShoes": ["mustard", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "skyBlue",
+      "coat": "mustard"
+    },
+    "combineShoes": ["white", "mustard"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "darkGrey",
+      "coat": "mustard"
+    },
+    "combineShoes": ["black", "white", "mustard"]
+  },
+  {
+    "combineClothes": {
+      "top": "mustard",
+      "pants": "skyBlue",
+      "coat": "navy"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "lightGrey"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "navy"
+    },
+    "combineShoes": ["chocolate", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "chocolate",
+      "coat": "orange"
+    },
+    "combineShoes": ["white", "darkgrey","black"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "navy",
+      "coat": "orange"
+    },
+    "combineShoes": ["chocolate", "white", "orange"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "camel",
+      "coat": "orange"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "camel",
+      "coat": "beige"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "orange"
+    },
+    "combineShoes": ["black", "orange", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "black"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "wornblack",
+      "coat": "orange"
+    },
+    "combineShoes": ["black", "orange", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "wornBlack"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "skyBlue"
+    },
+    "combineShoes": ["white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "jean",
+      "coat": "orange"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "orange",
+      "coat": "jean"
+    },
+    "combineShoes": ["black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
+  },
+  {
+    "combineClothes": {
+      "top": "",
+      "pants": "",
+      "coat": ""
+    },
+    "combineShoes": ["", ""]
   },
   {
     "combineClothes": {
