@@ -103,6 +103,23 @@ export default function HomePage() {
       return value[result];
     };
 
+    //  Función genérica en la que verificamos que todos tengan una clave en común.
+    const keyFilter = (array, key) => {
+      let result = null;
+    
+      for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+          if (!array[i][key].some((item) => array[j][key].includes(item))) {
+            return null;
+          } else {
+            result = [array[i], array[j]];
+          }
+        }
+      }
+    
+      return result;
+    };
+
     //si se hace click sobre el abrigo, superior o pantalones
     if (partGarments.includes(idGarment)) {
       //Selecciono la prenda elegida y la utilizo para buscar el resto de prendas en los datos disponibles.
@@ -152,7 +169,7 @@ export default function HomePage() {
           );
           return filteredObjects(findColor, searchColor);
         };
-
+        
         let firstObject = filteredColors(partResults[0]);
         let secondObject = filteredColors(partResults[1]);
 
@@ -169,22 +186,6 @@ export default function HomePage() {
           return acc;
         }, {});
 
-        //  Función genérica en la que verificamos que todos tengan una clave en común.
-        const keyFilter = (array, key) => {
-          let result = null;
-
-          for (let i = 0; i < array.length; i++) {
-            for (let j = i + 1; j < array.length; j++) {
-              if (array[i][key].some((item) => array[j][key].includes(item))) {
-                result = [array[i], array[j]];
-                break;
-              }
-            }
-            if (result) break;
-          }
-
-          return result;
-        };
         //  Funcion generica del cual me otorga el style en común.
         const styleFilter = (array) => {
           let commonStyles = array[0].style;
@@ -239,7 +240,7 @@ export default function HomePage() {
               style !== null &&
               updateoutfit !== undefined
             ) {
-              return [styleName, updateoutfit];
+              return [styleName, updateoutfit, weather];
             } else pickStyle(attempt + 1);
           } else if (Object.keys(selectedItems).length > 1) {
             let randomStyle = randomNumber(Object.keys(selectedItems));
@@ -254,7 +255,7 @@ export default function HomePage() {
               style2 !== null &&
               updateoutfit2 !== undefined
             ) {
-              return [styleName2, updateoutfit2];
+              return [styleName2, updateoutfit2, weather2];
             } else pickStyle(attempt + 1);
           }
         }
@@ -267,11 +268,20 @@ export default function HomePage() {
         filteredClothes = pickStyle();
       } while (filteredClothes === undefined);
 
-      // Sustraemos del array el estilo y las prendas.
-      const styleClothes = filteredClothes[0];
-   
-      const finishClothes = filteredClothes[1];
 
+    
+      // Sustraemos del array el estilo y las prendas.
+      let styleClothes = filteredClothes[0];
+
+      let finishClothes = filteredClothes[1];
+      
+
+      // Se elimina el abrigo en el caso de que sean prendas de verano
+      if(keyFilter(finishClothes,"weather") === "heat"){
+        finishClothes = finishClothes.filter(item => item.garment !== 'coat');
+      }
+
+    
       // Con la información previa, procedemos a buscar el calzado adecuado.
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
@@ -299,6 +309,7 @@ export default function HomePage() {
         } else if (finishShoes.length > 1) {
           let random = randomNumber(finishShoes);
 
+          let pants = finishClothes.find((item) => item.garment === "pants");
           // Realizamos una selección para asegurarnos de que el color del calzado no coincida con el del pantalón.
           if (random.color.colorName !== pants.color.colorName) {
             return random;
@@ -318,7 +329,7 @@ export default function HomePage() {
 
       const pushShoes = [...finishClothes, shoes];
 
-      //Por ultimo, buscamos el cinturón. 
+      //Por ultimo, buscamos el cinturón.
       const searchBelt = () => {
         let colorshoes = shoes.color.colorName;
         let searchBelt = dataJson.filter((item) => item.garment === "belt");
@@ -343,7 +354,7 @@ export default function HomePage() {
       //Pusheamos la ultima parte para obtener el outfit completo.
       const outfitComplete = { ...pushShoes, belt };
 
-      // Realizamos ajustes al atuendo para asegurarnos de que sea compatible con los botones y así mostrarlo en pantalla 
+      // Realizamos ajustes al atuendo para asegurarnos de que sea compatible con los botones y así mostrarlo en pantalla
       const quitNames = Object.values(outfitComplete);
       const clothesArray = quitNames.map((item) => {
         if (item === null) {
@@ -366,7 +377,7 @@ export default function HomePage() {
         const matchingClothes = clothesArray.find(
           (clothes) => clothes && clothes.garment === button.garment
         );
-        return matchingClothes || { ...button, src: "" };
+        return matchingClothes || { ...button, src: "/src/images/emply-img.webp" };
       });
 
       setInfoGarment(buttonsOufit);
