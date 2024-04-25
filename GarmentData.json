@@ -3132,7 +3132,7 @@
     "image": "/src/images/image-json/pants/pantsChinos.webp",
     "imageRed": "/src/images/image-json/pants/pantsChinosRed.webp",
     "css": "big",
-    "style": ["elegant", "casual"],
+    "style": ["elegant"],
     "weather": ["mild", "cold"],
     "colors": [
       {
