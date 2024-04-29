@@ -2357,12 +2357,7 @@
         "title": "azul navy",
         "imageColor": "/src/images/image-json/belt/beltClasicnavy.webp"
       },
-      {
-        "colorName": "redBrick",
-        "hex": "#a94c2b",
-        "title": "ladrillo",
-        "imageColor": "/src/images/image-json/belt/beltClasicredbrick.webp"
-      },
+
       {
         "colorName": "windsorTan",
         "hex": "#a47850",
@@ -2375,12 +2370,7 @@
         "title": "chocolate",
         "imageColor": "/src/images/image-json/belt/beltClasicchocolate.webp"
       },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "title": "cacahuate",
-        "imageColor": "/src/images/image-json/belt/beltClasicpeanut.webp"
-      },
+
       {
         "colorName": "camel",
         "hex": "#c19a6b",
@@ -2452,12 +2442,7 @@
         "title": "emeralda oscuro",
         "imageCo|lor": "/src/images/image-json/belt/beltClothemerald.webp"
       },
-      {
-        "colorName": "darkGreen",
-        "hex": "#363d10",
-        "title": "verde oscuro",
-        "imageColor": "/src/images/image-json/belt/beltClothdarkgreen.webp"
-      },
+
       {
         "colorName": "army",
         "hex": "#5f6053",
@@ -2470,12 +2455,7 @@
         "title": "amarillo",
         "imageCo|lor": "/src/images/image-json/belt/beltClothyellow.webp"
       },
-      {
-        "colorName": "redBrick",
-        "hex": "#a94c2b",
-        "title": "ladrillo",
-        "imageColor": "/src/images/image-json/belt/beltClothredbrick.webp"
-      },
+
       {
         "colorName": "windsorTan",
         "hex": "#a47850",
@@ -2488,12 +2468,7 @@
         "title": "chocolate",
         "imageColor": "/src/images/image-json/belt/beltClothchocolate.webp"
       },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "title": "cacahuate",
-        "imageColor": "/src/images/image-json/belt/beltClothpeanut.webp"
-      },
+
       {
         "colorName": "camel",
         "hex": "#c19a6b",
@@ -2559,24 +2534,14 @@
         "title": "azul navy",
         "imageColor": "/src/images/image-json/belt/beltBraidednavy.webp"
       },
-      {
-        "colorName": "darkGreen",
-        "hex": "#363d10",
-        "title": "verde oscuro",
-        "imageColor": "/src/images/image-json/belt/beltBraideddarkgreen.webp"
-      },
+
       {
         "colorName": "army",
         "hex": "#5f6053",
         "title": "verde militar",
         "imageColor": "/src/images/image-json/belt/beltBraidedarmy.webp"
       },
-      {
-        "colorName": "redBrick",
-        "hex": "#a94c2b",
-        "title": "ladrillo",
-        "imageColor": "/src/images/image-json/belt/beltBraidedredbrick.webp"
-      },
+
       {
         "colorName": "windsorTan",
         "hex": "#a47850",
@@ -2589,12 +2554,7 @@
         "title": "chocolate",
         "imageColor": "/src/images/image-json/belt/beltBraidedchocolate.webp"
       },
-      {
-        "colorName": "peanut",
-        "hex": "#766142",
-        "title": "cacahuate",
-        "imageColor": "/src/images/image-json/belt/beltBraidedpeanut.webp"
-      },
+
       {
         "colorName": "camel",
         "hex": "#c19a6b",
@@ -3047,7 +3007,7 @@
     "name": "bermuda gabardina",
     "image": "/src/images/image-json/pants/pantsShortsGab.webp",
     "css": "big",
-    "style": ["casual"],
+    "style": ["casual", "elegant"],
     "weather": ["heat"],
     "colors": [
       {
@@ -4048,8 +4008,8 @@
     "name": "chelsea",
     "image": "/src/images/image-json/shoes/shoesChelsea.webp",
     "css": "shoes",
-    "style": ["basic"],
-    "weather": ["mild", "heat"],
+    "style": ["elegant"],
+    "weather": ["mild", "cold"],
     "colors":[
       {
         "colorName": "navy",

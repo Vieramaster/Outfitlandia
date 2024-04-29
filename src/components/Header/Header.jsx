@@ -7,7 +7,6 @@ export default function Header() {
       <div className="header__logo">
         <h1>outfilandia</h1>
       </div>
-      <button className="header__button">Ingresar</button>
     </header>
   );
 }

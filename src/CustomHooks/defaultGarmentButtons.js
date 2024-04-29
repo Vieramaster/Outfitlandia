@@ -15,7 +15,7 @@ export const defaultGarmentButtons = [
     buttonName: "abrigo",
     key: "default-coat",
   },
-  
+
   {
     css: "big",
     src: "/src/images/default/defaultPants.webp",
@@ -25,14 +25,6 @@ export const defaultGarmentButtons = [
     key: "default-pants",
   },
 
-  {
-    css: "small",
-    src: "/src/images/default/watch.webp",
-    name: "default-watch",
-    garment: "watch",
-    buttonName: "reloj",
-    key: "default-watch",
-  },
   {
     css: "small",
     src: "/src/images/default/belt.webp",

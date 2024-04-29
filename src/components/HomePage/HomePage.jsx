@@ -17,7 +17,6 @@ export default function HomePage() {
   const [divSwap, setDivSwap] = useState(false);
   const [firstButton, setFirstButton] = useState({});
   const [buttonDisabled, setButtonDisabled] = useState(false);
-
   const [addColorButtonCombine, setAddColorButtonCombine] = useState(false);
 
   // Genera un nuevo objeto utilizando el color asignado en la combinación, eliminando los demás colores y ajustándolo para que sea compatible con los botones.
@@ -106,7 +105,7 @@ export default function HomePage() {
     //  Función genérica en la que verificamos que todos tengan una clave en común.
     const keyFilter = (array, key) => {
       let result = null;
-    
+
       for (let i = 0; i < array.length; i++) {
         for (let j = i + 1; j < array.length; j++) {
           if (!array[i][key].some((item) => array[j][key].includes(item))) {
@@ -116,7 +115,7 @@ export default function HomePage() {
           }
         }
       }
-    
+
       return result;
     };
 
@@ -169,7 +168,7 @@ export default function HomePage() {
           );
           return filteredObjects(findColor, searchColor);
         };
-        
+
         let firstObject = filteredColors(partResults[0]);
         let secondObject = filteredColors(partResults[1]);
 
@@ -226,7 +225,7 @@ export default function HomePage() {
 
           //Aplicamos filtros de estilo y clima para asegurarnos de que todo coincida y para evitar errores. En caso de que algo falle, volvemos a ejecutar la función principal pickStyle().
           if (Object.keys(selectedItems).length === 0) {
-            return pickStyle(attempt + 1);
+            return pickStyle( attempt + 1);
           } else if (Object.keys(selectedItems).length === 1) {
             let key = Object.keys(selectedItems)[0];
 
@@ -256,7 +255,7 @@ export default function HomePage() {
               updateoutfit2 !== undefined
             ) {
               return [styleName2, updateoutfit2, weather2];
-            } else pickStyle(attempt + 1);
+            } else pickStyle( attempt + 1);
           }
         }
       };
@@ -268,20 +267,16 @@ export default function HomePage() {
         filteredClothes = pickStyle();
       } while (filteredClothes === undefined);
 
-
-    
       // Sustraemos del array el estilo y las prendas.
       let styleClothes = filteredClothes[0];
 
       let finishClothes = filteredClothes[1];
-      
 
       // Se elimina el abrigo en el caso de que sean prendas de verano
-      if(keyFilter(finishClothes,"weather") === "heat"){
-        finishClothes = finishClothes.filter(item => item.garment !== 'coat');
+      if (keyFilter(finishClothes, "weather") === "heat") {
+        finishClothes = finishClothes.filter((item) => item.garment !== "coat");
       }
 
-    
       // Con la información previa, procedemos a buscar el calzado adecuado.
       const findAcc = (attempt = 0) => {
         const maxAttempts = 20;
@@ -377,7 +372,9 @@ export default function HomePage() {
         const matchingClothes = clothesArray.find(
           (clothes) => clothes && clothes.garment === button.garment
         );
-        return matchingClothes || { ...button, src: "/src/images/emply-img.webp" };
+        return (
+          matchingClothes || { ...button, src: "/src/images/emply-img.webp" }
+        );
       });
 
       setInfoGarment(buttonsOufit);
@@ -387,20 +384,18 @@ export default function HomePage() {
   return (
     <section className="HomePage">
       <SelectionGarment
-        onClickGarment={onClickGarment}
-        infoGarment={infoGarment}
+        {...{
+          onClickGarment,
+          infoGarment,
+          onClickCombine,
+          addColorButtonCombine,
+          buttonDisabled,
+        }}
       />
-      <Weather
-        onClickCombine={onClickCombine}
-        addColorButtonCombine={addColorButtonCombine}
-        buttonDisabled={buttonDisabled}
-      />
+      <Weather />
+
       <SelectionClothes
-        showGarments={showGarments}
-        OnClickClothes={OnClickClothes}
-        showColors={showColors}
-        divSwap={divSwap}
-        onClickColor={onClickColor}
+        {...{ showGarments, OnClickClothes, showColors, divSwap, onClickColor }}
       />
     </section>
   );

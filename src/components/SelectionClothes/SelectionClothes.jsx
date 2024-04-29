@@ -1,21 +1,21 @@
 import "./SelectionClothes.css";
 import ColorButton from "../ColorButton/ColorButton";
+
 import { customButton } from "../CustomButton/CustomButton";
 export default function SelectionClothes({
   showGarments,
   OnClickClothes,
   divSwap,
   showColors,
-  onClickColor,
+  onClickColor
+
 }) {
-
-
-  
   return (
     <div className="SelectionClothes">
+      
       {divSwap === false ? (
         <div className="SelectionClothes__box">
-          {customButton(showGarments, "name", null ,OnClickClothes)}
+          {customButton(showGarments, "name", null, OnClickClothes)}
         </div>
       ) : null}
       {divSwap === true ? (

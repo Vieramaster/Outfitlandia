@@ -28,15 +28,18 @@
   width: 6.5rem;
   height: 8.5rem;
   pointer-events: none;
+  background-color: transparent;
 }
 
 .shoes {
   width: 15rem;
   height: 8.5rem;
   pointer-events: none;
+  background-color: transparent;
 }
 .shoes img {
   height: 100%;
+  
 }
 
 .big {

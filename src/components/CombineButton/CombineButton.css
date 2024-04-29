@@ -1,0 +1,20 @@
+.combineButton {
+  background-color: transparent;
+  width: 6.5rem;
+  height: 8.5rem;
+  display: grid;
+  place-items: center;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+.combineButton img {
+  width: 100%;
+  object-fit: cover;
+}
+.activeButton {
+  background-color: var(--fourth-color);
+}
