@@ -327,7 +327,7 @@
     "name": "remera manga corta",
     "image": "/src/images/image-json/top/topTShirt.webp",
     "css": "big",
-    "style": ["basic", "casual"],
+    "style": ["basic", "casual", "elegant"],
     "weather": ["heat", "mild"],
     "colors": [
       {
@@ -605,12 +605,7 @@
         "title": "gris oscuro",
         "imageColor": "/src/images/image-json/top/topPolodarkgrey.webp"
       },
-      {
-        "colorName": "wornBlack",
-        "hex": "#2d2d2d",
-        "title": "negro gastado",
-        "imageColor": "/src/images/image-json/top/topPolowornblack.webp"
-      },
+
       {
         "colorName": "black",
         "hex": "#000000",
@@ -914,8 +909,8 @@
     "name": "camisa manga corta",
     "image": "/src/images/image-json/top/topShortShirt.webp",
     "css": "big",
-    "style": ["elegant"],
-    "weather": ["heat"],
+    "style": ["elegant", "casual"],
+    "weather": ["heat", "mild"],
     "colors": [
       {
         "colorName": "purple",
@@ -927,7 +922,7 @@
         "colorName": "lilac",
         "hex": "#c9b8e1",
         "title": "lila",
-        "imageColor": "/src/images/image-json/top/topShortShirt.webp"
+        "imageColor": "/src/images/image-json/top/topShortShirtlilac.webp"
       },
       {
         "colorName": "aero",
@@ -951,7 +946,7 @@
         "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "/src/images/image-json/top/topShortShirtskyBlue.webp"
+        "imageColor": "/src/images/image-json/top/topShortShirtskyblue.webp"
       },
 
       {
@@ -972,6 +967,7 @@
         "title": "verde militar",
         "imageColor": "/src/images/image-json/top/topShortShirtarmy.webp"
       },
+
       {
         "colorName": "yellow",
         "hex": "#efbe3d",
@@ -984,7 +980,6 @@
         "title": "mostaza",
         "imageColor": "/src/images/image-json/top/topShortShirtmustard.webp"
       },
-
       {
         "colorName": "windsorTan",
         "hex": "#a47850",
@@ -997,6 +992,7 @@
         "title": "chocolate",
         "imageColor": "/src/images/image-json/top/topShortShirtchocolate.webp"
       },
+
       {
         "colorName": "beige",
         "hex": "#cbbba5",
@@ -1007,7 +1003,7 @@
         "colorName": "white",
         "hex": "#ffffff",
         "title": "blanco",
-        "imageColor": "/src/images/image-json/top/topShortShirt.webp"
+        "imageColor": "/src/images/image-json/top/topTShirt.webp"
       },
       {
         "colorName": "lightGrey",
@@ -1021,7 +1017,6 @@
         "title": "gris oscuro",
         "imageColor": "/src/images/image-json/top/topShortShirtdarkgrey.webp"
       },
-
       {
         "colorName": "black",
         "hex": "#000000",
@@ -1066,7 +1061,7 @@
     "image": "/src/images/image-json/top/topLongShirt.webp",
     "css": "big",
     "style": ["elegant"],
-    "weather": ["heat", "mild", "cold"],
+    "weather": [ "mild", "cold"],
     "colors": [
       {
         "colorName": "purple",
@@ -1316,12 +1311,7 @@
         "title": "gris oscuro",
         "imageColor": "/src/images/image-json/top/topLongTShirtdarkgrey.webp"
       },
-      {
-        "colorName": "wornBlack",
-        "hex": "#2d2d2d",
-        "title": "negro gastado",
-        "imageColor": "/src/images/image-json/top/topLongTShirtwornblack.webp"
-      },
+
       {
         "colorName": "black",
         "hex": "#000000",
@@ -1365,7 +1355,7 @@
     "name": "chaqueta de jean o garbardina",
     "image": "/src/images/image-json/coat/coatDenim.webp",
     "css": "big",
-    "style": ["casual"],
+    "style": ["casual", "elegant"],
     "weather": ["heat", "mild"],
     "colors": [
       {
@@ -1377,7 +1367,7 @@
 
       {
         "colorName": "jean",
-        "hex": "#b",
+        "hex": "#132b59",
         "title": "jean",
         "imageColor": "/src/images/image-json/coat/coatDenimjean.webp"
       },
@@ -1428,6 +1418,12 @@
         "hex": "#dfc2be",
         "title": "rosa bebe",
         "imageColor": "/src/images/image-json/coat/coatDenimBabyPink.webp"
+      },
+      {
+        "colorName": "army",
+        "hex": "#5f6053",
+        "title": "army",
+        "imageColor": "/src/images/image-json/coat/coatDenimArmy.webp"
       }
     ]
   },
@@ -1659,12 +1655,7 @@
         "title": "mostaza",
         "imageColor": "/src/images/image-json/coat/coatParkaMustard.webp"
       },
-      {
-        "colorName": "redBrick",
-        "hex": "#a94c2b",
-        "title": "ladrillo",
-        "imageColor": "/src/images/image-json/coat/coatParkaRedBrick.webp"
-      },
+
       {
         "colorName": "windsorTan",
         "hex": "#a47850",
@@ -1715,7 +1706,7 @@
     "image": "/src/images/image-json/coat/coatShacket.webp",
     "css": "big",
     "style": ["casual"],
-    "weather": ["mild"],
+    "weather": ["cold"],
     "colors": [
       {
         "colorName": "purple",
@@ -1747,12 +1738,7 @@
         "title": "verde militar",
         "imageColor": "/src/images/image-json/coat/coatShacketarmy.webp"
       },
-      {
-        "colorName": "ivory",
-        "hex": "#e1dfd1",
-        "title": "marfil",
-        "imageColor": "/src/images/image-json/coat/coatShacketivory.webp"
-      },
+
       {
         "colorName": "yellow",
         "hex": "#efbe3d",
@@ -1821,7 +1807,7 @@
     "image": "/src/images/image-json/coat/coatBomber.webp",
     "css": "big",
     "style": ["basic", "casual"],
-    "weather": ["cold"],
+    "weather": ["mild","heat"],
     "colors": [
       {
         "colorName": "aero",
@@ -1913,7 +1899,6 @@
     "garment": "coat",
     "name": "chaqueta de jean con abrigo",
     "image": "/src/images/image-json/coat/coatDenimWinter.webp",
-    "imageRed": "/src/images/image-json/coat/coatDenimWinterRed.webp",
     "css": "big",
     "style": ["casual"],
     "weather": ["cold"],
@@ -2077,16 +2062,16 @@
   {
     "garment": "coat",
     "name": "blazer",
-    "image": "/src/images/image-json/coat/coatBlazer.webp",
+    "image": "/src/images/image-json/coat/coatblazer.webp",
     "css": "big",
     "style": ["elegant"],
-    "weather": ["mild", "cold"],
+    "weather": ["cold", "mild"],
     "colors": [
       {
         "colorName": "purple",
         "hex": "#5f2f82",
         "title": "purpura",
-        "imageColor": "/src/images/image-json/coat/coatBlazerpurple.webp"
+        "imageColor": "/src/images/image-json/coat/coatBlazerPurple.webp"
       },
       {
         "colorName": "lilac",
@@ -2922,10 +2907,9 @@
     "garment": "pants",
     "name": "gabardina",
     "image": "/src/images/image-json/pants/pantsGabardine.webp",
-    "imageRed": "/src/images/image-json/pants/pantsDenimGabardineRed.webp",
     "css": "big",
-    "style": ["casual"],
-    "weather": ["mild", "cold"],
+    "style": ["casual", "elegant"],
+    "weather": ["mild", "cold", "heat"],
     "colors": [
       {
         "colorName": "navy",
@@ -3090,7 +3074,6 @@
     "garment": "pants",
     "name": "chino",
     "image": "/src/images/image-json/pants/pantsChinos.webp",
-    "imageRed": "/src/images/image-json/pants/pantsChinosRed.webp",
     "css": "big",
     "style": ["elegant"],
     "weather": ["mild", "cold"],
@@ -3171,11 +3154,10 @@
   },
   {
     "garment": "pants",
-    "name": "bermuda chino",
+    "name": " bermuda chino",
     "image": "/src/images/image-json/pants/pantsShortChino.webp",
-    "imageRed": "/src/images/image-json/pants/pantsShortChinoRed.webp",
     "css": "big",
-    "style": ["casual"],
+    "style": ["casual","elegant"],
     "weather": ["heat"],
     "colors": [
       {
@@ -3225,13 +3207,6 @@
       },
 
       {
-        "colorName": "white",
-        "hex": "#ffffff",
-        "title": "blanco",
-        "imageColor": "/src/images/image-json/pants/pantsShortChino.webp"
-      },
-
-      {
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
@@ -3242,7 +3217,7 @@
         "colorName": "darkGrey",
         "hex": "#4a4855",
         "title": "gris oscuro",
-        "imageColor": "/src/images/image-json/pants/pantsShortChinodarkgrey.webp"
+        "imageColor":"/src/images/image-json/pants/pantsShortChinodarkgrey.webp"
       },
 
       {

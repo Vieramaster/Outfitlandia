@@ -39,14 +39,7 @@
     },
     "combineShoes": ["black", "white"]
   },
-  {
-    "combineClothes": {
-      "top": "purple",
-      "pants": "burgundy",
-      "coat": "black"
-    },
-    "combineShoes": ["black", "white"]
-  },
+
   {
     "combineClothes": {
       "top": "purple",
@@ -1060,7 +1053,7 @@
       "pants": "beige",
       "coat": "darkGrey"
     },
-    "combineShoes": ["white", "chocolate", "windsorTan", "aquamarine"]
+    "combineShoes": ["white", "chocolate", "aquamarine"]
   },
 
   {
@@ -1075,7 +1068,7 @@
     "combineClothes": {
       "top": "aquamarine",
       "pants": "camel",
-      "coat": "windsorTan"
+      "coat": "chocolate"
     },
     "combineShoes": ["white", "chocolate"]
   },
@@ -1093,7 +1086,7 @@
       "pants": "camel",
       "coat": "darkGrey"
     },
-    "combineShoes": ["white", "chocolate", "windsorTan", "aquamarine"]
+    "combineShoes": ["white", "chocolate", "aquamarine"]
   },
   {
     "combineClothes": {
@@ -11159,5 +11152,64 @@
       "coat": "black"
     },
     "combineShoes": ["white", "black"]
+  },
+  {
+    "combineClothes": {
+      "top": "black",
+      "pants": "black",
+      "coat": "purple"
+    },
+    "combineShoes": ["purple", "black", "white"]
+  },
+
+
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "black",
+      "coat": "purple"
+    },
+    "combineShoes": [ "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "navy",
+      "coat": "purple"
+    },
+    "combineShoes": [ "black", "white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "jean",
+      "coat": "lilac"
+    },
+    "combineShoes": [ "black", "white", "chocolate"]
+  },
+  {
+    "combineClothes": {
+      "top": "white",
+      "pants": "white",
+      "coat": "lilac"
+    },
+    "combineShoes": [ "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "lilac",
+      "pants": "jean",
+      "coat": "purple"
+    },
+    "combineShoes": [ "black", "white"]
+  },
+  {
+    "combineClothes": {
+      "top": "babyPink",
+      "pants": "white",
+      "coat": "lilac"
+    },
+    "combineShoes": [ "black", "chocolate"]
   }
+  
 ]

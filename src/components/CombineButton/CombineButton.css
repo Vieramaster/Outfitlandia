@@ -1,7 +1,7 @@
 .combineButton {
   background-color: transparent;
-  width: 6.5rem;
-  height: 8.5rem;
+  width: 6rem;
+  height: 7.5rem;
   display: grid;
   place-items: center;
 
@@ -17,4 +17,24 @@
 }
 .activeButton {
   background-color: var(--fourth-color);
+}
+
+@media (width <= 1500px) {
+
+
+  .combineButton {
+    width: calc(6rem * 0.8);
+    height: calc(7.5rem * 0.8);
+  }
+
+}
+
+@media (width <= 1250px) {
+
+
+  .combineButton {
+    width: calc(6rem * 0.6);
+    height: calc(7.5rem * 0.6);
+  }
+
 }

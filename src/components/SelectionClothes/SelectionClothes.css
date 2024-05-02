@@ -1,7 +1,7 @@
 .SelectionClothes {
-  height: 45rem;
+  height: 40rem;
   width: 60%;
-
+  background-color: rgba(21, 25, 237, 0.5);
   overflow: auto;
 }
 .SelectionClothes__box {
@@ -9,7 +9,7 @@
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2rem;
+  gap: 1rem;
   place-items: center;
   padding: 2rem;
 
@@ -19,7 +19,6 @@
 .SelectionClothes::-webkit-scrollbar {
   width: 10px;
 }
-
 
 .SelectionClothes::-webkit-scrollbar-track {
   background: var(--primary-color);
@@ -36,9 +35,41 @@
 .SelectionClothes__colors {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  align-content: center; 
   gap: 2rem;
   padding: 0 4rem;
-  place-content: center;
+}
+
+@media (width <= 1500px) {
+  .SelectionClothes {
+    height: calc(40rem * 0.8);
+  }
+
+  .SelectionClothes__box {
+    grid-template-columns: repeat(auto-fit, minmax(calc(15rem * 0.8), 1fr));
+    gap: calc(1 * 0.8);
+    padding: calc(2 * 0.8);
+    row-gap: calc(2 * 0.8);
+  }
+  .SelectionClothes__colors {
+
+    gap: calc(2 * 0.6);
+    padding: 0 calc(4 * 0.6);
+
+  }
+}
+@media (width <= 1250px) {
+  .SelectionClothes {
+    height: calc(40rem * 0.6);
+  }
+  .SelectionClothes__box {
+    grid-template-columns: repeat(auto-fit, minmax(calc(15rem * 0.6), 1fr));
+    gap: calc(1 * 0.6);
+    padding: calc(2 * 0.6);
+    row-gap: calc(2 * 0.6);
+  }
 }

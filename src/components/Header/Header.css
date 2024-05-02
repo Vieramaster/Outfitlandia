@@ -19,3 +19,10 @@ header {
   margin: auto 3rem;
   color: var(--primary-color);
 }
+
+@media (width <= 1500px){
+  header{
+    height: calc(6rem * 0.8);
+  }
+}
+

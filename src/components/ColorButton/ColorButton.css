@@ -14,4 +14,13 @@
 .colorButton:hover {
   transform: skew(-20deg) translateY(-6px);
 }
-/**/
+
+
+
+@media( width <= 1250px){
+
+  .colorButton{
+    width: calc(6rem * 0.8);
+    height: calc(4rem * 0.8);
+  }
+}  

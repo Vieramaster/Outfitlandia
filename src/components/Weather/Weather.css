@@ -6,6 +6,7 @@
   place-content: center;
   align-items: center;
   gap: 2rem;
+  background-color: rgba(237, 21, 21, 0.5);
 }
 .Weather--info {
   width: 6rem;
@@ -31,21 +32,37 @@
 }
 
 
-@media (width <= 1280px) {
-  .weather-box--info {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-}
-
 .Weather--info p {
   color: var(--primary-color);
   font-size: 1.5em;
   font-weight: 600;
 }
 
-@media (width <= 1280px) {
-  .Weather {
-    width: 5rem;
+@media( width <= 1500px){
+
+  .Weather{
+    width: calc(8rem * 0.8);
+
   }
-}
+  .Weather--info {
+    width: calc(6rem * 0.8);
+    height: calc(6rem * 0.8);
+  }
+
+}  
+@media( width <= 1250px){
+
+  .Weather{
+    width: calc(8rem * 0.6);
+
+  }
+  .Weather--info {
+    width: calc(6rem * 0.6);
+  
+  }
+  .Weather--info p {
+
+    font-size: 1.5rem;
+
+  }
+}  
