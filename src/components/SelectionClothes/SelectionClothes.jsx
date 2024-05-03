@@ -7,12 +7,16 @@ export default function SelectionClothes({
   OnClickClothes,
   divSwap,
   showColors,
-  onClickColor
-
+  onClickColor,
+  mobile,
+  showMobileClothes,
 }) {
   return (
-    <div className="SelectionClothes">
-      
+    <div
+      className={`SelectionClothes ${
+        mobile && showMobileClothes ? "hidden" : ""
+      }`}
+    >
       {divSwap === false ? (
         <div className="SelectionClothes__box">
           {customButton(showGarments, "name", null, OnClickClothes)}

@@ -137,8 +137,8 @@ export function OutfitCreator(
     );
 
     let randomCombineColor = randomNumber(findColors);
-        console.log("-----------------------------")
-    console.log(randomCombineColor, "colores")
+
+
 
     let { combineShoes } = randomCombineColor;
 
@@ -162,7 +162,7 @@ export function OutfitCreator(
 
     let outfitFilter = firstObject.concat(secondObject);
 
-    console.log(outfitFilter)
+
     // Organizamos los estilos según el style de las prendas.”
     const groupedByStyle = outfitFilter.reduce((acc, item) => {
       item.style.forEach((style) => {
@@ -187,7 +187,7 @@ export function OutfitCreator(
       return commonStyles.length > 0 ? commonStyles[0] : null;
     };
 
-    console.log(groupedByStyle,  "groupedByStyle")
+
     // Identificamos los estilos que tienen las dos partes y, si hay varios, elegimos uno al azar.
     let selectedItems = [];
 
@@ -212,8 +212,8 @@ export function OutfitCreator(
       if (selectedItems[style].includes(null)) {
         delete selectedItems[style];
       }
+    }
 
-      console.log(selectedItems, "selectedItems")
       //Aplicamos filtros de estilo y clima para asegurarnos de que todo coincida y para evitar errores. En caso de que algo falle, volvemos a ejecutar la función principal pickStyle().
       if (Object.keys(selectedItems).length === 0) {
         return pickStyle(attempt + 1);
@@ -226,7 +226,7 @@ export function OutfitCreator(
         let style = keyFilter(updateoutfit, "style");
         let styleName = styleFilter(updateoutfit);
         if (weather !== null && style !== null && updateoutfit !== undefined) {
-          console.log( updateoutfit, "1")
+
           return [styleName, updateoutfit];
         } else pickStyle(attempt + 1);
       } else if (Object.keys(selectedItems).length > 1) {
@@ -242,11 +242,11 @@ export function OutfitCreator(
           style2 !== null &&
           updateoutfit2 !== undefined
         ) {
-          console.log( updateoutfit2)
+
           return [styleName2, updateoutfit2];
         } else pickStyle(attempt + 1);
       }
-    }
+    
   };
 
   // Volvemos a ejecutar la funcion en caso de que salga algun tipo de error.
@@ -255,7 +255,7 @@ export function OutfitCreator(
     filteredClothes = pickStyle();
   } while (!filteredClothes || (filteredClothes[0] === undefined && filteredClothes[1] === undefined));
   
-  console.log(filteredClothes, "filteredclothes")
+
 
   // Sustraemos del array el estilo y las prendas.
   let styleClothes = filteredClothes[0];
@@ -329,7 +329,7 @@ export function OutfitCreator(
       return null;
     } else if (randomBelt === null) {
       return filteredStyle.filter((item) =>
-        item.color.includes((el) => el.colorName === "black")
+        item.color.includes(el => el.colorName === "black")
       );
     } else return randomBelt;
   };

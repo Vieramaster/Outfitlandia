@@ -5,9 +5,9 @@
   display: grid;
   place-items: center;
 
-  border: 3px solid black;
+  border: 3px solid var(--fourth-color);
   border-radius: 10px;
-  box-shadow: 0.1em 0.1em;
+
   cursor: pointer;
 }
 
@@ -20,21 +20,28 @@
 }
 
 @media (width <= 1500px) {
-
-
   .combineButton {
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
-
 }
 
 @media (width <= 1250px) {
-
-
   .combineButton {
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);
   }
+}
+@media (width <= 800px) {
+  .combineButton {
+    width: calc(6rem * 0.8);
+    height: calc(7.5rem * 0.8);
+  }
+}
 
+@media (width <= 400px) {
+  .combineButton {
+    width: calc(6rem * 0.6);
+    height: calc(7.5rem * 0.6);
+  }
 }

@@ -7,6 +7,7 @@ export default function SelectionGarment({
   onClickCombine,
   addColorButtonCombine,
   buttonDisabled,
+
 }) {
   return (
     <section className="SelectionGarment">

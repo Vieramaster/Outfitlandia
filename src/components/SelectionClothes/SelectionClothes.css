@@ -1,7 +1,7 @@
 .SelectionClothes {
   height: 40rem;
   width: 60%;
-  background-color: rgba(21, 25, 237, 0.5);
+
   overflow: auto;
 }
 .SelectionClothes__box {
@@ -37,9 +37,9 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center; 
-  align-content: center; 
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   gap: 2rem;
   padding: 0 4rem;
 }
@@ -56,20 +56,51 @@
     row-gap: calc(2 * 0.8);
   }
   .SelectionClothes__colors {
-
     gap: calc(2 * 0.6);
     padding: 0 calc(4 * 0.6);
-
   }
 }
 @media (width <= 1250px) {
   .SelectionClothes {
     height: calc(40rem * 0.6);
+    width: 55%;
   }
   .SelectionClothes__box {
     grid-template-columns: repeat(auto-fit, minmax(calc(15rem * 0.6), 1fr));
     gap: calc(1 * 0.6);
     padding: calc(2 * 0.6);
     row-gap: calc(2 * 0.6);
+  }
+}
+@media (width <= 800px){
+  .SelectionClothes{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+
+    background-image: linear-gradient(
+      135deg,
+      #393f4b 25%,
+      #2d2f35 49%,
+      #222325 75%
+    );
+  }
+  .SelectionClothes__box {
+
+    grid-template-columns: repeat(auto-fit, minmax(calc(15rem * 0.7), 1fr));
+    gap: 1rem;
+    place-items: center;
+    padding: 2rem;
+  
+    row-gap: 2rem;
+  }
+  .SelectionClothes__colors {
+
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  .hidden {
+    display: none;
   }
 }

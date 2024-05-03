@@ -4,14 +4,11 @@ header {
   background-color: transparent;
   display: grid;
   justify-content: center;
-  background-color:  var(--fifth-color);
-
-
+  background-color: var(--fifth-color);
 }
 
 .header__logo {
   font-size: 2.5rem;
-
 }
 .header__logo {
   font-family: var(--primary-font);
@@ -20,9 +17,20 @@ header {
   color: var(--primary-color);
 }
 
-@media (width <= 1500px){
-  header{
+@media (width <= 1500px) {
+  header {
     height: calc(6rem * 0.8);
+  }
+  .header__logo {
+    font-size: calc(2.5rem * 0.8);
   }
 }
 
+@media (max-height: 700px) {
+  header {
+    height: calc(6rem * 0.6);
+  }
+  .header__logo {
+    font-size: calc(2.5rem * 0.6);
+  }
+}

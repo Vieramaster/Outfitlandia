@@ -6,7 +6,7 @@
   place-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: rgba(237, 21, 21, 0.5);
+
 }
 .Weather--info {
   width: 6rem;
@@ -31,38 +31,42 @@
   margin-bottom: 5px;
 }
 
-
 .Weather--info p {
   color: var(--primary-color);
   font-size: 1.5em;
   font-weight: 600;
 }
 
-@media( width <= 1500px){
-
-  .Weather{
+@media (width <= 1500px) {
+  .Weather {
     width: calc(8rem * 0.8);
-
   }
   .Weather--info {
     width: calc(6rem * 0.8);
     height: calc(6rem * 0.8);
   }
-
-}  
-@media( width <= 1250px){
-
-  .Weather{
+}
+@media (width <= 1250px) {
+  .Weather {
     width: calc(8rem * 0.6);
-
   }
   .Weather--info {
     width: calc(6rem * 0.6);
-  
   }
   .Weather--info p {
-
     font-size: 1.5rem;
-
   }
-}  
+}
+
+@media (width <= 800px) {
+  .Weather{
+    flex-direction: row;
+    width: 100%;
+    height: 6rem;
+  }
+  .Weather--info{
+    width: 4rem;
+    height: 4rem;
+  }
+}
+

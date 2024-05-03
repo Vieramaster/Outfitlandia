@@ -2,7 +2,7 @@ import "./HomePage.css";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
 import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import Weather from "../Weather/Weather";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useDataJson from "../../CustomHooks/useDataJson";
 import {
   filteredObjects,
@@ -22,6 +22,20 @@ export default function HomePage() {
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [addColorButtonCombine, setAddColorButtonCombine] = useState(false);
   const { dataJson, dataColor } = useDataJson();
+  const [mobile, setMobile] = useState(window.innerWidth <= 800);
+  const [showMobileClothes, setShowMobileClothes] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 800);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const findGarments = (data, garment, search) => {
     return data.filter((item) => item[search] === garment);
@@ -38,6 +52,7 @@ export default function HomePage() {
     setFirstButton({});
     const newGarmet = findGarments(dataJson, id, "garment");
     setShowGarments(newGarmet);
+    setShowMobileClothes(false);
   };
 
   //Ingresas el ID, que corresponde al nombre de la prenda seleccionada. Luego, buscamos los colores asociados a esa prenda y los almacenamos en un estado (useState). Además, creamos un estado booleano para alternar entre mostrar las prendas o los colores en la misma sección.
@@ -68,6 +83,7 @@ export default function HomePage() {
 
     setInfoGarment(newImageButton());
     setAddColorButtonCombine(true);
+    setShowMobileClothes(true);
   };
 
   const onClickCombine = () => {
@@ -103,7 +119,15 @@ export default function HomePage() {
       <Weather />
 
       <SelectionClothes
-        {...{ showGarments, OnClickClothes, showColors, divSwap, onClickColor }}
+        {...{
+          showGarments,
+          OnClickClothes,
+          showColors,
+          divSwap,
+          onClickColor,
+          mobile,
+          showMobileClothes,
+        }}
       />
     </section>
   );
