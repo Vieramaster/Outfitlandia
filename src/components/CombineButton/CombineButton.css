@@ -1,22 +1,70 @@
 .combineButton {
-  background-color: transparent;
+  /* Variables */
+  --button_radius: 0.75em;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--secondary-color);
   width: 6rem;
   height: 7.5rem;
-  display: grid;
-  place-items: center;
+}
 
-  border: 3px solid var(--fourth-color);
-  border-radius: 10px;
+.combineButton__span {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  width: 6rem;
+  height: 7.5rem;
+  cursor: no-drop;
+  display: flex;
+}
 
+.combineButton__svg {
+  fill: var(--secondary-color);
+  transform: scale(1.8);
+}
+.activeButton .combineButton__span {
+  background-color: var(--fourth-color);
+}
+
+.combineButton.activeButton:hover .combineButton__span {
+  transform: translateY(-0.33em);
+  cursor: pointer;
+}
+.combineButton.activeButton .combineButton__span {
   cursor: pointer;
 }
 
-.combineButton img {
-  width: 100%;
-  object-fit: cover;
+.combineButton.activeButton:active .combineButton__span {
+  transform: translateY(0);
 }
-.activeButton {
-  background-color: var(--fourth-color);
+
+@keyframes changeColor {
+  0% {
+    fill: var(--secondary-color);
+  }
+  50% {
+    fill: var(--fourth-color);
+  }
+  100% {
+    fill: var(--secondary-color);
+  }
+}
+
+.combineButton.activeButton .svg--arrowBotton {
+  animation: changeColor 5s infinite;
+}
+
+.combineButton.activeButton .svg--arrowTop {
+  animation: changeColor 5s infinite;
+  animation-delay: 2.5s;
 }
 
 @media (width <= 1500px) {
