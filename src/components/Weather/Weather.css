@@ -6,7 +6,6 @@
   place-content: center;
   align-items: center;
   gap: 2rem;
-
 }
 .Weather--info {
   width: 6rem;
@@ -23,10 +22,7 @@
   font-size: 1.3rem;
 }
 
-
-
 .Weather__button {
-
   --button_radius: 0.75em;
   font-size: 17px;
   font-weight: bold;
@@ -35,15 +31,14 @@
   background: var(--secondary-color);
   cursor: pointer;
   display: flex;
-
+  margin-top: 0.3rem;
 }
 
-.weather--svg{
-  fill: var( --third-color);
+.weather--svg {
+  fill: var(--third-color);
   width: 5rem;
-
 }
-.Weather__button--span{
+.Weather__button--span {
   width: 6rem;
   height: 6rem;
   display: block;
@@ -58,28 +53,15 @@
   display: grid;
   place-content: center;
   align-items: center;
-
 }
 
-
-
-button:hover .Weather__button--span{
-
+button:hover .Weather__button--span {
   transform: translateY(-0.33em);
 }
 
-button:active .Weather__button--span{
-
+button:active .Weather__button--span {
   transform: translateY(0);
 }
-
-
-
-
-
-
-
-
 
 .winter img {
   width: 70%;
@@ -99,32 +81,43 @@ button:active .Weather__button--span{
   .Weather {
     width: calc(8rem * 0.8);
   }
-  .Weather--info {
+  .Weather--info,
+  .Weather__button--span  {
     width: calc(6rem * 0.8);
     height: calc(6rem * 0.8);
+  }
+  .weather--svg {
+    width: calc(5rem * 0.8);
   }
 }
 @media (width <= 1250px) {
   .Weather {
     width: calc(8rem * 0.6);
   }
-  .Weather--info {
+  .Weather--info,
+  .Weather__button--span {
     width: calc(6rem * 0.6);
   }
   .Weather--info p {
     font-size: 1.5rem;
   }
+  .weather--svg {
+    width: calc(5rem * 0.6);
+  }
 }
 
 @media (width <= 800px) {
-  .Weather{
+  .Weather {
     flex-direction: row;
     width: 100%;
     height: 6rem;
   }
-  .Weather--info{
+  .Weather--info,
+  .Weather__button--span  {
     width: 4rem;
     height: 4rem;
   }
+  .weather--svg {
+    width: 3rem;
+  }
 }
-

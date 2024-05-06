@@ -2,13 +2,14 @@ import "./HomePage.css";
 import SelectionGarment from "../SelectionGarment/SelectionGarment";
 import SelectionClothes from "../SelectionClothes/SelectionClothes";
 import Weather from "../Weather/Weather";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useDataJson from "../../CustomHooks/useDataJson";
 import {
   filteredObjects,
   OutfitCreator,
   defaultGarmentButtons,
 } from "../../CustomHooks/OutfitCreator";
+import WeatherModal from "../WeatherModal/WeatherModal";
 
 export default function HomePage() {
   const [infoGarment, setInfoGarment] = useState(defaultGarmentButtons);
@@ -105,6 +106,18 @@ export default function HomePage() {
     );
   };
 
+  const refModal = useRef(null);
+
+  const toggleModal = () => {
+    if (!refModal.current) {
+      return;
+    }
+    refModal.current.hasAttribute("open")
+      ? refModal.current.close()
+      : refModal.current.showModal();
+  };
+  const HandleModal = () => {};
+
   return (
     <section className="HomePage">
       <SelectionGarment
@@ -116,7 +129,7 @@ export default function HomePage() {
           buttonDisabled,
         }}
       />
-      <Weather />
+      <Weather {...{ toggleModal }} />
 
       <SelectionClothes
         {...{
@@ -129,6 +142,7 @@ export default function HomePage() {
           showMobileClothes,
         }}
       />
+      <WeatherModal ref={refModal} {...{ toggleModal, HandleModal }} />
     </section>
   );
 }

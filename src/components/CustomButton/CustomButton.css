@@ -8,9 +8,7 @@
   transition: all 0.5s;
   display: grid;
   place-items: center;
-
 }
-
 
 .big:hover {
   border: 1px solid var(--fourth-color);
@@ -39,8 +37,7 @@
   background-color: transparent;
 }
 .shoes img {
-  height: 100%;
-  
+  width: 95%;
 }
 
 .big {
@@ -48,7 +45,7 @@
   height: 18rem;
 }
 
-@media (width <= 1500px ){
+@media (width <= 1500px) {
   .big {
     width: calc(13.5rem * 0.8);
     height: calc(18rem * 0.8);
@@ -58,8 +55,8 @@
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
-  .shoes{
-    width: calc(13.5rem *  0.8);
+  .shoes {
+    width: calc(13.5rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
 }
@@ -73,13 +70,13 @@
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);
   }
-  .shoes{
-    width: calc(13.5rem *  0.6);
+  .shoes {
+    width: calc(13.5rem * 0.6);
     height: calc(7.5rem * 0.6);
   }
 }
 
-@media (width <= 800px ){
+@media (width <= 800px) {
   .big {
     width: calc(13.5rem * 0.8);
     height: calc(18rem * 0.8);
@@ -89,8 +86,8 @@
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
-  .shoes{
-    width: calc(13.5rem *  0.8);
+  .shoes {
+    width: calc(13.5rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
 }
@@ -105,8 +102,8 @@
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);
   }
-  .shoes{
-    width: calc(13.5rem *  0.6);
+  .shoes {
+    width: calc(13.5rem * 0.6);
     height: calc(7.5rem * 0.65);
   }
 }

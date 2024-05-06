@@ -1,0 +1,19 @@
+.WeatherModal{
+    width: 50rem;
+    height: 6rem;
+    border-radius: 5px;
+    background-color: antiquewhite;
+
+}
+
+.WeatherModal input{
+    width: 75%;
+    height: 3rem;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.WeatherModal button{
+    width: 15%;
+    height: 3rem;
+}

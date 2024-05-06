@@ -1,10 +1,11 @@
 import "./Weather.css";
 
-export default function Weather() {
+
+export default function Weather({toggleModal}) {
   return (
     <div className="Weather">
-      <button className="Weather__button">
-        <span class="Weather__button--span">
+      <button className="Weather__button" onClick={toggleModal}>
+        <span className="Weather__button--span">
           <svg className="weather--svg" id="outputsvg" viewBox="0 0 5120 5120">
             <g>
               <g>
