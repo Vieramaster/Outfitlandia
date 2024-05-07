@@ -1,0 +1,98 @@
+.InteractiveButton {
+  --button_radius: 0.75em;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--secondary-color);
+  margin-top: 0.3rem;
+}
+
+.InteractiveButton__span {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InteractiveButton:hover .InteractiveButton__span {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+.InteractiveButton:active .InteractiveButton__span {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+/*   classname: */
+
+.InteractiveWeather {
+  width: 6.2rem;
+  height: 6.2rem;
+}
+
+.buttonCombiner {
+  width: 6rem;
+  height: 7.5rem;
+}
+.active {
+  background-color: var(--fourth-color);
+}
+
+.InteractiveButton.active:hover .InteractiveButton__span {
+  transform: translateY(-0.33em);
+  cursor: pointer;
+}
+.InteractiveButton.active .InteractiveButton__span {
+  cursor: pointer;
+}
+
+.InteractiveButton.active:active .InteractiveButton__span {
+  transform: translateY(0);
+}
+
+/* media query */
+
+@media (width <= 1500px) {
+  .InteractiveWeather {
+    width: calc(6.2rem * 0.8);
+    height: calc(6.2rem * 0.8);
+  }
+  .buttonCombiner {
+    width: calc(6rem * 0.8);
+    height: calc(7.5rem * 0.8);
+  }
+}
+@media (width <= 1250px) {
+  .InteractiveWeather {
+    width: calc(6.2rem * 0.6);
+  }
+  .buttonCombiner {
+    width: calc(6rem * 0.6);
+    height: calc(7.5rem * 0.6);
+  }
+}
+
+@media (width <= 800px) {
+  .InteractiveWeather {
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-top: 0.4rem;
+  }
+  .buttonCombiner {
+    width: calc(6rem * 0.8);
+    height: calc(7.5rem * 0.8);
+  }
+}

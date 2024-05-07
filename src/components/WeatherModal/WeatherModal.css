@@ -1,19 +1,47 @@
-.WeatherModal{
-    width: 50rem;
-    height: 6rem;
-    border-radius: 5px;
-    background-color: antiquewhite;
-
+.WeatherModal {
+  width: 50rem;
+  height: 4rem;
+  margin: 8rem auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
 }
 
-.WeatherModal input{
-    width: 75%;
-    height: 3rem;
-    border-radius: 5px;
-    font-style: italic;
+.WeatherModal__form--submit,
+.WeatherModal__form--cancel,
+.WeatherModal__form--input {
+  font-family: var(--primary-font);
 }
 
-.WeatherModal button{
-    width: 15%;
-    height: 3rem;
+.WeatherModal__form {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.WeatherModal__form--submit,
+.WeatherModal__form--cancel {
+  font-size: 1.4rem;
+  width: 15%;
+  height: 3rem;
+}
+
+.WeatherModal__form--input {
+  background-color: var();
+  width: 60%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+  font-style: italic;
+  padding-left: 1rem;
+  letter-spacing: 0.75px;
+}
+.WeatherModal__form--submit:hover,
+.WeatherModal__form--cancel:hover {
+  background-color: var(--fourth-color);
 }

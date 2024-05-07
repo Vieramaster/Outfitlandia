@@ -44,6 +44,31 @@
   place-content: center;
   margin-top: 0.5rem;
 }
+
+
+@keyframes changeColor {
+  0% {
+    fill: var(--third-color);
+  }
+  50% {
+    fill: var(--fourth-color);
+  }
+  100% {
+    fill: var(--third-color);
+  }
+}
+ .svg--arrowBotton {
+  animation: changeColor 5s infinite;
+}
+
+ .svg--arrowTop {
+  animation: changeColor 5s infinite;
+  animation-delay: -2.5s;
+}
+
+
+
+
 @media (max-width: 1500px) {
   .SelectionGarment {
     width: calc(30rem * 0.8);

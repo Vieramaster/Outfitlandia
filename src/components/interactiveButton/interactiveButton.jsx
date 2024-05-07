@@ -1,9 +1,21 @@
-import "./interactiveButton.css";
+import "./InteractiveButton.css";
 
-export default function interactiveButton({ SvgIcon, className }) {
+export default function InteractiveButton({
+  buttonDescription,
+  className,
+  onClick,
+  disabled,
+  spanClassName,
+  type
+}) {
   return (
-    <button className={className}>
-      <SvgIcon />
+    <button
+      className={`InteractiveButton ${className}`}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+    >
+      <span class={`InteractiveButton__span ${spanClassName}`}>{buttonDescription}</span>
     </button>
   );
 }

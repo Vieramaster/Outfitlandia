@@ -1,11 +1,13 @@
 import "./Weather.css";
+import InteractiveButton from "../InteractiveButton/InteractiveButton";
 
-
-export default function Weather({toggleModal}) {
+export default function Weather({ toggleModal }) {
   return (
     <div className="Weather">
-      <button className="Weather__button" onClick={toggleModal}>
-        <span className="Weather__button--span">
+      <InteractiveButton
+        className="InteractiveWeather"
+        onClick={toggleModal}
+        buttonDescription={
           <svg className="weather--svg" id="outputsvg" viewBox="0 0 5120 5120">
             <g>
               <g>
@@ -14,8 +16,8 @@ export default function Weather({toggleModal}) {
               </g>
             </g>
           </svg>
-        </span>
-      </button>
+        }
+      />
       <div className="Weather--info">
         <img src="/src/images/09d.svg" alt="ico" />
       </div>
