@@ -14,10 +14,9 @@ function WeatherModal({ toggleModal, HandleModal }, refModal) {
       }}
     >
       <form onSubmit={HandleModal} className="WeatherModal__form">
-        
         <input
-          name="city"
           type="text"
+          name="searchCity"
           placeholder=" Escriba su ciudad..."
           required
           className="WeatherModal__form--input"

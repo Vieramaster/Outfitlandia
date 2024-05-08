@@ -6,7 +6,7 @@ export default function InteractiveButton({
   onClick,
   disabled,
   spanClassName,
-  type
+  type,
 }) {
   return (
     <button
@@ -15,7 +15,9 @@ export default function InteractiveButton({
       disabled={disabled}
       type={type}
     >
-      <span class={`InteractiveButton__span ${spanClassName}`}>{buttonDescription}</span>
+      <span className={`InteractiveButton__span ${spanClassName}`}>
+        {buttonDescription}
+      </span>
     </button>
   );
 }

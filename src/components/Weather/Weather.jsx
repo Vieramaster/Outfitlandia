@@ -1,7 +1,7 @@
 import "./Weather.css";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
 
-export default function Weather({ toggleModal }) {
+export default function Weather({ toggleModal, arrayWeather }) {
   return (
     <div className="Weather">
       <InteractiveButton
@@ -18,6 +18,8 @@ export default function Weather({ toggleModal }) {
           </svg>
         }
       />
+
+      {arrayWeather.map((item, index) => {})}
       <div className="Weather--info">
         <img src="/src/images/09d.svg" alt="ico" />
       </div>

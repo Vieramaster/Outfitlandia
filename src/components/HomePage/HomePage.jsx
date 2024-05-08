@@ -10,6 +10,7 @@ import {
   defaultGarmentButtons,
 } from "../../CustomHooks/OutfitCreator";
 import WeatherModal from "../WeatherModal/WeatherModal";
+import ApiWeather from "../../ApiWeather/ApiWeather";
 
 export default function HomePage() {
   const [infoGarment, setInfoGarment] = useState(defaultGarmentButtons);
@@ -25,6 +26,9 @@ export default function HomePage() {
   const { dataJson, dataColor } = useDataJson();
   const [mobile, setMobile] = useState(window.innerWidth <= 800);
   const [showMobileClothes, setShowMobileClothes] = useState(true);
+  const [dataWeather, setDataWeather] = useState(null);
+  const [city, setCity] = useState(null);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -116,8 +120,31 @@ export default function HomePage() {
       ? refModal.current.close()
       : refModal.current.showModal();
   };
-  const HandleModal = () => {};
 
+  const HandleModal = (event) => {
+    event.preventDefault();
+    setCity(event.target.searchCity.value);
+  };
+
+  //pasar de m/s a km/h
+
+  const winterConverter = (val) => {
+    return val * (3600 / 1) * (1 / 1000);
+  };
+  let  arrayWeather
+
+  if (dataWeather) {
+    arrayWeather = {
+      weather: dataWeather.weather[0].main,
+      temp: dataWeather.main.temp,
+      wind: winterConverter(dataWeather.wind.speed),
+    }
+  } else null;
+
+
+/*
+ 
+      */
   return (
     <section className="HomePage">
       <SelectionGarment
@@ -129,7 +156,7 @@ export default function HomePage() {
           buttonDisabled,
         }}
       />
-      <Weather {...{ toggleModal }} />
+      <Weather {...{ toggleModal, arrayWeather }} />
 
       <SelectionClothes
         {...{
@@ -143,6 +170,7 @@ export default function HomePage() {
         }}
       />
       <WeatherModal ref={refModal} {...{ toggleModal, HandleModal }} />
+      <ApiWeather {...{ city, setDataWeather }} />
     </section>
   );
 }
