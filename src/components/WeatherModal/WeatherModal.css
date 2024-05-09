@@ -4,7 +4,7 @@
   margin: 8rem auto;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
+
 
 }
 
@@ -53,4 +53,44 @@
 .WeatherModal__form--submit:hover,
 .WeatherModal__form--cancel:hover {
   background-color: var(--fourth-color);
+}
+@media(width <= 1250px){
+  .WeatherModal{
+   width: 40rem;
+  }
+}
+@media(width <= 800px){
+  .WeatherModal{
+    height: 8rem;
+    width: 30rem;
+    margin: auto;
+  }
+  .WeatherModal__form{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 1px;
+
+  }
+  .WeatherModal__form--input {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 90%;
+    margin: auto;
+
+  }
+  .WeatherModal__form--cancel{
+    grid-area: 2/1/3/2;
+
+
+  }
+  .WeatherModal__form--submit {
+    grid-area: 2/2/3/3;
+
+
+  }
+  .WeatherModal__form--submit ,
+  .WeatherModal__form--cancel{
+    width: calc(30rem * 0.40);
+    margin: auto;
+  }
 }

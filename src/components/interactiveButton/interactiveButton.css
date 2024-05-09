@@ -75,6 +75,13 @@
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
+
+  .InteractiveWeather svg{
+    transform: scale(1.5);
+  }
+  .buttonCombiner svg{
+    transform: scale(1.5);
+  }
 }
 @media (width <= 1250px) {
   .InteractiveWeather {
@@ -83,6 +90,12 @@
   .buttonCombiner {
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);
+  }
+  .InteractiveWeather svg{
+    transform: scale(2.5);
+  }
+  .buttonCombiner svg{
+    transform: scale(2.5);
   }
 }
 
@@ -95,5 +108,11 @@
   .buttonCombiner {
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
+  }
+  .InteractiveWeather svg{
+    transform: scale(2);
+  }
+  .buttonCombiner svg{
+    transform: scale(1.8);
   }
 }

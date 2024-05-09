@@ -29,7 +29,6 @@ export default function HomePage() {
   const [dataWeather, setDataWeather] = useState(null);
   const [city, setCity] = useState(null);
 
-
   useEffect(() => {
     const handleResize = () => {
       setMobile(window.innerWidth <= 800);
@@ -129,20 +128,23 @@ export default function HomePage() {
   //pasar de m/s a km/h
 
   const winterConverter = (val) => {
-    return val * (3600 / 1) * (1 / 1000);
+    let calc = val * (3600 / 1) * (1 / 1000);
+    return Math.floor(calc);
   };
-  let  arrayWeather
+
+  let arrayWeather;
 
   if (dataWeather) {
     arrayWeather = {
       weather: dataWeather.weather[0].main,
-      temp: dataWeather.main.temp,
+      temp: parseFloat(dataWeather.main.temp.toFixed(1)),
       wind: winterConverter(dataWeather.wind.speed),
-    }
+      ico: dataWeather.weather[0].icon,
+    };
   } else null;
 
-
-/*
+  console.log(arrayWeather);
+  /*
  
       */
   return (

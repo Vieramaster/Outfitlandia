@@ -40,6 +40,6 @@ export default function ApiWeather({ city, setDataWeather }) {
         .finally(() => setLoadingWeather(false));
     }
   }, [url]);
+console.log(errorWeather)
 
- 
 }

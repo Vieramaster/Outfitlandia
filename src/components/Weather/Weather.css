@@ -19,11 +19,15 @@
   place-items: center;
   user-select: none;
   font-family: var(--primary-font);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
+.winter{
+  font-size: 1rem; 
 
+}
 .winter img {
   width: 70%;
+  margin-top: -0.5rem;
 }
 .winter span {
   color: var(--primary-color);
@@ -43,9 +47,13 @@
   .Weather--info {
     width: calc(6rem * 0.8);
     height: calc(6rem * 0.8);
+    font-size:  calc(1.5rem * 0.8);
   }
   .weather--svg {
     width: calc(5rem * 0.8);
+  }
+  .winter{
+    font-size:  calc(1.2rem * 0.8);
   }
 }
 @media (width <= 1250px) {
@@ -54,12 +62,17 @@
   }
   .Weather--info {
     width: calc(6rem * 0.6);
+    font-size:  calc(1.5rem * 0.7);
   }
-  .Weather--info p {
-    font-size: 1.5rem;
-  }
+
   .weather--svg {
     width: calc(5rem * 0.6);
+  }
+  .winter{
+    font-size:  calc(1.2rem * 0.6);
+  }
+  .winter img{
+    margin-top: -0.25rem;
   }
 }
 

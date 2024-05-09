@@ -20,6 +20,7 @@ function WeatherModal({ toggleModal, HandleModal }, refModal) {
           placeholder=" Escriba su ciudad..."
           required
           className="WeatherModal__form--input"
+          autoComplete="off"
         />
 
         <InteractiveButton
