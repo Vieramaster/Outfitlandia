@@ -26,7 +26,6 @@
   justify-content: center;
 }
 
-
 .InteractiveButton:hover .InteractiveButton__span {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
@@ -76,10 +75,10 @@
     height: calc(7.5rem * 0.8);
   }
 
-  .InteractiveWeather svg{
+  .InteractiveWeather svg {
     transform: scale(1.5);
   }
-  .buttonCombiner svg{
+  .buttonCombiner svg {
     transform: scale(1.5);
   }
 }
@@ -91,10 +90,10 @@
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);
   }
-  .InteractiveWeather svg{
+  .InteractiveWeather svg {
     transform: scale(2.5);
   }
-  .buttonCombiner svg{
+  .buttonCombiner svg {
     transform: scale(2.5);
   }
 }
@@ -109,10 +108,22 @@
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
   }
-  .InteractiveWeather svg{
+  .InteractiveWeather svg {
     transform: scale(2);
   }
-  .buttonCombiner svg{
+  .buttonCombiner svg {
     transform: scale(1.8);
+  }
+}
+
+@media (width <= 400px) {
+  .InteractiveWeather {
+    width: 4rem;
+    height: 4.2rem;
+  }
+  .buttonCombiner {
+    width: calc(6rem * 0.6);
+    height: calc(7.5rem * 0.62);
+    margin-top: 0.3rem;
   }
 }

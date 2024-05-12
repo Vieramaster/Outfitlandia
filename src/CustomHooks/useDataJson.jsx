@@ -1,28 +1,33 @@
-import { useEffect, useMemo, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 export default function useDataJson() {
-  const [dataJson, setDataJson] = useState([]);
-  const [dataColor, setDataColor] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  
+  const fetchDataJson = async () => {
+    const res = await fetch("/garmentData.json");
+    return res.json();
+  };
+  const {
+    isLoading: dataLoading,
+    isError: dataError,
+    data: dataJson = [],
+  } = useQuery({ queryKey: ["dataJson"], queryFn: fetchDataJson });
 
-  useEffect(() => {
-    fetch("/garmentData.json")
-      .then((response) => response.json())
-      .then(setDataJson)
-      .catch(setError)
-      .finally(() => setLoading(false));
-  }, []);
+  const fetchColor = async () => {
+    const res = await fetch("/colorCombine.json");
+    return res.json();
+  };
+  const {
+    isLoading: colorLoading,
+    isError: colorError,
+    data: colorJson = [],
+  } = useQuery({ queryKey: ["dataColor"], queryFn: fetchColor });
 
-  useEffect(() => {
-    fetch("/colorCombine.json")
-      .then((response) => response.json())
-      .then(setDataColor)
-      .catch(setError)
-      .finally(() => setLoading(false));
-  }, []);
-
-  return useMemo(() => {
-    return { dataJson, dataColor, loading, error };
-  }, [dataJson, dataColor, loading, error]);
+  return {
+    dataError,
+    dataJson,
+    dataLoading,
+    colorError,
+    colorLoading,
+    colorJson,
+  };
 }

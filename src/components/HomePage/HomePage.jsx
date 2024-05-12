@@ -10,7 +10,7 @@ import {
   defaultGarmentButtons,
 } from "../../CustomHooks/OutfitCreator";
 import WeatherModal from "../WeatherModal/WeatherModal";
-import ApiWeather from "../../ApiWeather/ApiWeather";
+import { useQuery } from "@tanstack/react-query";
 
 export default function HomePage() {
   const [infoGarment, setInfoGarment] = useState(defaultGarmentButtons);
@@ -23,7 +23,7 @@ export default function HomePage() {
   const [firstButton, setFirstButton] = useState({});
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [addColorButtonCombine, setAddColorButtonCombine] = useState(false);
-  const { dataJson, dataColor } = useDataJson();
+  const { dataJson, colorJson } = useDataJson();
   const [mobile, setMobile] = useState(window.innerWidth <= 800);
   const [showMobileClothes, setShowMobileClothes] = useState(true);
   const [dataWeather, setDataWeather] = useState(null);
@@ -104,14 +104,14 @@ export default function HomePage() {
         garmentColor,
         firstButton,
         dataJson,
-        dataColor
+        colorJson
       )
     );
   };
 
   const refModal = useRef(null);
 
-  const toggleModal = () => {
+  const toggleModalWeather = () => {
     if (!refModal.current) {
       return;
     }
@@ -125,7 +125,44 @@ export default function HomePage() {
     setCity(event.target.searchCity.value);
   };
 
-  //pasar de m/s a km/h
+  const [position, setPosition] = useState({
+    latitude: null,
+    longitude: null,
+  });
+
+  const key = "c2638b4d5ddc5ca90b2455a289f7a142";
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setPosition({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        });
+      });
+    } else {
+      alert("el navegador no soporta geolocalización");
+    }
+  }, []);
+
+  let url;
+
+  if (position.latitude && position.longitude) {
+    url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=${key}&lang=es&units=metric`;
+  }
+
+  if (city) {
+    url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=es&units=metric`;
+  }
+
+  const fetchWeather = async () => {
+    const res = await fetch(url);
+    return res.json();
+  };
+  const { data: weatherData } = useQuery({
+    queryKey: ["weather"],
+    queryFn: fetchWeather,
+  });
 
   const winterConverter = (val) => {
     let calc = val * (3600 / 1) * (1 / 1000);
@@ -133,17 +170,16 @@ export default function HomePage() {
   };
 
   let arrayWeather;
-
-  if (dataWeather) {
+  console.log(weatherData);
+  if (weatherData) {
     arrayWeather = {
-      weather: dataWeather.weather[0].main,
-      temp: parseFloat(dataWeather.main.temp.toFixed(1)),
-      wind: winterConverter(dataWeather.wind.speed),
-      ico: dataWeather.weather[0].icon,
+      weather: weatherData.weather[0].main,
+      temp: parseFloat(weatherData.main.temp.toFixed(1)),
+      wind: winterConverter(weatherData.wind.speed),
+      ico: weatherData.weather[0].icon,
     };
-  } else null;
+  }
 
-  console.log(arrayWeather);
   /*
  
       */
@@ -158,7 +194,7 @@ export default function HomePage() {
           buttonDisabled,
         }}
       />
-      <Weather {...{ toggleModal, arrayWeather }} />
+      <Weather {...{ toggleModalWeather, arrayWeather }} />
 
       <SelectionClothes
         {...{
@@ -171,8 +207,9 @@ export default function HomePage() {
           showMobileClothes,
         }}
       />
-      <WeatherModal ref={refModal} {...{ toggleModal, HandleModal }} />
-      <ApiWeather {...{ city, setDataWeather }} />
+      <WeatherModal ref={refModal} {...{ toggleModalWeather, HandleModal }} />
     </section>
   );
 }
+
+/* <ErrorModal ref={refErrorModal}{...{toggleModalWeatherWeather, toggleModalWeatherError}}/>*/

@@ -2,14 +2,14 @@ import { forwardRef } from "react";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
 import "./WeatherModal.css";
 
-function WeatherModal({ toggleModal, HandleModal }, refModal) {
+function WeatherModal({ toggleModalWeather, HandleModal }, refModal) {
   return (
     <dialog
       ref={refModal}
       className="WeatherModal"
       onClick={(event) => {
         if (event.currentTarget === event.target) {
-          toggleModal();
+          toggleModalWeather();
         }
       }}
     >
@@ -26,10 +26,10 @@ function WeatherModal({ toggleModal, HandleModal }, refModal) {
         <InteractiveButton
           className="WeatherModal__form--cancel"
           buttonDescription="cancelar"
-          onClick={toggleModal}
+          onClick={toggleModalWeather}
         />
         <InteractiveButton
-          onClick={toggleModal}
+          onClick={toggleModalWeather}
           className="WeatherModal__form--submit"
           type="submit"
           buttonDescription="buscar"
