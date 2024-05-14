@@ -1,5 +1,4 @@
 import "./InteractiveButton.css";
-
 export default function InteractiveButton({
   buttonDescription,
   className,
@@ -7,6 +6,7 @@ export default function InteractiveButton({
   disabled,
   spanClassName,
   type,
+  buttonName,
 }) {
   return (
     <button
@@ -14,6 +14,7 @@ export default function InteractiveButton({
       onClick={onClick}
       disabled={disabled}
       type={type}
+      aria-label={buttonName}
     >
       <span className={`InteractiveButton__span ${spanClassName}`}>
         {buttonDescription}

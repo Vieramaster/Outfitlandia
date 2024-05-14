@@ -1,6 +1,5 @@
 import "./SelectionClothes.css";
 import ColorButton from "../ColorButton/ColorButton";
-
 import { customButton } from "../CustomButton/CustomButton";
 export default function SelectionClothes({
   showGarments,

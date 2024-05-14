@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-
 export default function useDataJson() {
   const {
     isLoading: dataLoading,
@@ -12,7 +11,6 @@ export default function useDataJson() {
       return res.json();
     },
   });
-
   const {
     isLoading: colorLoading,
     isError: colorError,
@@ -24,7 +22,6 @@ export default function useDataJson() {
       return res.json();
     },
   });
-
   return {
     dataError,
     dataJson,

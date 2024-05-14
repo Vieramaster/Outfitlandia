@@ -1,8 +1,6 @@
 import "./SelectionGarment.css";
 import { customButton } from "../CustomButton/CustomButton";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
-import useDataJson from "../../CustomHooks/useDataJson";
-
 export default function SelectionGarment({
   onClickGarment,
   infoGarment,
@@ -10,15 +8,15 @@ export default function SelectionGarment({
   addColorButtonCombine,
   buttonDisabled,
 }) {
-
   return (
     <section className="SelectionGarment">
-      {customButton(infoGarment, "garment", "big", onClickGarment, )}
+      {customButton(infoGarment, "garment", "big", onClickGarment)}
       <div className="SelectionGarment__box">
         <div className="SelectionGarment__box--first">
-          {customButton(infoGarment, "garment", "small", onClickGarment, )}
+          {customButton(infoGarment, "garment", "small", onClickGarment)}
 
           <InteractiveButton
+            buttonName="¡Combinar!"
             onClick={onClickCombine}
             disabled={buttonDisabled}
             className="buttonCombiner"
@@ -51,9 +49,8 @@ export default function SelectionGarment({
             }
           />
         </div>
-
         <div className="SelectionGarment__box--shoes">
-          {customButton(infoGarment, "garment", "shoes", onClickGarment, )}
+          {customButton(infoGarment, "garment", "shoes", onClickGarment)}
         </div>
       </div>
     </section>

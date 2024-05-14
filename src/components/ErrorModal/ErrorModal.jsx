@@ -1,7 +1,6 @@
 import { forwardRef } from "react";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
 import "./ErrorModal.css";
-
 function ErrorModal({ toggleModalWeather, toggleModalError }, refErrorModal) {
   const onClickChange = () => {
     toggleModalWeather();
@@ -37,5 +36,4 @@ function ErrorModal({ toggleModalWeather, toggleModalError }, refErrorModal) {
     </dialog>
   );
 }
-
 export default forwardRef(ErrorModal);

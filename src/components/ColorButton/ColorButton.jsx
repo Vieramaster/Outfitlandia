@@ -1,5 +1,4 @@
 import "./ColorButton.css";
-
 export default function ColorButton({ colorName, hex, title, onClick }) {
   return (
     <button

@@ -12,7 +12,6 @@ import {
 import WeatherModal from "../WeatherModal/WeatherModal";
 import { useQuery } from "@tanstack/react-query";
 import ErrorModal from "../ErrorModal/ErrorModal";
-
 export default function HomePage() {
   const [infoGarment, setInfoGarment] = useState(defaultGarmentButtons);
   const [idGarment, setIdGarment] = useState("");
@@ -28,23 +27,18 @@ export default function HomePage() {
   const [mobile, setMobile] = useState(window.innerWidth <= 800);
   const [showMobileClothes, setShowMobileClothes] = useState(true);
   const [city, setCity] = useState(null);
-
   useEffect(() => {
     const handleResize = () => {
       setMobile(window.innerWidth <= 800);
     };
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   const findGarments = (data, garment, search) => {
     return data.filter((item) => item[search] === garment);
   };
-
   // Ingresa el ID para identificar la parte específica de la prenda que debemos buscar. Luego, reiniciamos todos los useState para evitar posibles errores, y finalmente almacenamos la prenda en un estado (useState).
   const onClickGarment = (id) => {
     setDivSwap(false);
@@ -58,7 +52,6 @@ export default function HomePage() {
     setShowGarments(newGarmet);
     setShowMobileClothes(false);
   };
-
   //Ingresas el ID, que corresponde al nombre de la prenda seleccionada. Luego, buscamos los colores asociados a esa prenda y los almacenamos en un estado (useState). Además, creamos un estado booleano para alternar entre mostrar las prendas o los colores en la misma sección.
   const OnClickClothes = (id) => {
     const chosenGarment = findGarments(dataJson, id, "name");
@@ -67,24 +60,18 @@ export default function HomePage() {
     setShowColors(colors);
     setDivSwap(true);
   };
-
   // El ID proporciona el nombre del color, lo que nos permite buscar su imagen correspondiente y mostrarla en los botones principales. Así se logra la asociación visual entre los colores y las prendas.
   const onClickColor = (id) => {
     setGarmentColor(id);
     const imageButton = showColors.find((item) => item.colorName === id);
-
     const filterForButton = filteredObjects(showClothes, imageButton.colorName);
-
     setFirstButton(filterForButton[0]);
-
     const newImageButton = () => {
       const newGarmet = JSON.parse(JSON.stringify(infoGarment));
-
       const foundItem = newGarmet.find((item) => item.garment === idGarment);
       foundItem ? (foundItem.src = filterForButton[0].image) : null;
       return newGarmet;
     };
-
     setInfoGarment(newImageButton());
     setAddColorButtonCombine(true);
     setShowMobileClothes(true);
@@ -95,7 +82,6 @@ export default function HomePage() {
     setTimeout(() => {
       setButtonDisabled(false);
     }, 500);
-
     setInfoGarment(
       OutfitCreator(
         infoGarment,
@@ -108,9 +94,7 @@ export default function HomePage() {
       )
     );
   };
-
   const refModal = useRef(null);
-
   const toggleModalWeather = () => {
     if (!refModal.current) {
       return;
@@ -119,13 +103,10 @@ export default function HomePage() {
       ? refModal.current.close()
       : refModal.current.showModal();
   };
-
   const HandleModal = (inputValue) => {
     setCity(inputValue);
   };
-
   const refErrorModal = useRef(null);
-
   const toggleModalError = () => {
     if (!refErrorModal.current) {
       return;
@@ -134,40 +115,35 @@ export default function HomePage() {
       ? refErrorModal.current.close()
       : refErrorModal.current.showModal();
   };
-
   const winterConverter = (val) => {
     let calc = val * (3600 / 1) * (1 / 1000);
     return Math.floor(calc);
   };
-
   const [position, setPosition] = useState({
     latitude: null,
     longitude: null,
   });
-
   const key = "c2638b4d5ddc5ca90b2455a289f7a142";
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      setPosition({
-        latitude: position.coords.latitude,
-        longitude: position.coords.longitude,
+  const OnLocation = () => {
+    toggleModalWeather();
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setPosition({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        });
       });
-    });
-  } else {
-    alert("el navegador no soporta geolocalización");
-  }
-
+    } else {
+      alert("el navegador no soporta geolocalización");
+    }
+  };
   let url;
-
   if (position.latitude && position.longitude) {
     url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=${key}&lang=es&units=metric`;
   }
-
   if (city) {
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=es&units=metric`;
   }
-
   const { isError: weatherError, data: weatherData } = useQuery({
     queryKey: [url],
     queryFn: async () => {
@@ -177,9 +153,7 @@ export default function HomePage() {
       } else return res.json();
     },
   });
-
   let arrayWeather;
-
   if (weatherData && !weatherError) {
     arrayWeather = {
       weather: weatherData.weather[0].main,
@@ -188,7 +162,6 @@ export default function HomePage() {
       ico: weatherData.weather[0].icon,
     };
   }
-
   return (
     <section className="HomePage">
       <SelectionGarment
@@ -201,7 +174,6 @@ export default function HomePage() {
         }}
       />
       <Weather {...{ toggleModalWeather, arrayWeather }} />
-
       <SelectionClothes
         {...{
           showGarments,
@@ -213,7 +185,10 @@ export default function HomePage() {
           showMobileClothes,
         }}
       />
-      <WeatherModal ref={refModal} {...{ toggleModalWeather, HandleModal }} />
+      <WeatherModal
+        ref={refModal}
+        {...{ toggleModalWeather, HandleModal, OnLocation }}
+      />
       <ErrorModal
         ref={refErrorModal}
         {...{ toggleModalWeather, toggleModalError }}
@@ -221,5 +196,3 @@ export default function HomePage() {
     </section>
   );
 }
-
-/* */

@@ -1,5 +1,3 @@
-
-
 export let defaultGarmentButtons = [
   {
     css: "big",
@@ -17,7 +15,6 @@ export let defaultGarmentButtons = [
     buttonName: "abrigo",
     key: "default-coat",
   },
-
   {
     css: "big",
     src: "/src/images/default/defaultPants.webp",
@@ -26,7 +23,6 @@ export let defaultGarmentButtons = [
     buttonName: "pantalones",
     key: "default-pants",
   },
-
   {
     css: "small",
     src: "/src/images/default/belt.webp",
@@ -63,7 +59,6 @@ export function filteredObjects(array, arrayColor) {
       });
   });
 }
-
 export function OutfitCreator(
   infoGarment,
   idGarment,
@@ -74,19 +69,15 @@ export function OutfitCreator(
   dataColor
 ) {
   //prevenir el spam del click
-
-
   const partGarments = ["top", "pants", "coat"];
   // funcion generica para elegir objetos aleatoriamente
   const randomNumber = (value) => {
     if (value.length === 0) {
       return null;
     }
-    const result = Math.floor(Math.random() * (value.length));
+    const result = Math.floor(Math.random() * value.length);
     return value[result];
   };
-  
-
   //  Función genérica en la que verificamos que todos tengan una clave en común.
   const keyFilter = (array, key) => {
     let result = null;
@@ -100,19 +91,13 @@ export function OutfitCreator(
         }
       }
     }
-
     return result;
   };
-
-  //si se hace click sobre el abrigo, superior o pantalones
-
   //Selecciono la prenda elegida y la utilizo para buscar el resto de prendas en los datos disponibles.
   const partResults = partGarments.filter((item) => item !== idGarment);
-
   const garmentFilter = dataJson.filter((item) =>
     partResults.includes(item.garment)
   );
-
   // Extraigo las claves de la prenda elegida para utilizarlas como filtros más adelante.
   const [{ style: garmentStyle, weather: garmentWeather }] = showClothes;
 
@@ -125,25 +110,17 @@ export function OutfitCreator(
   );
   // Dejo una variable sin declarar para utilizarla más adelante en la función pickStyle().
   let shoesColor;
-
   const pickStyle = (attempt = 0) => {
     if (attempt === 200) {
       alert("No se encontrado ningun outfit");
     }
-
     // Identificamos el color de la prenda y seleccionamos uno al azar.
     let findColors = dataColor.filter(
       (item) => item.combineClothes[idGarment] === garmentColor
     );
-
     let randomCombineColor = randomNumber(findColors);
-
-
-
     let { combineShoes } = randomCombineColor;
-
     shoesColor = combineShoes;
-
     // Busqueda de objetos mediante las prendas restantes, para luego crear un solo array.
     const filteredColors = (obj) => {
       let searchColor = randomCombineColor.combineClothes[obj];
@@ -155,14 +132,9 @@ export function OutfitCreator(
       );
       return filteredObjects(findColor, searchColor);
     };
-
-  
     let firstObject = filteredColors(partResults[0]);
     let secondObject = filteredColors(partResults[1]);
-
     let outfitFilter = firstObject.concat(secondObject);
-
-
     // Organizamos los estilos según el style de las prendas.”
     const groupedByStyle = outfitFilter.reduce((acc, item) => {
       item.style.forEach((style) => {
@@ -173,7 +145,6 @@ export function OutfitCreator(
       });
       return acc;
     }, {});
-
     //  Funcion generica del cual me otorga el style en común.
     const styleFilter = (array) => {
       let commonStyles = array[0].style;
@@ -183,17 +154,12 @@ export function OutfitCreator(
           array[i].style.includes(style)
         );
       }
-
       return commonStyles.length > 0 ? commonStyles[0] : null;
     };
-
-
     // Identificamos los estilos que tienen las dos partes y, si hay varios, elegimos uno al azar.
     let selectedItems = [];
-
     for (let style of Object.keys(groupedByStyle)) {
       selectedItems[style] = [];
-
       for (let garment of partResults) {
         let returnItem = [];
         let items = groupedByStyle[style].filter(
@@ -208,92 +174,68 @@ export function OutfitCreator(
         }
         selectedItems[style].push(returnItem);
       }
-
       if (selectedItems[style].includes(null)) {
         delete selectedItems[style];
       }
     }
-
-      //Aplicamos filtros de estilo y clima para asegurarnos de que todo coincida y para evitar errores. En caso de que algo falle, volvemos a ejecutar la función principal pickStyle().
-      if (Object.keys(selectedItems).length === 0) {
-        return pickStyle(attempt + 1);
-      } else if (Object.keys(selectedItems).length === 1) {
-        let key = Object.keys(selectedItems)[0];
-
-        let updateoutfit = [...selectedItems[key], firstButton];
-
-        let weather = keyFilter(updateoutfit, "weather");
-        let style = keyFilter(updateoutfit, "style");
-        let styleName = styleFilter(updateoutfit);
-        if (weather !== null && style !== null && updateoutfit !== undefined) {
-
-          return [styleName, updateoutfit];
-        } else pickStyle(attempt + 1);
-      } else if (Object.keys(selectedItems).length > 1) {
-        let randomStyle = randomNumber(Object.keys(selectedItems));
-        let updateoutfit2 = [...selectedItems[randomStyle], firstButton];
-        let weather2 = keyFilter(updateoutfit2, "weather");
-        let style2 = keyFilter(updateoutfit2, "style");
-
-        let styleName2 = styleFilter(updateoutfit2 , "2 ");
-
-        if (
-          weather2 !== null &&
-          style2 !== null &&
-          updateoutfit2 !== undefined
-        ) {
-
-          return [styleName2, updateoutfit2];
-        } else pickStyle(attempt + 1);
-      }
-    
+    //Aplicamos filtros de estilo y clima para asegurarnos de que todo coincida y para evitar errores. En caso de que algo falle, volvemos a ejecutar la función principal pickStyle().
+    if (Object.keys(selectedItems).length === 0) {
+      return pickStyle(attempt + 1);
+    } else if (Object.keys(selectedItems).length === 1) {
+      let key = Object.keys(selectedItems)[0];
+      let updateoutfit = [...selectedItems[key], firstButton];
+      let weather = keyFilter(updateoutfit, "weather");
+      let style = keyFilter(updateoutfit, "style");
+      let styleName = styleFilter(updateoutfit);
+      if (weather !== null && style !== null && updateoutfit !== undefined) {
+        return [styleName, updateoutfit];
+      } else pickStyle(attempt + 1);
+    } else if (Object.keys(selectedItems).length > 1) {
+      let randomStyle = randomNumber(Object.keys(selectedItems));
+      let updateoutfit2 = [...selectedItems[randomStyle], firstButton];
+      let weather2 = keyFilter(updateoutfit2, "weather");
+      let style2 = keyFilter(updateoutfit2, "style");
+      let styleName2 = styleFilter(updateoutfit2, "2 ");
+      if (weather2 !== null && style2 !== null && updateoutfit2 !== undefined) {
+        return [styleName2, updateoutfit2];
+      } else pickStyle(attempt + 1);
+    }
   };
-
   // Volvemos a ejecutar la funcion en caso de que salga algun tipo de error.
   let filteredClothes;
   do {
     filteredClothes = pickStyle();
-  } while (!filteredClothes || (filteredClothes[0] === undefined && filteredClothes[1] === undefined));
-  
-
-
+  } while (
+    !filteredClothes ||
+    (filteredClothes[0] === undefined && filteredClothes[1] === undefined)
+  );
   // Sustraemos del array el estilo y las prendas.
   let styleClothes = filteredClothes[0];
-
   let finishClothes = filteredClothes[1];
-
   // Se elimina el abrigo en el caso de que sean prendas de verano
   if (keyFilter(finishClothes, "weather") === "heat") {
     finishClothes = finishClothes.filter((item) => item.garment !== "coat");
   }
-
   // Con la información previa, procedemos a buscar el calzado adecuado.
   const findAcc = (attempt = 0) => {
     const maxAttempts = 20;
-
     if (attempt === maxAttempts) {
       return null;
     }
-
     let findShoes = dataJson.filter((item) => item.garment === "shoes");
-
     let styleResult = findShoes.filter((item) => {
       return item.style.includes(styleClothes);
     });
-
     let searchWeather = styleResult.filter((item) =>
       garmentWeather.every((val) => item.weather.includes(val))
     );
-
     let finishShoes = filteredObjects(searchWeather, shoesColor);
-
     if (finishShoes.length === 0) {
       return findAcc(attempt + 1);
     } else if (finishShoes.length === 1) {
       return finishShoes[0];
     } else if (finishShoes.length > 1) {
       let random = randomNumber(finishShoes);
-
       let pants = finishClothes.find((item) => item.garment === "pants");
       // Realizamos una selección para asegurarnos de que el color del calzado no coincida con el del pantalón.
       if (random.color.colorName !== pants.color.colorName) {
@@ -303,16 +245,12 @@ export function OutfitCreator(
           (shoe) =>
             shoe.color.colorName === "white" || shoe.color.colorName === "black"
         );
-
         return blackShoes;
       }
     }
   };
-
   const shoes = findAcc();
-
   const pushShoes = [...finishClothes, shoes];
-
   //Por ultimo, buscamos el cinturón.
   const searchBelt = () => {
     let colorshoes = shoes.color.colorName;
@@ -320,7 +258,6 @@ export function OutfitCreator(
     let filteredStyle = searchBelt.filter((item) =>
       item.style.includes(styleClothes)
     );
-
     let filteredColor = filteredObjects(filteredStyle, colorshoes);
     let randomBelt = randomNumber(filteredColor);
     let pants = finishClothes.find((item) => item.garment === "pants");
@@ -329,15 +266,13 @@ export function OutfitCreator(
       return null;
     } else if (randomBelt === null) {
       return filteredStyle.filter((item) =>
-        item.color.includes(el => el.colorName === "black")
+        item.color.includes((el) => el.colorName === "black")
       );
     } else return randomBelt;
   };
   const belt = searchBelt();
-
   //Pusheamos la ultima parte para obtener el outfit completo.
   const outfitComplete = { ...pushShoes, belt };
-
   // Realizamos ajustes al atuendo para asegurarnos de que sea compatible con los botones y así mostrarlo en pantalla
   const quitNames = Object.values(outfitComplete);
   const clothesArray = quitNames.map((item) => {
@@ -354,7 +289,6 @@ export function OutfitCreator(
       };
     }
   });
-
   // Realizamos una copia de los botones anteriores, los reemplazamos con los nuevos y actualizamos la prenda en consecuencia.
   const buttonsCopy = JSON.parse(JSON.stringify(infoGarment));
   const buttonsOufit = buttonsCopy.map((button) => {
@@ -363,6 +297,5 @@ export function OutfitCreator(
     );
     return matchingClothes || { ...button, src: "/src/images/emply-img.webp" };
   });
-
-  return buttonsOufit
+  return buttonsOufit;
 }

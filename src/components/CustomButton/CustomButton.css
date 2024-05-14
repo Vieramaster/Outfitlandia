@@ -9,7 +9,6 @@
   display: grid;
   place-items: center;
 }
-
 .clothingButton img {
   width: 100%;
   pointer-events: none;

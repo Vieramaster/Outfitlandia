@@ -7,20 +7,17 @@
   padding: 1rem;
   min-height: 45rem;
 }
-
 @media (width <= 1500px) {
   .HomePage {
     min-height: calc(45rem * 0.8);
   }
 }
-
 @media (width <= 1250px) {
   .HomePage {
     min-height: calc(45rem * 0.6);
   }
 }
 @media (width <= 800px){
-
   .HomePage{
     flex-direction: column;
     justify-content: center;

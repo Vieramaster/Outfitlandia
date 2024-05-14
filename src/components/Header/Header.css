@@ -6,17 +6,14 @@ header {
   justify-content: center;
   background-color: var(--fifth-color);
 }
-
 .header__logo {
   font-size: 2.5rem;
 }
 .header__logo {
   font-family: var(--primary-font);
-
   margin: auto 3rem;
   color: var(--primary-color);
 }
-
 @media (width <= 1500px) {
   header {
     height: calc(6rem * 0.8);
@@ -25,7 +22,6 @@ header {
     font-size: calc(2.5rem * 0.8);
   }
 }
-
 @media (max-height: 700px) {
   header {
     height: calc(6rem * 0.6);

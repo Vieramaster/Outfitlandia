@@ -9,11 +9,9 @@
   transition: all 0.5s;
   transform: skew(-20deg);
 }
-
 .colorButton:hover {
   transform: skew(-20deg) translateY(-6px);
 }
-
 @media (width <= 1500px) {
   .colorButton {
     width: calc(6rem * 0.8);

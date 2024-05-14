@@ -1,5 +1,4 @@
 import "./CustomButton.css";
-
 export const customButton = (array, idProperty, CssType, customClick) => {
   const BasicButton = (item, index) => {
     return (
@@ -15,7 +14,6 @@ export const customButton = (array, idProperty, CssType, customClick) => {
       </button>
     );
   };
-
   return CssType
     ? array.map((item, index) => {
         return item.css === CssType ? BasicButton(item, index) : null;

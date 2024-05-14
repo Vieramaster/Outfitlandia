@@ -6,36 +6,30 @@
   place-items: center;
   grid-gap: 1px;
 }
-
 .SelectionGarment__big {
   align-items: center;
   place-content: center;
 }
-
 .SelectionGarment__big,
 .SelectionGarment__box {
   display: flex;
   width: 100%;
   height: 100%;
 }
-
 .SelectionGarment__box {
   flex-direction: column;
 
   justify-content: space-between;
   margin: auto;
 }
-
 .SelectionGarment__box--first {
   width: 85%;
   height: 50%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-
 .SelectionGarment__box--shoes {
   width: 100%;
   height: 50%;
@@ -43,23 +37,19 @@
   place-content: center;
   margin-top: 0.5rem;
 }
-
 .big:hover {
   border: 1px solid var(--fourth-color);
   transform: scale(1.04);
 }
-
 .big:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
-
 .small {
   width: 6rem;
   height: 7.5rem;
   pointer-events: none;
   background-color: transparent;
 }
-
 .shoes {
   width: 13.5rem;
   height: 7.5rem;
@@ -67,14 +57,13 @@
   background-color: transparent;
 }
 .shoes img {
-  height: 95%;
+  height: 100%;
+  width: 100%;
 }
-
 .big {
   width: 13.5rem;
   height: 18rem;
 }
-
 @keyframes changeColor {
   0% {
     fill: var(--third-color);
@@ -89,12 +78,10 @@
 .svg--arrowBotton {
   animation: changeColor 5s infinite;
 }
-
 .svg--arrowTop {
   animation: changeColor 5s infinite;
   animation-delay: -2.5s;
 }
-
 @media (max-width: 1500px) {
   .SelectionGarment {
     width: calc(30rem * 0.8);
@@ -114,7 +101,6 @@
     height: calc(7.5rem * 0.8);
   }
 }
-
 @media (width <= 1250px) {
   .SelectionGarment {
     width: calc(30rem * 0.6);
@@ -134,7 +120,6 @@
     height: calc(7.5rem * 0.6);
   }
 }
-
 @media (max-width: 800px) {
   .SelectionGarment {
     width: calc(30rem * 0.8);
@@ -145,7 +130,6 @@
     width: calc(13.5rem * 0.8);
     height: calc(18rem * 0.8);
   }
-
   .small {
     width: calc(6rem * 0.8);
     height: calc(7.5rem * 0.8);
@@ -155,7 +139,6 @@
     height: calc(7.5rem * 0.8);
   }
 }
-
 @media (width <= 400px) {
   .SelectionGarment {
     width: calc(30rem * 0.6);
@@ -165,7 +148,6 @@
     width: calc(13.5rem * 0.6);
     height: calc(18rem * 0.6);
   }
-
   .small {
     width: calc(6rem * 0.6);
     height: calc(7.5rem * 0.6);

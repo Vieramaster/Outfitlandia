@@ -1,11 +1,10 @@
 import "./Weather.css";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
-
 export default function Weather({ toggleModalWeather, arrayWeather }) {
-
   return (
     <div className="Weather">
       <InteractiveButton
+        buttonName="Buscar pronostico"
         className="InteractiveWeather"
         onClick={toggleModalWeather}
         buttonDescription={
@@ -19,9 +18,13 @@ export default function Weather({ toggleModalWeather, arrayWeather }) {
           </svg>
         }
       />
-    
       <div className="Weather--info">
-      <img src={`src/images/icons/${ arrayWeather ? arrayWeather.ico : "01d"}.svg `} alt="weather" />
+        <img
+          src={`src/images/icons/${
+            arrayWeather ? arrayWeather.ico : "01d"
+          }.svg `}
+          alt="weather"
+        />
       </div>
       <div className="Weather--info">
         <p>{arrayWeather ? arrayWeather.temp + " °C" : "20 °C"}</p>
