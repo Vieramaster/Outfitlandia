@@ -1,8 +1,17 @@
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
+
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
 import "./WeatherModal.css";
 
 function WeatherModal({ toggleModalWeather, HandleModal }, refModal) {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    HandleModal(inputValue);
+    setInputValue("");
+    toggleModalWeather();
+  };
   return (
     <dialog
       ref={refModal}
@@ -13,7 +22,7 @@ function WeatherModal({ toggleModalWeather, HandleModal }, refModal) {
         }
       }}
     >
-      <form onSubmit={HandleModal} className="WeatherModal__form">
+      <form onSubmit={handleSubmit} className="WeatherModal__form">
         <input
           type="text"
           name="searchCity"
@@ -21,6 +30,8 @@ function WeatherModal({ toggleModalWeather, HandleModal }, refModal) {
           required
           className="WeatherModal__form--input"
           autoComplete="off"
+          value={inputValue}
+          onChange={(event) => setInputValue(event.target.value)}
         />
 
         <InteractiveButton
@@ -29,7 +40,6 @@ function WeatherModal({ toggleModalWeather, HandleModal }, refModal) {
           onClick={toggleModalWeather}
         />
         <InteractiveButton
-          onClick={toggleModalWeather}
           className="WeatherModal__form--submit"
           type="submit"
           buttonDescription="buscar"

@@ -1,5 +1,40 @@
-.ErrorModal{
-    width: 50rem;
+.ErrorModal {
+  width: 50rem;
+  height: 4rem;
+  margin: 8rem auto;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+
+.ErrorModal__container {
+  width: 100%;
+  height: 100%;
+}
+
+.ErrorModal__container,
+.ErrorModal__container--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.ErrorModal__container--button,
+.ErrorModal__container--text {
+  font-family: var(--primary-font);
+}
+
+.ErrorModal__container--text {
+  font-size: 1.4rem;
+
+}
+.ErrorModal__container--button {
+    font-size: 1.4rem;
+    width: 7rem;
     height: 3rem;
-    background-color: aquamarine;
+    border-radius: 8px;
+}
+.ErrorModal__container--button span {
+    border-radius: 8px;
 }
