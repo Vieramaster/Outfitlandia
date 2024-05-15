@@ -11,14 +11,14 @@ export default function SelectionClothes({
   showMobileClothes,
 }) {
   return (
-    <div
+    <section
       className={`SelectionClothes ${
         mobile && showMobileClothes ? "hidden" : ""
       }`}
     >
       {divSwap === false ? (
         <div className="SelectionClothes__box">
-          {customButton(showGarments, "name", null, OnClickClothes)}
+          {customButton(showGarments, "name", null, OnClickClothes )}
         </div>
       ) : null}
       {divSwap === true ? (
@@ -36,6 +36,6 @@ export default function SelectionClothes({
           })}
         </div>
       ) : null}
-    </div>
+    </section>
   );
 }

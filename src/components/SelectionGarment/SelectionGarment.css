@@ -56,14 +56,17 @@
   pointer-events: none;
   background-color: transparent;
 }
-.shoes img {
-  height: 100%;
-  width: 100%;
-}
 .big {
   width: 13.5rem;
   height: 18rem;
 }
+.shoes img,
+.small img,
+.big img {
+  height: 100%;
+  width: 100%;
+}
+
 @keyframes changeColor {
   0% {
     fill: var(--third-color);

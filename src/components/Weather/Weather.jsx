@@ -2,7 +2,7 @@ import "./Weather.css";
 import InteractiveButton from "../InteractiveButton/InteractiveButton";
 export default function Weather({ toggleModalWeather, arrayWeather }) {
   return (
-    <div className="Weather">
+    <section className="Weather">
       <InteractiveButton
         buttonName="Buscar pronostico"
         className="InteractiveWeather"
@@ -33,6 +33,6 @@ export default function Weather({ toggleModalWeather, arrayWeather }) {
         <img src="/src/images/icons/wind.svg" alt="ico" />
         <p>{arrayWeather ? arrayWeather.wind + "KM/H" : "10 KM/H"}</p>
       </div>
-    </div>
+    </section>
   );
 }

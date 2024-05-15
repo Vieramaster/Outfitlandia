@@ -1,5 +1,5 @@
 import "./CustomButton.css";
-export const customButton = (array, idProperty, CssType, customClick) => {
+export const customButton = (array, idProperty, CssType, customClick, width, height) => {
   const BasicButton = (item, index) => {
     return (
       <button
@@ -10,7 +10,7 @@ export const customButton = (array, idProperty, CssType, customClick) => {
         title={item.name}
         disabled={CssType === "shoes" || CssType === "small"}
       >
-        <img src={item.src || item.image} alt={item.name} />
+        <img src={item.src || item.image} alt={item.name} width={width} height={height}/>
       </button>
     );
   };

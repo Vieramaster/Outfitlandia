@@ -3,6 +3,7 @@
   src: url("/src/fonts/Madson-Bold.otf") format("opentype"),
     url("/src/fonts/Madson-Semibold.otf") format("opentype"),
     url("/src/fonts/Madson.otf") format("opentype");
+    font-display: swap;
 }
 :root {
   --primary-color: #d4d4dc;
