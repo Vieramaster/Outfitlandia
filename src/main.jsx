@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Header from "./Components/Header/Header";
-import HomePage from "./Components/HomePage/HomePage";
+import Header from "./Components/Header/Header.jsx";
+import HomePage from "./Components/HomePage/HomePage.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 const queryClient = new QueryClient();
