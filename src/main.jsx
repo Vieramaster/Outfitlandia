@@ -12,4 +12,5 @@ createRoot(document.querySelector("#root")).render(
       <HomePage />
     </StrictMode>
   </QueryClientProvider>
+  
 );
