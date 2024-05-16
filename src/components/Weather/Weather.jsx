@@ -20,7 +20,7 @@ export default function Weather({ toggleModalWeather, arrayWeather }) {
       />
       <div className="Weather--info">
         <img
-          src={`src/images/icons/${
+          src={`images/icons/${
             arrayWeather ? arrayWeather.ico : "01d"
           }.svg `}
           alt="weather"
@@ -30,7 +30,7 @@ export default function Weather({ toggleModalWeather, arrayWeather }) {
         <p>{arrayWeather ? arrayWeather.temp + " °C" : "20 °C"}</p>
       </div>
       <div className="Weather--info winter">
-        <img src="/src/images/icons/wind.svg" alt="ico" />
+        <img src="images/icons/wind.svg" alt="ico" />
         <p>{arrayWeather ? arrayWeather.wind + "KM/H" : "10 KM/H"}</p>
       </div>
     </section>

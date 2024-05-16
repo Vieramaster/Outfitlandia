@@ -1,7 +1,7 @@
 export let defaultGarmentButtons = [
   {
     css: "big",
-    src: "/src/images/default/defaultTop.webp",
+    src: "/images/default/defaultTop.webp",
     name: "default-top",
     garment: "top",
     buttonName: "parte superior",
@@ -9,7 +9,7 @@ export let defaultGarmentButtons = [
   },
   {
     css: "big",
-    src: "/src/images/default/defaultCoat.webp",
+    src: "/images/default/defaultCoat.webp",
     name: "default-coat",
     garment: "coat",
     buttonName: "abrigo",
@@ -17,7 +17,7 @@ export let defaultGarmentButtons = [
   },
   {
     css: "big",
-    src: "/src/images/default/defaultPants.webp",
+    src: "images/default/defaultPants.webp",
     name: "default-pants",
     garment: "pants",
     buttonName: "pantalones",
@@ -25,7 +25,7 @@ export let defaultGarmentButtons = [
   },
   {
     css: "small",
-    src: "/src/images/default/belt.webp",
+    src: "/images/default/belt.webp",
     name: "default-belt",
     garment: "belt",
     buttonName: "cinturón",
@@ -33,7 +33,7 @@ export let defaultGarmentButtons = [
   },
   {
     css: "shoes",
-    src: "/src/images/default/shoes.webp",
+    src: "/images/default/shoes.webp",
     name: "default-shoes",
     garment: "shoes",
     buttonName: "calzado",
@@ -295,7 +295,7 @@ export function OutfitCreator(
     const matchingClothes = clothesArray.find(
       (clothes) => clothes && clothes.garment === button.garment
     );
-    return matchingClothes || { ...button, src: "/src/images/emply-img.webp" };
+    return matchingClothes || { ...button, src: "images/emply-img.webp" };
   });
   return buttonsOufit;
 }
