@@ -145,6 +145,7 @@ export default function HomePage() {
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=es&units=metric`;
   }
   const { isError: weatherError, data: weatherData } = useQuery({
+    enabled: url !== undefined,
     queryKey: [url],
     queryFn: async () => {
       const res = await fetch(url);
