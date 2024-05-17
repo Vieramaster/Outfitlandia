@@ -1388,7 +1388,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatDenimLightgrey.webp"
+        "imageColor": "images/image-json/coat/coatDenimLightGrey.webp"
       },
       {
         "colorName": "WornBlack",
@@ -2854,7 +2854,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsJeanLightgrey.webp"
+        "imageColor": "images/image-json/pants/pantsJeanLightGrey.webp"
       },
       {
         "colorName": "WornBlack",
@@ -2888,7 +2888,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsshortJeanLightgrey.webp"
+        "imageColor": "images/image-json/pants/pantsshortJeanLightGrey.webp"
       },
       {
         "colorName": "WornBlack",
