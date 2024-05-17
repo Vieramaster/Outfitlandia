@@ -17,7 +17,7 @@ export let defaultGarmentButtons = [
   },
   {
     css: "big",
-    src: "images/default/defaultPants.webp",
+    src: "/images/default/defaultPants.webp",
     name: "default-pants",
     garment: "pants",
     buttonName: "pantalones",
