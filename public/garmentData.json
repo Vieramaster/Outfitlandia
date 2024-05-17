@@ -69,7 +69,7 @@
         "imageColor": "images/image-json/top/topHoodieYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topHoodieMustard.webp"
@@ -84,7 +84,7 @@
         "colorName": "windsorTan",
         "hex": "#a47850",
         "title": "suela",
-        "imageColor": "images/image-json/top/topHoodieWindsortan.webp"
+        "imageColor": "images/image-json/top/topHoodieWindsorTan.webp"
       },
       {
         "colorName": "chocolate",
@@ -114,7 +114,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topHoodieLightGRey.webp"
+        "imageColor": "images/image-json/top/topHoodieLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -231,7 +231,7 @@
         "imageColor": "images/image-json/top/topSweatShirtYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topSweatShirtMustard.webp"
@@ -276,7 +276,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topSweatShirtLightGRey.webp"
+        "imageColor": "images/image-json/top/topSweatShirtLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -393,7 +393,7 @@
         "imageColor": "images/image-json/top/topTShirtYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topTShirtMustard.webp"
@@ -434,7 +434,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topTShirtLightGRey.webp"
+        "imageColor": "images/image-json/top/topTShirtLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -552,7 +552,7 @@
         "imageColor": "images/image-json/top/topPoloYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topPoloMustard.webp"
@@ -592,7 +592,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topPoloLightGRey.webp"
+        "imageColor": "images/image-json/top/topPoloLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -709,7 +709,7 @@
         "imageColor": "images/image-json/top/topSweaterYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topSweaterMustard.webp"
@@ -744,7 +744,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topSweaterLightGRey.webp"
+        "imageColor": "images/image-json/top/topSweaterLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -838,7 +838,7 @@
       },
 
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topTurtleSweaterMustard.webp"
@@ -865,7 +865,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topTurtleSweaterLightGRey.webp"
+        "imageColor": "images/image-json/top/topTurtleSweaterLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -941,7 +941,7 @@
         "colorName": "skyBlue",
         "hex": "#afd8eb",
         "title": "celeste",
-        "imageColor": "images/image-json/top/topShortShirtskyblue.webp"
+        "imageColor": "images/image-json/top/topShortShirtSkyBlue.webp"
       },
 
       {
@@ -970,7 +970,7 @@
         "imageColor": "images/image-json/top/topShortShirtYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topShortShirtMustard.webp"
@@ -1004,7 +1004,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topShortShirtLightGRey.webp"
+        "imageColor": "images/image-json/top/topShortShirtLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1115,7 +1115,7 @@
       },
 
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topLongShirtMustard.webp"
@@ -1149,7 +1149,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topLongShirtLightGRey.webp"
+        "imageColor": "images/image-json/top/topLongShirtLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1259,7 +1259,7 @@
         "imageColor": "images/image-json/top/topLongTShirtYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/top/topLongTShirtMustard.webp"
@@ -1298,7 +1298,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/top/topLongTShirtLightGRey.webp"
+        "imageColor": "images/image-json/top/topLongTShirtLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1471,7 +1471,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatLeatherLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatLeatherLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1562,7 +1562,7 @@
         "imageColor": "images/image-json/coat/coatInflatableJacketYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/coat/coatInflatableJacketMustard.webp"
@@ -1596,7 +1596,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatInflatableJacketLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatInflatableJacketLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1645,7 +1645,7 @@
         "imageColor": "images/image-json/coat/coatParkaArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/coat/coatParkaMustard.webp"
@@ -1741,7 +1741,7 @@
         "imageColor": "images/image-json/coat/coatShacketYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/coat/coatShacketMustard.webp"
@@ -1768,7 +1768,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatShacketLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatShacketLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1862,7 +1862,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatBomberLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatBomberLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -1902,7 +1902,7 @@
         "colorName": "jean",
         "hex": "#132b59",
         "title": "jean",
-        "imageColor": "images/image-json/coat/coatDenimWinterjean.webp"
+        "imageColor": "images/image-json/coat/coatDenimWinterJean.webp"
       },
       {
         "colorName": "skyBlue",
@@ -1932,7 +1932,7 @@
         "colorName": "WornBlack",
         "hex": "#2d2d2d",
         "title": "negro gastado",
-        "imageColor": "images/image-json/coat/coatDenimWinterwornBlack.webp"
+        "imageColor": "images/image-json/coat/coatDenimWinterWornBlack.webp"
       },
       {
         "colorName": "black",
@@ -2026,7 +2026,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatWindbreakerLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatWindbreakerLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2057,7 +2057,7 @@
   {
     "garment": "coat",
     "name": "blazer",
-    "image": "images/image-json/coat/coatblazer.webp",
+    "image": "images/image-json/coat/coatBlazer.webp",
     "css": "big",
     "style": ["elegant"],
     "weather": ["cold", "mild"],
@@ -2099,7 +2099,7 @@
         "imageColor": "images/image-json/coat/coatBlazerSkyBlue.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/coat/coatBlazerMustard.webp"
@@ -2126,7 +2126,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatBlazerLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatBlazerLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2190,7 +2190,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatShortOvercoatLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatShortOvercoatLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2242,7 +2242,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatGabanLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatGabanLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2273,7 +2273,7 @@
         "imageColor": "images/image-json/coat/coatDuffleNavy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/coat/coatDuffleMustard.webp"
@@ -2306,7 +2306,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/coat/coatDuffleLightGRey.webp"
+        "imageColor": "images/image-json/coat/coatDuffleLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2373,7 +2373,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/belt/beltClasicLightGRey.webp"
+        "imageColor": "images/image-json/belt/beltClasicLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2466,7 +2466,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/belt/beltClothLightGRey.webp"
+        "imageColor": "images/image-json/belt/beltClothLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2557,7 +2557,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/belt/beltBraidedLightGRey.webp"
+        "imageColor": "images/image-json/belt/beltBraidedLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2665,7 +2665,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsJogginLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsJogginLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -2860,7 +2860,7 @@
         "colorName": "WornBlack",
         "hex": "#2d2d2d",
         "title": "negro gastado",
-        "imageColor": "images/image-json/pants/pantsJeanwornBlack.webp"
+        "imageColor": "images/image-json/pants/pantsJeanWornBlack.webp"
       }
     ]
   },
@@ -2919,7 +2919,7 @@
         "imageColor": "images/image-json/pants/pantsGabardineArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/pants/pantsGabardineMustard.webp"
@@ -2959,7 +2959,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsGabardineLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsGabardineLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3003,7 +3003,7 @@
         "imageColor": "images/image-json/pants/pantsShortsGabArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/pants/pantsShortsGabMustard.webp"
@@ -3043,7 +3043,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsShortsGabLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsShortsGabLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3086,7 +3086,7 @@
         "imageColor": "images/image-json/pants/pantsChinoArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/pants/pantsChinosMustard.webp"
@@ -3123,7 +3123,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsChinoLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsChinoLightGrey.webp"
       },
 
       {
@@ -3168,7 +3168,7 @@
         "imageColor": "images/image-json/pants/pantsShortChinoArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/pants/pantsShortChinoMustard.webp"
@@ -3205,7 +3205,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsShortChinoLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsShortChinoLightGrey.webp"
       },
 
       {
@@ -3250,7 +3250,7 @@
         "imageColor": "images/image-json/pants/pantsChargeArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/pants/pantsChargeMustard.webp"
@@ -3290,7 +3290,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/pants/pantsChargeLightGRey.webp"
+        "imageColor": "images/image-json/pants/pantsChargeLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3388,7 +3388,7 @@
         "imageColor": "images/image-json/shoes/shoesSportYellow.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/shoes/shoesSportMustard.webp"
@@ -3415,7 +3415,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesSportLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesSportLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3458,7 +3458,7 @@
         "imageColor": "images/image-json/shoes/shoesSneakersNavy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/shoes/shoesSneakersMustard.webp"
@@ -3498,7 +3498,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesSneakersLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesSneakersLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3570,7 +3570,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesNauticLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesNauticLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3643,7 +3643,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesShortBootsLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesShortBootsLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3686,7 +3686,7 @@
         "imageColor": "images/image-json/shoes/shoesBorcegoArmy.webp"
       },
       {
-        "coloNamrName": "mustard",
+        "colorName": "mustard",
         "hex": "#be7b17",
         "title": "mostaza",
         "imageColor": "images/image-json/shoes/shoesBorcegoMustard.webp"
@@ -3776,7 +3776,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesOxfordLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesOxfordLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3848,7 +3848,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesBrogueLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesBrogueLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -3937,7 +3937,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesCanvasLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesCanvasLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
@@ -4094,7 +4094,7 @@
         "colorName": "lightGrey",
         "hex": "#c7c8ca",
         "title": "gris claro",
-        "imageColor": "images/image-json/shoes/shoesBrogueLightGRey.webp"
+        "imageColor": "images/image-json/shoes/shoesBrogueLightGrey.webp"
       },
       {
         "colorName": "darkGrey",
