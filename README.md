@@ -6,7 +6,7 @@ An app designed to solve what many of us struggle with when getting dressed: com
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/McGgbm2/Outfilandia.png)
+![App Screenshot](https://i.ibb.co/7RsmtM9/ezgif-5-4ea3b21152.gif)
 
 
 ## Acknowledgements
