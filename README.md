@@ -6,7 +6,7 @@ An app designed to solve what many of us struggle with when getting dressed: com
 
 
 ![App Screenshot](https://i.ibb.co/fpSLvwY/Outfitlandia.gif)
-![App Screenshot](https://i.ibb.co/gZML7xP/ezgif-4-4356599b07.gif)
+![App Screenshot](https://i.ibb.co/z87X8jH/ezgif-4-8c33f39ec1.gif)
 
 
 ## Acknowledgements
