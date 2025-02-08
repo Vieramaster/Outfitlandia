@@ -3,7 +3,7 @@
 
 An app designed to solve what many of us struggle with when getting dressed: combining clothes based on a favorite garment. It also guides you when buying clothes if you’re not exactly sure what you need
 
-![App Screenshot](githubusercontent.com/b0931b8513097b72f17d12957300acac682aaf7f1eb23d37b008a3610817fdba/68747470733a2f2f692e6962622e636f2f6670534c7677592f4f75746669746c616e6469612e676966)
+![App Screenshot](https://camo.githubusercontent.com/b0931b8513097b72f17d12957300acac682aaf7f1eb23d37b008a3610817fdba/68747470733a2f2f692e6962622e636f2f6670534c7677592f4f75746669746c616e6469612e676966)
 
 
 ## Acknowledgements
