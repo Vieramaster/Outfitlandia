@@ -3,10 +3,7 @@
 
 An app designed to solve what many of us struggle with when getting dressed: combining clothes based on a favorite garment. It also guides you when buying clothes if you’re not exactly sure what you need
 
-
-
-![App Screenshot](https://i.ibb.co/fpSLvwY/Outfitlandia.gif)
-![App Screenshot](https://i.ibb.co/znyJKWJ/ezgif-6-8aa50b0a34.gif)
+![App Screenshot](https://i.ibb.co/b9pcWtb/Cavendish.png)
 
 
 ## Acknowledgements
