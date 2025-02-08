@@ -30,3 +30,6 @@ An app designed to solve what many of us struggle with when getting dressed: com
 
 This was my first React project. Despite the challenges I faced, I believe I gained a solid foundation. I learned to use hooks correctly and created custom hooks to achieve cleaner and more readable code. Additionally, I handled library installations and usage, such as with Tanstack Query. I also implemented AI requests to generate images of clothing items.
 
+## Feedback
+
+Big thanks to [@Lou](https://github.com/Lou) for helping with the code feedback!
